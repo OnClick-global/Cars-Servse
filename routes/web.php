@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\Admin\CarsController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\NameController;
+
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,14 +18,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Auth::routes();
-Route::get('/logout',[HomeController::class,'logout'])->name('signout');
-Route::get('/',function (){ return redirect(route('home')); });
+Route::get('/logout', [LoginController::class, 'logout'])->name('signout');
+Route::get('/', function () {
+    return redirect(route('home'));
+});
 
-Route::group(['middleware'=>'auth:web'], function(){
-    Route::get('/home',[HomeController::class,'index'])->name('home');
-    // test
-    Route::get('/name',[NameController::class,'index'])->name('name');
-    Route::post('/delete',[NameController::class,'destroy'])->name('delete');
+Route::group(['middleware' => 'auth:web'], function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+    Route::group(['namespace' => 'admin','prefix'=>'cars'], function () {
+        Route::get('/allCars', [CarsController::class, 'index'])->name('allCars');
+        Route::get('/addNewCar', [CarsController::class, 'create'])->name('add new car');
+        Route::post('/store', [CarsController::class, 'store'])->name('store car');
+        Route::post('/carsimages', [CarsController::class, 'carsImages'])->name('cars.images');
+    });
 });
 
 

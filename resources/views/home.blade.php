@@ -1,6 +1,6 @@
 @extends('adminLayouts.app')
 @section('title')
-    Abo nasser
+    {{App\Helpers\Helper::translate('dashboard')}}
 @endsection
 @section('content')
     <div class="subheader py-2 py-lg-6 subheader-solid" id="kt_subheader">
@@ -11,12 +11,12 @@
                 <!--begin::Page Heading-->
                 <div class="d-flex align-items-baseline flex-wrap mr-5">
                     <!--begin::Page Title-->
-                    <h5 class="text-dark font-weight-bold my-1 mr-5">Dashboard</h5>
+                    <h5 class="text-dark font-weight-bold my-1 mr-5"></h5>
                     <!--end::Page Title-->
                     <!--begin::Breadcrumb-->
                     <ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
                         <li class="breadcrumb-item">
-                            <a href="{{route('home')}}" class="text-muted">General</a>
+                            <a href="{{route('home')}}" class="text-muted">{{App\Helpers\Helper::translate('dashboard')}}</a>
                         </li>
                     </ul>
                     <!--end::Breadcrumb-->
