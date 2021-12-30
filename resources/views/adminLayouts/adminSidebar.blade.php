@@ -56,6 +56,14 @@
                                     <span class="menu-text">{{App\Helpers\Helper::translate('New Car')}}</span>
                                 </a>
                             </li>
+                            <li class="menu-item @if( Request::segment(2)== 'allCars' ) menu-item-active @endif "  aria-haspopup="true">
+                                <a href="{{route('allCars')}}" class="menu-link">
+                                    <i class="menu-bullet menu-bullet-dot">
+                                        <span></span>
+                                    </i>
+                                    <span class="menu-text">{{App\Helpers\Helper::translate('All Car')}}</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </li>

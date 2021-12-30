@@ -30,87 +30,67 @@
         </div>
     </div>
 
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">{{App\Helpers\Helper::translate('name in arabic')}}</th>
+            <th scope="col">{{App\Helpers\Helper::translate('name in english')}}</th>
+            <th scope="col">{{App\Helpers\Helper::translate('Description in arabic')}}</th>
+            <th scope="col">{{App\Helpers\Helper::translate('Description in english')}}</th>
+            <th scope="col">{{App\Helpers\Helper::translate('Status')}}</th>
 
-    <div class="card card-custom">
-        <!--begin::Form-->
-        <form method="post" action="" enctype="multipart/form-data">
-            @csrf
-            <div class="row">
-                <div class="card-body col-6">
-                    <div class="form-group">
-                        <label>{{App\Helpers\Helper::translate('name in arabic')}}<span
-                                class="text-danger">*</span></label>
-                        <input name="name_ar" class="form-control" type="text"
-                               placeholder="{{App\Helpers\Helper::translate('please Enter Name In Arabic')}}"/>
-                    </div>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($cars as $car )
+            <tr>
+                <th scope="row">{{ $loop->index+1 }}</th>
+                <td>{{$car->name_ar}}</td>
+                <td>{{$car->name_en}}</td>
+                <td >{{ Str::limit($car->des_ar, 20, '  ...')}}</td>
+                <td >{{ Str::limit($car->des_en, 20, '  ...')}}</td>
 
-                </div>
-                <div class="card-body col-6">
-                    <div class="form-group">
-                        <label>{{App\Helpers\Helper::translate('name in English')}}<span
-                                class="text-danger">*</span></label>
-                        <input name="name_en" class="form-control" type="text"
-                               placeholder="{{App\Helpers\Helper::translate('please Enter Name In English')}}"/>
-                    </div>
 
-                </div>
-                <div class="card-body col-6">
-                    <div class="form-group mb-1">
-                        <label for="exampleTextarea">{{App\Helpers\Helper::translate('Description In Arabic')}}
-                            <span class="text-danger">*</span></label>
-                        <textarea class="form-control" id="exampleTextarea" name="des_ar" rows="3"></textarea>
-                    </div>
-                </div>
-                <div class="card-body col-6">
-                    <div class="form-group mb-1">
-                        <label for="exampleTextarea">{{App\Helpers\Helper::translate('Description In English')}}
-                            <span class="text-danger">*</span></label>
-                        <textarea class="form-control" id="exampleTextarea" name="des_en" rows="3"></textarea>
-                    </div>
-                </div>
 
-                <div class="card-body col-12">
-                    <div class="form-group ">
-                        <div class="dropzone dropzone-default dropzone-primary" id="kt_dropzone_car">
-                            <div class="dropzone-msg dz-message needsclick">
-                                <h3 class="dropzone-msg-title">Drop files here or click to upload.</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <td>
+   <span class="switch switch-outline switch-icon switch-Primary">
+    <label>
+     <input type="checkbox" name="status"  onchange="update_active(this)" value="{{$car->id}}" @if($car ->status =='1') checked="checked" @endif >
+     <span></span>
+    </label>
+   </span>
+                </td>
 
-            </div>
+            </tr>
+        @endforeach
+        </tbody>
+    </table>
 
-            <div class="card-footer text-center">
-                <button type="Submit"
-                        class="btn btn-primary btn-default ">{{App\Helpers\Helper::translate('Save')}}</button>
-            </div>
-        </form>
-        <!--end::Form-->
-    </div>
+
+
+
+
 @endsection
 @section('script')
-    <script src="assets/js/pages/crud/file-upload/dropzonejs.js"></script>
-    <script src="assets/plugins/global/plugins.bundle.js"></script>
     <script type="text/javascript">
-        $('#kt_dropzone_car').dropzone({
-            url: "{{route('cars.images')}}",
-            headers: { 'X-CSRF-TOKEN': "{{ csrf_token() }}"}, // Set the url for your upload script location
-            paramName: "dzfile", // The name that will be used to transfer the file
-            maxFiles: 10,
-            maxFilesize: 10, // MB
-            addRemoveLinks: true,
-            accept: function (file, done) {
-                if (file.name == "justinbieber.jpg") {
-                    done("Naha, you don't.");
+        function update_active(el) {
+            if (el.checked)
+                var status = '1';
+            else
+                var status = '0';
+            $.post('{{ route('car status') }}', {
+                _token: '{{ csrf_token() }}',
+                id: el.value,
+                status: status
+            }, function (data) {
+                if (status == 1) {
+                    toastr.success("{{App\Helpers\Helper::translate('Car is Active')}}");
                 } else {
-                    done();
+                    toastr.error("{{App\Helpers\Helper::translate('Car is Deactivate')}}");
                 }
-            }
-        });
-    </script>
-    <script>
-
+            });
+        }
     </script>
 @endsection
 

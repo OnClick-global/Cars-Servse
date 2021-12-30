@@ -16,7 +16,7 @@ class Helper
     public static function uploadImage(string $dir, string $format, $image = null)
     {
         if ($image != null) {
-            $imageName = Carbon::now()->toDateString() . "-" . uniqid() . "." . $format;
+            $imageName = Carbon::now()->toDateString(). "-" . uniqid() . "." . $format;
             if (!Storage::disk('public')->exists($dir)) {
                 Storage::disk('public')->makeDirectory($dir);
             }

@@ -81,6 +81,7 @@
 
             </div>
 
+
             <div class="card-footer text-center">
                 <button type="Submit"
                         class="btn btn-primary btn-default ">{{App\Helpers\Helper::translate('Save')}}</button>
@@ -96,7 +97,7 @@
         $('#kt_dropzone_car').dropzone({
             paramName: "dzfile", // The name that will be used to transfer the file
             //autoProcessQueue: false,
-            maxFilesize: 5, // MB
+            maxFilesize: 10, // MB
             clickable: true,
             addRemoveLinks: true,
             acceptedFiles: 'image/*',
@@ -114,38 +115,32 @@
             url: "{{ route('cars.images') }}", // Set the url
             success:
                 function (file, response) {
-                    $('form').append('<input type="hidden" name="document[]" value="' + response.name + '">')
-
+                    $('form').append('<input type="hidden" name="images[]" value="' + response.name + '">')
                 }
-            ,
-            removedfile: function (file) {
-                file.previewElement.remove()
-                var name = ''
-                if (typeof file.file_name !== 'undefined') {
-                    name = file.file_name
-                } else {
-                    name = uploadedDocumentMap[file.name]
-                }
-                $('form').find('input[name="document[]"][value="' + name + '"]').remove()
-            }
-            ,
-            // previewsContainer: "#dpz-btn-select-files", // Define the container to display the previews
-            init: function () {
-                @if(isset($event) && $event->document)
-                var files =
-                    {!! json_encode($event->document) !!}
-                    for (var i in files) {
-                    var file = files[i]
-                    this.options.addedfile.call(this, file)
-                    file.previewElement.classList.add('dz-complete')
-                    $('form').append('<input type="hidden" name="document[]" value="' + file.file_name + '">')
-                }
-                @endif
-            }
         });
     </script>
+    @if(Session::has('message'))
     <script>
 
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-center",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+        toastr.success("{{ Session::get('message') }}");
     </script>
+@endif
 @endsection
 
