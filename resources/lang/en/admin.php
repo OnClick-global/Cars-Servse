@@ -19,4 +19,9 @@
   'Car is Active' => 'Car is Active',
   'Car is Deactivate' => 'Car is Deactivate',
   'Status' => 'Status',
+  'Car Deleted successfully!' => 'Car Deleted successfully!',
+  'Car created successfully!' => 'Car created successfully!',
+  'View Car' => 'View Car',
+  'Description in English' => 'Description in English',
+  'Drop files here or click to upload.' => 'Drop files here or click to upload.',
 );

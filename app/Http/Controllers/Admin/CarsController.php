@@ -31,7 +31,7 @@ class CarsController extends Controller
     }
     public function carsImages(Request $request ){
         $file = $request->file('dzfile');
-        $filename = Helper::uploadImage('cars', 'jpg',$file);
+        $filename = Helper::uploadImage('cars', '$file');
         return response()->json([
             'name' => $filename,
             'original_name' => $file->getClientOriginalName(),
@@ -42,5 +42,15 @@ class CarsController extends Controller
         Car::where('id', $request->id)->update([
             'status' => $request->status
         ]);
+    }
+    public function destroy($id)
+    {
+        $car = Car::findOrFail($id);
+        Car::where('id',$id)->delete();
+        return redirect(route('allCars'))->with('message', Helper::translate('Car Deleted successfully!'));
+    }
+    public function view($id){
+        $car=Car::where('id',$id)->first();
+        return view('admin.cars.view', compact('car'));
     }
 }

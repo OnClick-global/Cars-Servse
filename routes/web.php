@@ -32,6 +32,8 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::post('/store', [CarsController::class, 'store'])->name('store car');
         Route::post('/carsimages', [CarsController::class, 'carsImages'])->name('cars.images');
         Route::post('/carStatus', [CarsController::class, 'changeStatus'])->name('car status');
+        Route::get('/deletecar/{id}', [CarsController::class, 'destroy'])->name('car delete');
+        Route::get('/viewCar/{id}', [CarsController::class, 'view'])->name('car view');
     });
 });
 

@@ -7,11 +7,6 @@ use Illuminate\Support\Facades\Storage;
 
 class Helper
 {
-    public static
-    function shout(string $string)
-    {
-        return strtoupper($string);
-    }
 
     public static function uploadImage(string $dir, string $format, $image = null)
     {
@@ -20,7 +15,7 @@ class Helper
             if (!Storage::disk('public')->exists($dir)) {
                 Storage::disk('public')->makeDirectory($dir);
             }
-            Storage::disk('public')->put($dir . $imageName, file_get_contents($image));
+            Storage::disk('public')->put($imageName, file_get_contents($image));
         } else {
             $imageName = 'def.png';
         }
