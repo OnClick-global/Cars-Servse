@@ -31,7 +31,7 @@ class CarsController extends Controller
     }
     public function carsImages(Request $request ){
         $file = $request->file('dzfile');
-        $filename = Helper::uploadImage('cars', '$file');
+        $filename = Helper::uploadImage('cars', 'jpg',$file);
         return response()->json([
             'name' => $filename,
             'original_name' => $file->getClientOriginalName(),

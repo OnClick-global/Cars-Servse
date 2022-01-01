@@ -42,6 +42,13 @@
                 </div>
             </li>
 
+            <li class="menu-item @if( Request::segment(1)== 'settings' ) menu-item-active @endif "  aria-haspopup="true">
+                <a href="{{route('settings')}}" class="menu-link">
+                    <i class="menu-icon flaticon2-settings"></i>
+                    <span class="menu-text">{{App\Helpers\Helper::translate('Settings')}}</span>
+                </a>
+            </li>
+
         </ul>
         <!--end::Menu Nav-->
     </div>

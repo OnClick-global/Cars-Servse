@@ -1,9 +1,9 @@
 <?php
 
 use App\Http\Controllers\Admin\CarsController;
+use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
-
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -34,6 +34,10 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::post('/carStatus', [CarsController::class, 'changeStatus'])->name('car status');
         Route::get('/deletecar/{id}', [CarsController::class, 'destroy'])->name('car delete');
         Route::get('/viewCar/{id}', [CarsController::class, 'view'])->name('car view');
+    });
+    Route::group(['namespace' => 'admin'], function () {
+        Route::get('/settings', [SettingController::class, 'settings'])->name('settings');
+        Route::post('/settings/update', [SettingController::class, 'store'])->name('settings update');
     });
 });
 

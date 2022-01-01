@@ -153,6 +153,9 @@
 <!--end::Page Vendors-->
 <!--begin::Page Scripts(used by this page)-->
 <script src="assets/js/pages/widgets.js"></script>
+<!--begin::Page Scripts(used by this page)-->
+<script src="assets/plugins/custom/uppy/uppy.bundle.js"></script>
+<script src="assets/js/pages/crud/file-upload/uppy.js"></script>
 @yield('script')
 <!--end::Page Scripts-->
 </body>
