@@ -32,8 +32,12 @@
             <h4 class="text-dark-75 font-weight-bolder ">{{App\Helpers\Helper::translate('name in English')}} :</h4> <p class="text-dark-75 ">{{$car->name_en}} </p>
             <h4 class="text-dark-75 font-weight-bolder ">{{App\Helpers\Helper::translate('Description in arabic')}} :</h4> <p class="text-dark-75 ">{{$car->des_ar}} </p>
             <h4 class="text-dark-75 font-weight-bolder ">{{App\Helpers\Helper::translate('Description in English')}} :</h4> <p class="text-dark-75 ">{{$car->des_en}} </p>
+
+
             <div class="carousel-item active">
-                <img src="{{asset('storage/app/public')}}/{{$car->images['0']}}" >
+                @foreach($car->images as $c)
+                <img style="width: 150px;" src="{{asset('storage/cars')}}/{{$c}}" >
+                @endforeach
             </div>
         </div>
     </div>

@@ -35,7 +35,7 @@
 <div id="kt_quick_user" class="offcanvas offcanvas-right p-10">
     <!--begin::Header-->
     <div class="offcanvas-header d-flex align-items-center justify-content-between pb-5">
-        <h3 class="font-weight-bold m-0">User Profile
+        <h3 class="font-weight-bold m-0">{{App\Helpers\Helper::translate('User Profile')}}
         <a href="#" class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_user_close">
             <i class="ki ki-close icon-xs text-muted"></i>
         </a>
@@ -54,10 +54,10 @@
                 <div class="navi mt-2">
                     <a class="navi-item">
 
-                        <span class="navi-text text-muted text-hover-primary">jm@softplus.com</span>
+                        <span class="navi-text text-muted text-hover-primary">{{auth()->user()->email}}</span>
                         </span>
                     </a>
-                    <a href="{{route('logout')}}" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Sign Out</a>
+                    <a href="{{route('logout')}}" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">{{App\Helpers\Helper::translate('Sign Out')}}</a>
                 </div>
             </div>
         </div>

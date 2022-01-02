@@ -162,13 +162,13 @@
                         <div class="row">
                             <div class="col-4">
                                 <button class="btn btn-primary"
-                                        type="button">{{App\Helpers\Helper::translate('twitter')}}</button>
+                                        type="button">{{App\Helpers\Helper::translate('Logo')}}</button>
                             </div>
                             <div class="col-2">
                                 <div class="form-group">
                                     <div class="image-input image-input-outline" id="kt_image_1">
                                         <div class="image-input-wrapper"
-                                             style="background-image: url()"></div>
+                                             style="background-image: url({{asset('storage/settings')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}})"></div>
 
                                         <label
                                             class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
@@ -204,5 +204,28 @@
     <script>
         var avatar1 = new KTImageInput('kt_image_1');
     </script>
+    @if(Session::has('message'))
+        <script>
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+            toastr.success("{{ Session::get('message') }}");
+        </script>
+    @endif
 @endsection
 

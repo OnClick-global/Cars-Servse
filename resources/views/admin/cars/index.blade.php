@@ -51,7 +51,7 @@
                                onclick="return confirm('هل انت متكد من حذف الخدمه')"<i
                                 class="menu-icon flaticon-delete-1 text-danger"></i></a> &ensp;
                             <a href="{{route('car view',$car->id)}}"><i class="menu-icon flaticon-eye text-success"></i></a>&ensp;
-                            <a href=""><i class="menu-icon flaticon2-edit text-info"></i></a>
+                            <a href="{{route('edit car',$car->id)}}"><i class="menu-icon flaticon2-edit text-info"></i></a>
 
                         </td>
                         <td>

@@ -38,7 +38,7 @@
                 <!--begin::Login Header-->
                 <div class="d-flex flex-center mb-15">
                     <a href="#">
-                        <img src="assets/media/logos/onclick.png" class="max-h-100px" alt="" />
+                        <img alt="Logo" style="width: 300px;" src="{{asset('storage/settings')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}   " />
                     </a>
                 </div>
                 <!--end::Login Header-->

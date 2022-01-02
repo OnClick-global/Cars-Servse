@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CarRequest extends FormRequest
+class PartnerRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,9 +26,7 @@ class CarRequest extends FormRequest
         return [
             'name_en' => 'required|max:255',
             'name_ar' => 'required|max:255',
-            'des_en' => 'required|max:255',
-            'des_ar' => 'required|max:255',
-            'images' => 'array|min:1',
+            'images' => 'required',
         ];
     }
 }

@@ -54,5 +54,9 @@ class SettingsSeeder extends Seeder
             'key' => 'twitter',
             'value' => '',
         ]);
+        $admin = Setting::create([
+            'key' => 'logo  ',
+            'value' => '',
+        ]);
     }
 }

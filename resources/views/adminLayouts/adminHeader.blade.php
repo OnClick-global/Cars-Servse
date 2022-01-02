@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="canonical" href="https://keenthemes.com/metronic" />
     <!--begin::Fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
     <!--end::Fonts-->
     <!--begin::Page Vendors Styles(used by this page)-->
     <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
@@ -31,13 +33,13 @@
 </head>
 <!--end::Head-->
 <!--begin::Body-->
-<body id="kt_body" class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed aside-minimize-hoverable page-loading">
+<body style="font-family: 'Tajawal', sans-serif;" class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed aside-minimize-hoverable page-loading">
 <!--begin::Main-->
 <!--begin::Header Mobile-->
 <div id="kt_header_mobile" class="header-mobile align-items-center header-mobile-fixed">
     <!--begin::Logo-->
-    <a href="index.html">
-        <img alt="Logo" src="assets/media/logos/logo-light.png" />
+    <a href="{{route('home')}}">
+        <img alt="Logo" style="width: 100px;" src="{{asset('storage/settings')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}   " />
     </a>
     <!--end::Logo-->
     <!--begin::Toolbar-->
@@ -77,8 +79,8 @@
             <!--begin::Brand-->
             <div class="brand flex-column-auto" id="kt_brand">
                 <!--begin::Logo-->
-                <a href="index.html" class="brand-logo">
-                    <img alt="Logo" src="assets/media/logos/logo-light.png" />
+                <a href="{{route('home')}}" class="brand-logo">
+                    <img alt="Logo" style="width: 100px;" src="{{asset('storage/settings')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}   " />
                 </a>
                 <!--end::Logo-->
                 <!--begin::Toggle-->

@@ -12,10 +12,13 @@ class Helper
     {
         if ($image != null) {
             $imageName = Carbon::now()->toDateString(). "-" . uniqid() . "." . $format;
+
             if (!Storage::disk('public')->exists($dir)) {
                 Storage::disk('public')->makeDirectory($dir);
             }
-            Storage::disk('public')->put($imageName, file_get_contents($image));
+            Storage::disk('public')->put($dir.'/'.$imageName, file_get_contents($image));
+
+
         } else {
             $imageName = 'def.png';
         }
@@ -28,7 +31,7 @@ class Helper
         if (Storage::disk('public')->exists($dir . $old_image)) {
             Storage::disk('public')->delete($dir . $old_image);
         }
-        $imageName = Helpers::upload($dir, $format, $image);
+        $imageName = self::uploadImage($dir, $format, $image);
         return $imageName;
     }
 

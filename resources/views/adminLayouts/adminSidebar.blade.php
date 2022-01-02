@@ -41,6 +41,35 @@
                     </ul>
                 </div>
             </li>
+            <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'partner' ) menu-item-open @endif" aria-haspopup="true" data-menu-toggle="hover">
+                <a href="javascript:;" class="menu-link menu-toggle">
+                    <i class="menu-icon flaticon-security"></i>
+                    <span class="menu-text">{{App\Helpers\Helper::translate('Partner')}}</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="menu-submenu">
+                    <i class="menu-arrow"></i>
+                    <ul class="menu-subnav">
+                        <li class="menu-item menu-item-active" aria-haspopup="true">
+                        <li class="menu-item @if( Request::segment(2)== 'addNewPartner' ) menu-item-active @endif "  aria-haspopup="true">
+                            <a href="{{route('add new partner')}}" class="menu-link">
+                                <i class="menu-bullet menu-bullet-dot">
+                                    <span></span>
+                                </i>
+                                <span class="menu-text">{{App\Helpers\Helper::translate('New Partner')}}</span>
+                            </a>
+                        </li>
+                        <li class="menu-item @if( Request::segment(2)== 'allPartner' ) menu-item-active @endif "  aria-haspopup="true">
+                            <a href="{{route('all partner')}}" class="menu-link">
+                                <i class="menu-bullet menu-bullet-dot">
+                                    <span></span>
+                                </i>
+                                <span class="menu-text">{{App\Helpers\Helper::translate('All Partners')}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
 
             <li class="menu-item @if( Request::segment(1)== 'settings' ) menu-item-active @endif "  aria-haspopup="true">
                 <a href="{{route('settings')}}" class="menu-link">
@@ -73,7 +102,7 @@
                 <!--begin::User-->
                 <div class="topbar-item">
                     <div class="btn btn-icon btn-icon-mobile w-auto btn-clean d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
-                        <span class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">Hi,</span>
+                        <span class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1">{{App\Helpers\Helper::translate('Hi,')}}</span>
                         <span class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3">{{auth()->user()->name}}</span>
                         <span class="symbol symbol-lg-35 symbol-25 symbol-light-success">
 											<span class="symbol-label font-size-h5 font-weight-bold">S</span>
