@@ -30,7 +30,7 @@ class PartnerController extends Controller
             'images' => $filename,
         ]);
 
-        return redirect(route('all partner'))->with('message', Helper::translate('Car created successfully!'));
+        return redirect(route('all partner'))->with('message', Helper::translate('Partner created successfully!'));
     }
     public function destroy($id)
     {
@@ -55,6 +55,6 @@ class PartnerController extends Controller
             'name_en' => $request->name_en,
             'images' => $filename,
         ]);
-        return redirect(route('all partner'))->with('message', Helper::translate('Car updated successfully!'));
+        return redirect(route('all partner'))->with('message', Helper::translate('Partner updated successfully!'));
     }
 }

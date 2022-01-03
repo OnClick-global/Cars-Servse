@@ -41,7 +41,7 @@
                     </ul>
                 </div>
             </li>
-            <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'partner' ) menu-item-open @endif" aria-haspopup="true" data-menu-toggle="hover">
+            <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'partners' ) menu-item-open @endif" aria-haspopup="true" data-menu-toggle="hover">
                 <a href="javascript:;" class="menu-link menu-toggle">
                     <i class="menu-icon flaticon-security"></i>
                     <span class="menu-text">{{App\Helpers\Helper::translate('Partner')}}</span>
@@ -65,6 +65,35 @@
                                     <span></span>
                                 </i>
                                 <span class="menu-text">{{App\Helpers\Helper::translate('All Partners')}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'clients' ) menu-item-open @endif" aria-haspopup="true" data-menu-toggle="hover">
+                <a href="javascript:;" class="menu-link menu-toggle">
+                    <i class="menu-icon flaticon-customer"></i>
+                    <span class="menu-text">{{App\Helpers\Helper::translate('Clients')}}</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="menu-submenu">
+                    <i class="menu-arrow"></i>
+                    <ul class="menu-subnav">
+                        <li class="menu-item menu-item-active" aria-haspopup="true">
+                        <li class="menu-item @if( Request::segment(2)== 'addNewClient' ) menu-item-active @endif "  aria-haspopup="true">
+                            <a href="{{route('add new client')}}" class="menu-link">
+                                <i class="menu-bullet menu-bullet-dot">
+                                    <span></span>
+                                </i>
+                                <span class="menu-text">{{App\Helpers\Helper::translate('New Client')}}</span>
+                            </a>
+                        </li>
+                        <li class="menu-item @if( Request::segment(2)== 'allClient' ) menu-item-active @endif "  aria-haspopup="true">
+                            <a href="{{route('all client')}}" class="menu-link">
+                                <i class="menu-bullet menu-bullet-dot">
+                                    <span></span>
+                                </i>
+                                <span class="menu-text">{{App\Helpers\Helper::translate('All Clients')}}</span>
                             </a>
                         </li>
                     </ul>

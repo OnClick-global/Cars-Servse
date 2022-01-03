@@ -1,6 +1,6 @@
 @extends('adminLayouts.app')
 @section('title')
-    {{App\Helpers\Helper::translate('Edit Partner')}}
+    {{App\Helpers\Helper::translate('Edit Client')}}
 @endsection
 @section('header')
 
@@ -14,7 +14,7 @@
                    class="text-muted">{{App\Helpers\Helper::translate('dashboard')}}</a>
             </li>
             <li class="breadcrumb-item">
-                <a   class="text-primary" >{{App\Helpers\Helper::translate('Edit Partner')}}</a>
+                <a   class="text-primary" >{{App\Helpers\Helper::translate('Edit Client')}}</a>
             </li>
         </ul>
         <!--end::Breadcrumb-->
@@ -59,7 +59,7 @@
                                         <label
                                             class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
                                             data-action="change" data-toggle="tooltip" title=""
-                                            data-original-title="{{App\Helpers\Helper::translate('Partner image')}}">
+                                            data-original-title="{{App\Helpers\Helper::translate('Client image')}}">
                                             <i class="fa fa-pen icon-sm text-muted"></i>
                                             <input type="file" name="images" accept=".png, .jpg, .jpeg"/>
                                         </label>

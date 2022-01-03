@@ -40,4 +40,11 @@
     'Logo' => 'Logo',
     'User Profile' => 'User Profile',
     'Sign Out' => 'Sign Out',
+    'Hi,' => 'Hi,',
+    'Settings Updated successfully!' => 'Settings Updated successfully!',
+    'Clients' => 'Clients',
+    'New Client' => 'New Client',
+    'All Clients' => 'All Clients',
+    'Partner created successfully!' => 'Partner created successfully!',
+    'Client image' => 'Client image',
 );

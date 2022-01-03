@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\CarsController;
+use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\PartnerController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Auth\LoginController;
@@ -42,13 +43,21 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::get('/settings', [SettingController::class, 'settings'])->name('settings');
         Route::post('/settings/update', [SettingController::class, 'store'])->name('settings update');
     });
-    Route::group(['namespace' => 'admin', 'prefix' => 'partner'], function () {
+    Route::group(['namespace' => 'admin', 'prefix' => 'partners'], function () {
         Route::get('/allPartner', [PartnerController::class, 'index'])->name('all partner');
         Route::get('/addNewPartner', [PartnerController::class, 'create'])->name('add new partner');
-        Route::post('/new partner', [PartnerController::class, 'store'])->name('store partner');
-        Route::get('/EditCar/{id}', [PartnerController::class, 'edit'])->name('edit partner');
-        Route::post('/updateCar/{id}', [PartnerController::class, 'updatePartner'])->name('update partner');
-        Route::get('/deletecar/{id}', [PartnerController::class, 'destroy'])->name('partner delete');
+        Route::post('/newPartner', [PartnerController::class, 'store'])->name('store partner');
+        Route::get('/EditPartner/{id}', [PartnerController::class, 'edit'])->name('edit partner');
+        Route::post('/updatePartner/{id}', [PartnerController::class, 'updatePartner'])->name('update partner');
+        Route::get('/deletePartner/{id}', [PartnerController::class, 'destroy'])->name('partner delete');
+    });
+    Route::group(['namespace' => 'admin', 'prefix' => 'clients'], function () {
+        Route::get('/allClient', [ClientController::class, 'index'])->name('all client');
+        Route::get('/addNewClient', [ClientController::class, 'create'])->name('add new client');
+        Route::post('/newClient', [ClientController::class, 'store'])->name('store client');
+        Route::get('/EditClient/{id}', [ClientController::class, 'edit'])->name('edit client');
+        Route::post('/updateClient/{id}', [ClientController::class, 'update'])->name('update client');
+        Route::get('/deleteClient/{id}', [ClientController::class, 'destroy'])->name('client delete');
     });
 });
 
