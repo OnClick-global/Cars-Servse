@@ -3,27 +3,35 @@
     {{App\Helpers\Helper::translate('dashboard')}}
 @endsection
 @section('content')
-    <div class="subheader py-2 py-lg-6 subheader-solid" id="kt_subheader">
-        <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
-            <!--begin::Info-->
-            <div class="d-flex align-items-center flex-wrap mr-1">
+    <div class="row">
+        <div class="card col-2">
+            <div class="card-body text-center">
+																<span class="svg-icon svg-icon-3x svg-icon-success">
+																<i class="flaticon-truck icon-2x text-danger"></i>
+																</span>
+                <div class="text-dark font-weight-bolder font-size-h2 mt-3">{{\App\Models\Car::count()}}</div>
+                <a href="#" class="text-muted text-hover-primary font-weight-bold font-size-lg mt-1">{{App\Helpers\Helper::translate('Cars')}}</a>
+            </div>
+        </div>
 
-                <!--begin::Page Heading-->
-                <div class="d-flex align-items-baseline flex-wrap mr-5">
-                    <!--begin::Page Title-->
-                    <h5 class="text-dark font-weight-bold my-1 mr-5"></h5>
-                    <!--end::Page Title-->
-                    <!--begin::Breadcrumb-->
-                    <ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
-                        <li class="breadcrumb-item">
-                            <a href="{{route('home')}}" class="text-muted">{{App\Helpers\Helper::translate('dashboard')}}</a>
-                        </li>
-                    </ul>
-                    <!--end::Breadcrumb-->
-                </div>
-                <!--end::Page Heading-->
+        <div class="card col-2">
+            <div class="card-body text-center">
+																<span class="svg-icon svg-icon-3x svg-icon-success">
+																	<i class="flaticon-security icon-2x text-info"></i>
+																</span>
+                <div class="text-dark font-weight-bolder font-size-h2 mt-3">{{\App\Models\Client::count()}}</div>
+                <a href="#" class="text-muted text-hover-primary font-weight-bold font-size-lg mt-1">{{App\Helpers\Helper::translate('Clients')}}</a>
+            </div>
+        </div>
+
+        <div class="card col-2">
+            <div class="card-body text-center">
+																<span class="svg-icon svg-icon-3x svg-icon-success">
+													<i class="flaticon-customer icon-2x text-success"></i>
+																</span>
+                <div class="text-dark font-weight-bolder font-size-h2 mt-3">{{\App\Models\Partner::count()}}</div>
+                <a href="#" class="text-muted text-hover-primary font-weight-bold font-size-lg mt-1">{{App\Helpers\Helper::translate('Partners')}}</a>
             </div>
         </div>
     </div>
-
 @endsection

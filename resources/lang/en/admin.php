@@ -47,4 +47,8 @@
     'All Clients' => 'All Clients',
     'Partner created successfully!' => 'Partner created successfully!',
     'Client image' => 'Client image',
+    'Client created successfully!' => 'Client created successfully!',
+    'Are You Sure You Want To delete ?' => 'Are You Sure You Want To delete  ',
+    'Client Deleted successfully!' => 'Client Deleted successfully!',
+    'Partners' => 'Partners',
 );
