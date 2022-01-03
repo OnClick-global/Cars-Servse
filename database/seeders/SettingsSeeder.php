@@ -56,7 +56,7 @@ class SettingsSeeder extends Seeder
         ]);
         $admin = Setting::create([
             'key' => 'logo  ',
-            'value' => '',
+            'value' => 'def.png',
         ]);
     }
 }
