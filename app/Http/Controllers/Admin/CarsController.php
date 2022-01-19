@@ -23,7 +23,6 @@ class CarsController extends Controller
 
     public function store(CarRequest $request)
     {
-
         $car = Car::Create([
             'name_ar' => $request->name_ar,
             'name_en' => $request->name_en,

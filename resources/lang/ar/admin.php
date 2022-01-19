@@ -17,7 +17,7 @@
   'Description In Arabic' => 'الوصف بالعربيه',
   'Description In English' => 'الوصف بالانجليزيه',
   'Drop files here or click to upload.' => 'ضع الصور هنا او اضغط لرفع الصور.',
-  'All Cars' => 'كل السيترات',
+  'All Cars' => 'كل السيارات',
   'name in english' => 'الاسم بالانجليزيه',
   'Description in arabic' => 'الوصف بالعربيه',
   'Description in english' => 'الوصف بالانجليزيه',
@@ -50,4 +50,8 @@
   'Client created successfully!' => 'تم انشاء العميل',
   'Client Deleted successfully!' => 'تم حذف العميل',
   'Partners' => 'الشركاء',
+  'Car created successfully!' => 'Car created successfully!',
+  'Edit Car' => 'Edit Car',
+  'View Car' => 'View Car',
+  'Description in English' => 'Description in English',
 );

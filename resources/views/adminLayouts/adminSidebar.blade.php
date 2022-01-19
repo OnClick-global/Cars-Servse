@@ -44,7 +44,7 @@
             <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'partners' ) menu-item-open @endif" aria-haspopup="true" data-menu-toggle="hover">
                 <a href="javascript:;" class="menu-link menu-toggle">
                     <i class="menu-icon flaticon-security"></i>
-                    <span class="menu-text">{{App\Helpers\Helper::translate('Partner')}}</span>
+                    <span class="menu-text">{{App\Helpers\Helper::translate('Partners')}}</span>
                     <i class="menu-arrow"></i>
                 </a>
                 <div class="menu-submenu">
