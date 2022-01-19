@@ -20,10 +20,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Auth::routes();
-Route::get('/logout', [LoginController::class, 'logout'])->name('signout');
-Route::get('/', function () {
-    return redirect(route('home'));
-});
+Route::get('/logout', [LoginController::class, 'logout'])->name('signout')->middleware('auth:web');
+Route::get('/', function () { return view('front.index');});
 
 Route::group(['middleware' => 'auth:web'], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
