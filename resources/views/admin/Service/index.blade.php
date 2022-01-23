@@ -38,27 +38,27 @@
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($data as $car )
+                @foreach($data as $row )
                     <tr>
                         <th scope="row">{{ $loop->index+1 }}</th>
-                        <td>{{$car->name_ar}}</td>
-                        <td>{{$car->name_en}}</td>
-                        <td>{{ Str::limit($car->des_ar, 20, '  ...')}}</td>
-                        <td>{{ Str::limit($car->des_en, 20, '  ...')}}</td>
+                        <td>{{$row->name_ar}}</td>
+                        <td>{{$row->name_en}}</td>
+                        <td>{{ Str::limit($row->des_ar, 20, '  ...')}}</td>
+                        <td>{{ Str::limit($row->des_en, 20, '  ...')}}</td>
                         <td>
 
-                            <a href="{{route('car delete',$car->id)}}"
+                            <a href="{{route('car delete',$row->id)}}"
                                onclick="return confirm('هل انت متكد من حذف الخدمه')"<i
                                 class="menu-icon flaticon-delete-1 text-danger"></i></a> &ensp;
-                            <a href="{{route('car view',$car->id)}}"><i class="menu-icon flaticon-eye text-success"></i></a>&ensp;
-                            <a href="{{route('edit car',$car->id)}}"><i class="menu-icon flaticon2-edit text-info"></i></a>
+                            <a href="{{route('car view',$row->id)}}"><i class="menu-icon flaticon-eye text-success"></i></a>&ensp;
+                            <a href="{{route('edit car',$row->id)}}"><i class="menu-icon flaticon2-edit text-info"></i></a>
 
                         </td>
                         <td>
    <span class="switch switch-outline switch-icon switch-Primary">
     <label>
-     <input type="checkbox" name="status" onchange="update_active(this)" value="{{$car->id}}"
-            @if($car ->status =='1') checked="checked" @endif >
+     <input type="checkbox" name="status" onchange="update_active(this)" value="{{$row->id}}"
+            @if($row ->status =='1') checked="checked" @endif >
      <span></span>
     </label>
    </span>
@@ -73,6 +73,50 @@
     </div>
 @endsection
 @section('script')
+    <script type="text/javascript">
+        function update_active(el) {
+            if (el.checked)
+                var status = '1';
+            else
+                var status = '0';
+            $.post('{{ route('car status') }}', {
+                _token: '{{ csrf_token() }}',
+                id: el.value,
+                status: status
+            }, function (data) {
+                if (status == 1) {
+                    toastr.success("{{App\Helpers\Helper::translate('Car is Active')}}");
+                } else {
+                    toastr.error("{{App\Helpers\Helper::translate('Car is Deactivate')}}");
+                }
+            });
+        }
+    </script>
+    @if(Session::has('message'))
+        <script>
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+            toastr.warning("{{ Session::get('message') }}");
+        </script>
+        <script>
+
+        </script>
+    @endif
 
 @endsection
 

@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\CarsController;
 use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\PartnerController;
+use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\front\HomeFrontController;
@@ -62,6 +63,16 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::post('/updateClient/{id}', [ClientController::class, 'update'])->name('update client');
         Route::get('/deleteClient/{id}', [ClientController::class, 'destroy'])->name('client delete');
     });
+    Route::group(['namespace' => 'admin', 'prefix' => 'service'], function () {
+        Route::get('/allService', [ServiceController::class, 'index'])->name('all service');
+        Route::get('/addNewService', [ServiceController::class, 'create'])->name('add new service');
+        Route::post('/newService', [ServiceController::class, 'store'])->name('store service');
+        Route::get('/EditService/{id}', [ServiceController::class, 'edit'])->name('edit service');
+        Route::post('/updateService/{id}', [ServiceController::class, 'update'])->name('update service');
+        Route::get('/viewService/{id}', [ServiceController::class, 'view'])->name('service view');
+        Route::get('/deleteService/{id}', [ServiceController::class, 'destroy'])->name('service delete');
+    });
+
 });
 
 
