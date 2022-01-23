@@ -14,7 +14,7 @@
                    class="text-muted">{{App\Helpers\Helper::translate('dashboard')}}</a>
             </li>
             <li class="breadcrumb-item">
-                <a   class="text-primary" >{{App\Helpers\Helper::translate('New Service')}}</a>
+                <a   class="text-primary" >{{App\Helpers\Helper::translate('New Car')}}</a>
             </li>
         </ul>
         <!--end::Breadcrumb-->
@@ -24,7 +24,7 @@
 
     <div class="card">
         <div class="card-body">
-            <form method="post" action="{{route('store service')}}" enctype="multipart/form-data">
+            <form method="post" action="{{route('store car')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="card-body col-6">
@@ -60,6 +60,15 @@
                         </div>
                     </div>
 
+                    <div class="card-body col-12">
+                        <div class="form-group ">
+                            <div class="dropzone dropzone-default dropzone-primary" id="kt_dropzone_car">
+                                <div class="dropzone-msg dz-message needsclick">
+                                    <h3 class="dropzone-msg-title">{{App\Helpers\Helper::translate('Drop files here or click to upload.')}}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -76,6 +85,55 @@
 @section('script')
     <script src="assets/js/pages/crud/file-upload/dropzonejs.js"></script>
     <script src="assets/plugins/global/plugins.bundle.js"></script>
+    <script type="text/javascript">
+        $('#kt_dropzone_car').dropzone({
+            paramName: "dzfile", // The name that will be used to transfer the file
+            // autoProcessQueue: false,
+            maxFilesize: 10, // MB
+            clickable: true,
+            addRemoveLinks: true,
+            acceptedFiles: 'image/*',
+            dictFallbackMessage: " المتصفح الخاص بكم لا يدعم خاصيه تعدد الصوره والسحب والافلات ",
+            dictInvalidFileType: "لايمكنك رفع هذا النوع من الملفات ",
+            dictCancelUpload: "الغاء الرفع ",
+            dictCancelUploadConfirmation: " هل انت متاكد من الغاء رفع الملفات ؟ ",
+            dictRemoveFile: "حذف الصوره",
+            dictMaxFilesExceeded: "لايمكنك رفع عدد اكثر من هضا ",
+            headers: {
+                'X-CSRF-TOKEN':
+                    "{{ csrf_token() }}"
+            }
+            ,
+            url: "{{ route('cars.images') }}", // Set the url
+            success:
+                function (file, response) {
+                    $('form').append('<input type="hidden" name="images[]" value="' + response.name + '">')
+                },
 
+        });
+    </script>
+    @if(Session::has('message'))
+    <script>
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        };
+        toastr.success("{{ Session::get('message') }}");
+    </script>
+@endif
 @endsection
 
