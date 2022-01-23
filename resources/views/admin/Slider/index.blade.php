@@ -1,6 +1,6 @@
 @extends('adminLayouts.app')
 @section('title')
-    {{App\Helpers\Helper::translate('All services')}}
+    {{App\Helpers\Helper::translate('All Sliders')}}
 @endsection
 @section('header')
 
@@ -14,7 +14,7 @@
                    class="text-muted">{{App\Helpers\Helper::translate('dashboard')}}</a>
             </li>
             <li class="breadcrumb-item">
-                <a class="text-primary">{{App\Helpers\Helper::translate('All services')}}</a>
+                <a class="text-primary">{{App\Helpers\Helper::translate('All Sliders')}}</a>
             </li>
         </ul>
         <!--end::Breadcrumb-->
@@ -27,8 +27,7 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th scope="col">{{App\Helpers\Helper::translate('service image')}}</th>
-                    <th scope="col">{{App\Helpers\Helper::translate('service name')}}</th>
+                    <th scope="col">{{App\Helpers\Helper::translate('Slider image')}}</th>
                     <th scope="col">{{App\Helpers\Helper::translate('Actions')}}</th>
 
                 </tr>
@@ -39,16 +38,12 @@
                         <td scope="row">
                             <img style="width: 70px;" src="{{$row->image}}">
                         </td>
-                        <td>{{$row->name_ar}}</td>
                         <td>
-                            <a href="{{route('service delete',$row->id)}}"
+                            <a href="{{route('Slider delete',$row->id)}}"
                                onclick="return confirm('هل انت متكد من حذف الخدمه')"><i
                                 class="menu-icon flaticon-delete-1 text-danger"></i></a> &ensp;
-                            <a href="{{route('service view',$row->id)}}"><i class="menu-icon flaticon-eye text-success"></i></a>&ensp;
-                            <a href="{{route('edit service',$row->id)}}"><i class="menu-icon flaticon2-edit text-info"></i></a>
-
+                            <a href="{{route('edit Slider',$row->id)}}"><i class="menu-icon flaticon2-edit text-info"></i></a>
                         </td>
-
                     </tr>
                 @endforeach
                 </tbody>

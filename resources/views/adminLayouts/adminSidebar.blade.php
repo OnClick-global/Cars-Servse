@@ -11,6 +11,36 @@
                     <span class="menu-text">{{App\Helpers\Helper::translate('Home')}}</span>
                 </a>
             </li>
+            <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'Slider' ) menu-item-open @endif
+                " aria-haspopup="true" data-menu-toggle="hover">
+                <a href="javascript:;" class="menu-link menu-toggle">
+                    <i class="menu-icon flaticon-security"></i>
+                    <span class="menu-text">{{App\Helpers\Helper::translate('Slider')}}</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="menu-submenu">
+                    <i class="menu-arrow"></i>
+                    <ul class="menu-subnav">
+                        <li class="menu-item menu-item-active" aria-haspopup="true">
+                        <li class="menu-item @if( Request::segment(2)== 'addNewSlider' ) menu-item-active @endif "  aria-haspopup="true">
+                            <a href="{{route('add new Slider')}}" class="menu-link">
+                                <i class="menu-bullet menu-bullet-dot">
+                                    <span></span>
+                                </i>
+                                <span class="menu-text">{{App\Helpers\Helper::translate('New Slider')}}</span>
+                            </a>
+                        </li>
+                        <li class="menu-item @if( Request::segment(2)== 'allSlider' ) menu-item-active @endif "  aria-haspopup="true">
+                            <a href="{{route('all Sliders')}}" class="menu-link">
+                                <i class="menu-bullet menu-bullet-dot">
+                                    <span></span>
+                                </i>
+                                <span class="menu-text">{{App\Helpers\Helper::translate('All Slider')}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
 
             <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'cars' ) menu-item-open @endif" aria-haspopup="true" data-menu-toggle="hover">
                 <a href="javascript:;" class="menu-link menu-toggle">
@@ -70,6 +100,38 @@
                     </ul>
                 </div>
             </li>
+
+            <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'service' ) menu-item-open @endif
+                " aria-haspopup="true" data-menu-toggle="hover">
+                <a href="javascript:;" class="menu-link menu-toggle">
+                    <i class="menu-icon flaticon-security"></i>
+                    <span class="menu-text">{{App\Helpers\Helper::translate('services')}}</span>
+                    <i class="menu-arrow"></i>
+                </a>
+                <div class="menu-submenu">
+                    <i class="menu-arrow"></i>
+                    <ul class="menu-subnav">
+                        <li class="menu-item menu-item-active" aria-haspopup="true">
+                        <li class="menu-item @if( Request::segment(2)== 'addNewService' ) menu-item-active @endif "  aria-haspopup="true">
+                            <a href="{{route('add new service')}}" class="menu-link">
+                                <i class="menu-bullet menu-bullet-dot">
+                                    <span></span>
+                                </i>
+                                <span class="menu-text">{{App\Helpers\Helper::translate('New Service')}}</span>
+                            </a>
+                        </li>
+                        <li class="menu-item @if( Request::segment(2)== 'allService' ) menu-item-active @endif "  aria-haspopup="true">
+                            <a href="{{route('all service')}}" class="menu-link">
+                                <i class="menu-bullet menu-bullet-dot">
+                                    <span></span>
+                                </i>
+                                <span class="menu-text">{{App\Helpers\Helper::translate('All Services')}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
             <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'clients' ) menu-item-open @endif" aria-haspopup="true" data-menu-toggle="hover">
                 <a href="javascript:;" class="menu-link menu-toggle">
                     <i class="menu-icon flaticon-customer"></i>

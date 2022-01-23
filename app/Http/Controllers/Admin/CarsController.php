@@ -13,8 +13,8 @@ class CarsController extends Controller
 {
     public function index()
     {
-        $cars = Car::get();
-        return view('admin.cars.index', compact('cars'));
+        $data = Car::get();
+        return view('admin.cars.index', compact('data'));
     }
 
     public function create()

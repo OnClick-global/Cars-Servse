@@ -28,17 +28,14 @@ class ServiceController extends Controller
                 'name_ar' => 'required|max:255',
                 'des_ar' => 'required|max:255',
                 'des_en' => 'required|max:255',
-                'images' => 'nullable|mimes:jpeg,jpg,png|max:10000',
+                'image' => 'nullable',
             ]);
-        if($request->images){
-            $imageFields = Helper::uploadImage($request->images, 'client');
+        if ($request->image) {
+            $data['image'] = Helper::uploadImage($request->image, 'service');
+        } else {
+            unset($data['image']);
         }
-        $car = Service::Create([
-            'name_ar' => $request->name_ar,
-            'name_en' => $request->name_en,
-            'images' => $imageFields,
-        ]);
-
+        Service::Create($data);
         return redirect(route('all service'))->with('success', Helper::translate('Service created successfully!'));
     }
 
@@ -48,6 +45,7 @@ class ServiceController extends Controller
         $data->first();
         return view('admin.Service.edit', compact('data'));
     }
+
     public function view($id)
     {
         $data = Service::where('id', $id)->first();
@@ -62,11 +60,12 @@ class ServiceController extends Controller
                 'name_ar' => 'required|max:255',
                 'des_ar' => 'required|max:255',
                 'des_en' => 'required|max:255',
-                'images' => 'nullable|mimes:jpeg,jpg,png|max:10000',
+                'image' => 'nullable|mimes:jpeg,jpg,png|max:10000',
             ]);
-        if($request->images){
-            $imageFields = Helper::uploadImage($request->images, 'client');
-            $data['images'] = $imageFields;
+        if ($request->image) {
+            $data['image'] = Helper::uploadImage($request->image, 'service');
+        } else {
+            unset($data['image']);
         }
         $client = Service::where('id', $id);
         $client->update($data);

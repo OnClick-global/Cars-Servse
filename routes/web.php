@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\CarsController;
 use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\PartnerController;
 use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\front\HomeFrontController;
@@ -71,6 +72,16 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::post('/updateService/{id}', [ServiceController::class, 'update'])->name('update service');
         Route::get('/viewService/{id}', [ServiceController::class, 'view'])->name('service view');
         Route::get('/deleteService/{id}', [ServiceController::class, 'destroy'])->name('service delete');
+    });
+
+    Route::group(['namespace' => 'admin', 'prefix' => 'sliders'], function () {
+        Route::get('/allSliders', [SliderController::class, 'index'])->name('all Sliders');
+        Route::get('/addNewSliders', [SliderController::class, 'create'])->name('add new Slider');
+        Route::post('/newSliders', [SliderController::class, 'store'])->name('store Slider');
+        Route::get('/EditSliders/{id}', [SliderController::class, 'edit'])->name('edit Slider');
+        Route::post('/updateSliders/{id}', [SliderController::class, 'update'])->name('update Slider');
+        Route::get('/viewSliders/{id}', [SliderController::class, 'view'])->name('Slider view');
+        Route::get('/deleteSliders/{id}', [SliderController::class, 'destroy'])->name('Slider delete');
     });
 
 });

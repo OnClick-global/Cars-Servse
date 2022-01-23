@@ -4,8 +4,9 @@
         <div class="bend niceties preview-1">
             <!-- slider images start -->
             <div id="nivoslider" class="slides">
-                <img src="assets/front/img/slider/1.jpg" alt="slider_1" title="#slider-direction-1"/>
-                <img src="assets/front/img/slider/2.jpg" alt="slider_2" title="#slider-direction-2"/>
+                <img src="assets/front/img/slider/slider1.jpg" alt="slider_1" title="#slider-direction-1"/>
+                <img src="assets/front/img/slider/slider2.jpg" alt="slider_2" title="#slider-direction-2"/>
+                <img src="assets/front/img/slider/4.jpg" alt="slider_2" title="#slider-direction-2"/>
             </div>
             <!-- slider images end -->
             <!-- slider 1 direction -->
