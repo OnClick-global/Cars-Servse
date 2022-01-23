@@ -8,6 +8,7 @@
 @section('breadcrumb')
     <div class="d-flex align-items-baseline flex-wrap mr-5">
         <!--begin::Breadcrumb-->
+
         <ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
             <li class="breadcrumb-item">
                 <a href="{{route('home')}}"
@@ -168,7 +169,7 @@
                                 <div class="form-group">
                                     <div class="image-input image-input-outline" id="kt_image_1">
                                         <div class="image-input-wrapper"
-                                             style="background-image: url({{asset('storage/settings')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}})"></div>
+                                             style="background-image: url({{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}})"></div>
 
                                         <label
                                             class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"

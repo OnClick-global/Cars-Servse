@@ -42,7 +42,7 @@
                         <th scope="row">{{ $loop->index+1 }}</th>
                         <td>{{$Partner->name_ar}}</td>
                         <td>{{$Partner->name_en}}</td>
-                        <td> <img style="width: 80px;" src="{{asset('storage/partner')}}/{{$Partner->images}}" ></td>
+                        <td> <img style="width: 80px;" src="{{$Partner->images}}" ></td>
                         <td>
                             <a href="{{route('partner delete',$Partner->id)}}"
                                onclick="return confirm('هل انت متكد من حذف الخدمه')"><i

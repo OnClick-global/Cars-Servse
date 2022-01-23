@@ -6,6 +6,7 @@ use App\Helpers\Helper;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\CarRequest;
 use App\Models\Car;
+use App\Models\CarsImages;
 use Illuminate\Http\Request;
 
 class CarsController extends Controller
@@ -23,29 +24,36 @@ class CarsController extends Controller
 
     public function store(CarRequest $request)
     {
+
         $car = Car::Create([
             'name_ar' => $request->name_ar,
             'name_en' => $request->name_en,
             'des_ar' => $request->name_ar,
             'des_en' => $request->name_en,
-            'images' => $request->images,
+
         ]);
-        return redirect(route('add new car'))->with('message', Helper::translate('Car created successfully!'));
+        foreach ($request->images as $image) {
+            CarsImages::create([
+                'image' => $image,
+                'car_id' => $car->id
+            ]);
+        }
+        return redirect(route('add new car'))->with('success', Helper::translate('Car created successfully!'));
     }
 
     public function carsImages(Request $request)
     {
         $file = $request->file('dzfile');
-        $filename = Helper::uploadImage('cars', 'jpg', $file);
+        $image =  Helper::uploadImage($file, 'cars');
         return response()->json([
-            'name' => $filename,
+            'name' => $image,
             'original_name' => $file->getClientOriginalName(),
         ]);
     }
 
     public function view($id)
     {
-        $car = Car::where('id', $id)->first();
+         $car = Car::where('id', $id)->with('Images')->first();
         return view('admin.cars.view', compact('car'));
     }
 
@@ -60,7 +68,7 @@ class CarsController extends Controller
     {
         $car = Car::findOrFail($id);
         $car->delete();
-        return redirect(route('allCars'))->with('message', Helper::translate('Car Deleted successfully!'));
+        return redirect(route('allCars'))->with('success', Helper::translate('Car Deleted successfully!'));
     }
 
     public function edit(Request $request, $id)
@@ -77,6 +85,20 @@ class CarsController extends Controller
             'des_ar' => $request->name_ar,
             'des_en' => $request->name_en,
         ]);
-        return redirect(route('allCars'))->with('message', Helper::translate('Car updated successfully!'));
+        return redirect(route('allCars'))->with('success', Helper::translate('Car updated successfully!'));
+    }
+
+    public function imageDelete($id)
+    {
+        $data = CarsImages::findOrFail($id);
+
+        if (CarsImages::where('car_id', $data->car_id)->count() > 1) {
+
+            $data->delete();
+            return back()->with('success', 'تم حذف الصوره بنجاج');
+        } else {
+            return back()->with('danger', 'لا يمكن حذف , لابد من وجود علي الاقل صوره واحده');
+        }
+
     }
 }

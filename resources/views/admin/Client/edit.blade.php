@@ -24,14 +24,14 @@
 
     <div class="card">
         <div class="card-body">
-            <form method="post" action="{{route('update partner',$Partner->id)}}" enctype="multipart/form-data">
+            <form method="post" action="{{route('update client',$client->id)}}" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="card-body col-6">
                         <div class="form-group">
                             <label>{{App\Helpers\Helper::translate('name in arabic')}}<span
                                     class="text-danger">*</span></label>
-                            <input name="name_ar" value="{{$Partner->name_ar}}" class="form-control" type="text"
+                            <input name="name_ar" value="{{$client->name_ar}}" class="form-control" type="text"
                                    placeholder="{{App\Helpers\Helper::translate('please Enter Name In Arabic')}}"/>
                         </div>
 
@@ -40,21 +40,18 @@
                         <div class="form-group">
                             <label>{{App\Helpers\Helper::translate('name in English')}}<span
                                     class="text-danger">*</span></label>
-                            <input name="name_en" value="{{$Partner->name_en}}" class="form-control" type="text"
+                            <input name="name_en" value="{{$client->name_en}}" class="form-control" type="text"
                                    placeholder="{{App\Helpers\Helper::translate('please Enter Name In English')}}"/>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="row">
-                            <div class="col-4">
-                                <button class="btn btn-primary"
-                                        type="button">{{App\Helpers\Helper::translate('Logo')}}</button>
-                            </div>
+
                             <div class="col-2">
                                 <div class="form-group">
                                     <div class="image-input image-input-outline" id="kt_image_1">
                                         <div class="image-input-wrapper"
-                                             style="background-image: url({{asset('storage/partner')}}/{{$Partner->images}})"></div>
+                                             style="background-image: url({{$client->images}})"></div>
 
                                         <label
                                             class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"

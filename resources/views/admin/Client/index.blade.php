@@ -37,17 +37,17 @@
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($Partners as $Partner )
+                @foreach($clients as $client )
                     <tr>
                         <th scope="row">{{ $loop->index+1 }}</th>
-                        <td>{{$Partner->name_ar}}</td>
-                        <td>{{$Partner->name_en}}</td>
-                        <td> <img style="width: 80px;" src="{{asset('storage/Client')}}/{{$Partner->images}}" ></td>
+                        <td>{{$client->name_ar}}</td>
+                        <td>{{$client->name_en}}</td>
+                        <td> <img style="width: 80px;" src="{{$client->images}}" ></td>
                         <td>
-                            <a href="{{route('client delete',$Partner->id)}}"
+                            <a href="{{route('client delete',$client->id)}}"
                                onclick="return confirm('Are You Sure You Want To delete ?')"><i
                                 class="menu-icon flaticon-delete-1 text-danger"></i> </a> &ensp;
-                            <a href="{{route('edit client',$Partner->id)}}"><i class="menu-icon flaticon2-edit text-info"></i></a>
+                            <a href="{{route('edit client',$client->id)}}"><i class="menu-icon flaticon2-edit text-info"></i></a>
 
                         </td>
                     </tr>

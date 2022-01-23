@@ -26,7 +26,7 @@ class PartnerRequest extends FormRequest
         return [
             'name_en' => 'required|max:255',
             'name_ar' => 'required|max:255',
-            'images' => 'required',
+            'images' => 'required|mimes:jpeg,jpg,png|max:10000',
         ];
     }
 }
