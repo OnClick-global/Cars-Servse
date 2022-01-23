@@ -24,7 +24,7 @@
 
     <div class="card">
         <div class="card-body">
-            <form method="post" action="{{route('update partner',$Partner->id)}}" enctype="multipart/form-data">
+            <form method="post" action="{{route('update partner',$Partner->id)}}" enctype="multipart/form-data" files="true">
                 @csrf
                 <div class="row">
                     <div class="card-body col-6">
@@ -46,29 +46,21 @@
                     </div>
                     <div class="col-6">
                         <div class="row">
-                            <div class="col-4">
-                                <button class="btn btn-primary"
-                                        type="button">{{App\Helpers\Helper::translate('Logo')}}</button>
-                            </div>
+
                             <div class="col-2">
                                 <div class="form-group">
                                     <div class="image-input image-input-outline" id="kt_image_1">
-                                        <div class="image-input-wrapper"
-                                             style="background-image: url({{asset('storage/partner')}}/{{$Partner->images}})"></div>
+                                        <div class="image-input-wrapper" style="background-image: url({{$Partner->images}})"></div>
 
-                                        <label
-                                            class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
-                                            data-action="change" data-toggle="tooltip" title=""
-                                            data-original-title="{{App\Helpers\Helper::translate('Partner image')}}">
+                                        <label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="{{App\Helpers\Helper::translate('Partner image')}}">
                                             <i class="fa fa-pen icon-sm text-muted"></i>
-                                            <input type="file" name="images" accept=".png, .jpg, .jpeg"/>
+                                            <input type="file"  name="images" accept=".png, .jpg, .jpeg"/>
+
                                         </label>
 
-                                        <span
-                                            class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
-                                            data-action="cancel" data-toggle="tooltip" title="Cancel">
-                                         <i class="ki ki-bold-close icon-xs text-muted"></i>
-                                        </span>
+                                        <span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="Cancel">
+                                          <i class="ki ki-bold-close icon-xs text-muted"></i>
+                                         </span>
                                     </div>
                                 </div>
                             </div>

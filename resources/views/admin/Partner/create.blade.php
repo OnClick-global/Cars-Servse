@@ -47,7 +47,7 @@
                     <div class="card-body col-6">
                     <div class="form-group">
                         <div class="image-input image-input-outline" id="kt_image_1">
-                            <div class="image-input-wrapper" style="background-image: url()"></div>
+                            <div class="image-input-wrapper" style="background-image: url({{asset('/assets/media/users/blank.png')}})"></div>
 
                             <label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="{{App\Helpers\Helper::translate('Partner image')}}">
                                 <i class="fa fa-pen icon-sm text-muted"></i>

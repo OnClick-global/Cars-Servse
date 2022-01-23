@@ -19,7 +19,6 @@ class CreateCarsTable extends Migration
             $table->string('name_en');
             $table->text('des_ar');
             $table->text('des_en');
-            $table->json('images');
             $table->enum('status',['1','0'])->default('1');
             $table->timestamps();
         });

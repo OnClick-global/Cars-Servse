@@ -1,4 +1,3 @@
-
 <!-- mobile menu area start -->
 <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
     <div class="container">
@@ -56,23 +55,34 @@
                                     </li>
                                     <li><a href="#">page title group 1</a>
                                         <ul>
-                                            <li><a href="assets/front/page-title-default.html">page title default</a></li>
-                                            <li><a href="assets/front/page-title-default-2.html">page title default 2</a></li>
+                                            <li><a href="assets/front/page-title-default.html">page title default</a>
+                                            </li>
+                                            <li><a href="assets/front/page-title-default-2.html">page title default
+                                                    2</a></li>
                                             <li><a href="assets/front/page-title-center.html">page title center</a></li>
                                             <li><a href="assets/front/page-title-right.html">page title right</a></li>
-                                            <li><a href="assets/front/page-title-right-2.html">page title right 2</a></li>
-                                            <li><a href="assets/front/page-title-bg-dark.html">page title bg dark</a></li>
-                                            <li><a href="assets/front/page-title-bg-dark-2.html">page title bg dark 2</a></li>
+                                            <li><a href="assets/front/page-title-right-2.html">page title right 2</a>
+                                            </li>
+                                            <li><a href="assets/front/page-title-bg-dark.html">page title bg dark</a>
+                                            </li>
+                                            <li><a href="assets/front/page-title-bg-dark-2.html">page title bg dark
+                                                    2</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">page title group 2</a>
                                         <ul>
-                                            <li><a href="assets/front/page-title-bg-color.html">page title bg color</a></li>
-                                            <li><a href="assets/front/page-title-bg-color-2.html">page title bg color 2</a></li>
-                                            <li><a href="assets/front/page-title-bg-fixed.html">page title bg fixed</a></li>
-                                            <li><a href="assets/front/page-title-bg-fixed-2.html">page title bg fixed 2</a></li>
-                                            <li><a href="assets/front/page-title-pattern.html">page title bg pattern</a></li>
-                                            <li><a href="assets/front/page-title-pattern-2.html">page title bg pattern 2</a></li>
+                                            <li><a href="assets/front/page-title-bg-color.html">page title bg color</a>
+                                            </li>
+                                            <li><a href="assets/front/page-title-bg-color-2.html">page title bg color
+                                                    2</a></li>
+                                            <li><a href="assets/front/page-title-bg-fixed.html">page title bg fixed</a>
+                                            </li>
+                                            <li><a href="assets/front/page-title-bg-fixed-2.html">page title bg fixed
+                                                    2</a></li>
+                                            <li><a href="assets/front/page-title-pattern.html">page title bg pattern</a>
+                                            </li>
+                                            <li><a href="assets/front/page-title-pattern-2.html">page title bg pattern
+                                                    2</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">footer style</a>
@@ -92,11 +102,15 @@
                                     <li><a href="assets/front/blog-list.html">blog list</a></li>
                                     <li><a href="assets/front/blog-left-sidebar.html">blog left sidebar</a></li>
                                     <li><a href="assets/front/blog-right-sidebar.html">blog right sidebar</a></li>
-                                    <li><a href="assets/front/blog-list-left-sidebar.html">blog list left sidebar</a></li>
-                                    <li><a href="assets/front/blog-list-right-sidebar.html">blog list right sidebar</a></li>
+                                    <li><a href="assets/front/blog-list-left-sidebar.html">blog list left sidebar</a>
+                                    </li>
+                                    <li><a href="assets/front/blog-list-right-sidebar.html">blog list right sidebar</a>
+                                    </li>
                                     <li><a href="assets/front/blog-details.html">blog details</a></li>
-                                    <li><a href="assets/front/blog-details-left-sidebar.html">blog details left sidebar</a></li>
-                                    <li><a href="assets/front/blog-details-right-sidebar.html">blog details right sidebar</a></li>
+                                    <li><a href="assets/front/blog-details-left-sidebar.html">blog details left
+                                            sidebar</a></li>
+                                    <li><a href="assets/front/blog-details-right-sidebar.html">blog details right
+                                            sidebar</a></li>
                                     <li><a href="assets/front/our-services.html">our services</a></li>
                                     <li><a href="assets/front/contact.html">contact us</a></li>
                                     <li><a href="assets/front/shop.html">shop</a></li>
@@ -104,8 +118,10 @@
                                     <li><a href="assets/front/shop-list.html">shop list</a></li>
                                     <li><a href="assets/front/shop-left-sidebar.html">shop left sidebar</a></li>
                                     <li><a href="assets/front/shop-right-sidebar.html">shop right sidebar</a></li>
-                                    <li><a href="assets/front/shop-list-left-sidebar.html">shop list left sidebar</a></li>
-                                    <li><a href="assets/front/shop-list-right-sidebar.html">shop list right sidebar</a></li>
+                                    <li><a href="assets/front/shop-list-left-sidebar.html">shop list left sidebar</a>
+                                    </li>
+                                    <li><a href="assets/front/shop-list-right-sidebar.html">shop list right sidebar</a>
+                                    </li>
                                     <li><a href="assets/front/shop-details.html">shop details</a></li>
                                     <li><a href="assets/front/cart.html">shopping cart</a></li>
                                     <li><a href="assets/front/cart-empty.html">shopping cart empty</a></li>
@@ -179,7 +195,9 @@
                             </div>
                             <!-- layer 3 -->
                             <div class="layer-1-3">
-                                <p class="title-3"> sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etctrro dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum dolor</p>
+                                <p class="title-3"> sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore etctrro dolore magna aliqua Ut enim ad minim veniam, quis
+                                    nostrud exercitation Lorem ipsum dolor</p>
                             </div>
                             <!-- layer 4 -->
                             <div class="layer-1-4">
@@ -211,7 +229,9 @@
                             </div>
                             <!-- layer 3 -->
                             <div class="layer-2-3">
-                                <p class="title-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etctrro dolore magna aliqua Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                <p class="title-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore etctrro dolore magna aliqua Ut enim ad minim
+                                    veniam, quis nostrud exercitation</p>
                             </div>
                             <!-- layer 4 -->
                             <div class="layer-2-4">
@@ -222,47 +242,6 @@
                 </div>
             </div>
             <!-- slider caption end -->
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 col-md-offset-6">
-                <!-- discount offer start -->
-                <div class="discount-offer">
-                    <!-- section title start -->
-                    <div class="discount-title">
-                        <h2>Get <span> 30%</span> Discount !</h2>
-                    </div>
-                    <!-- section title end -->
-                    <!-- discount content start -->
-                    <div class="discount-content">
-                        <div class="input-box name">
-                            <label>Name*</label>
-                            <input type="text">
-                        </div>
-                        <div class="input-box phone">
-                            <label>Phone*</label>
-                            <input type="text">
-                        </div>
-                        <div class="input-box repair">
-                            <label>Repair*</label>
-                            <div class="select-box">
-                                <select>
-                                    <option value="wheel_alignment">-Wheel Alignment</option>
-                                    <option value="car_wash">Car wash</option>
-                                    <option value="repair_glass">Repair glass</option>
-                                    <option value="repair_seat">Repair seat</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="submit-button">
-                            <button type="submit" class="default-button">get discount</button>
-                        </div>
-                    </div>
-                    <!-- discount content end -->
-                </div>
-                <!-- discount offer end -->
-            </div>
         </div>
     </div>
 </div>
@@ -279,8 +258,13 @@
                 <!-- section title end -->
                 <!-- about content start -->
                 <div class="about-us-info">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incdunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerciti aulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehederit essete cillum dolore eu fugiat nulla pariatur.</p>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum perspiciatis. aliquip ex ea commodo consequat. Duis aute irure dolor in reprehederit laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incdunt ut labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerciti aulamco laboris nisi ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehederit essete cillum dolore eu
+                        fugiat nulla pariatur.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum perspiciatis. aliquip ex ea commodo consequat. Duis aute irure dolor in reprehederit
+                        laborum.</p>
                     <a href="about-us.html" class="default-button">learn more</a>
                 </div>
                 <!-- about content end -->
@@ -316,7 +300,8 @@
                         <i class="fa fa-car"></i>
                         <h3> Car Wash</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt ultram labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt
+                        ultram labore et dolore magna aliqua.</p>
                 </div>
                 <!-- single service end -->
             </div>
@@ -327,7 +312,8 @@
                         <i class="fa fa-cogs"></i>
                         <h3> Engine repair</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt ultram labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt
+                        ultram labore et dolore magna aliqua.</p>
                 </div>
                 <!-- single service end -->
             </div>
@@ -338,7 +324,8 @@
                         <i class="fa fa-soccer-ball-o"></i>
                         <h3> wheel alignment</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt ultram labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt
+                        ultram labore et dolore magna aliqua.</p>
                 </div>
                 <!-- single service end -->
             </div>
@@ -349,7 +336,8 @@
                         <i class="fa fa-compass"></i>
                         <h3> suspension repair</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt ultram labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt
+                        ultram labore et dolore magna aliqua.</p>
                 </div>
                 <!-- single service end -->
             </div>
@@ -360,7 +348,8 @@
                         <i class="fa fa-cubes"></i>
                         <h3> brake service</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt ultram labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt
+                        ultram labore et dolore magna aliqua.</p>
                 </div>
                 <!-- single service end -->
             </div>
@@ -371,7 +360,8 @@
                         <i class="fa fa-life-ring"></i>
                         <h3> tire balance</h3>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt ultram labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt
+                        ultram labore et dolore magna aliqua.</p>
                 </div>
                 <!-- single service end -->
             </div>
@@ -386,571 +376,55 @@
             <div class="col-md-12">
                 <!-- section title start -->
                 <div class="section-heading text-center">
-                    <h2>Tinker <span> Shop</span> </h2>
+                    <h2>{{App\Helpers\Helper::translate('Clients')}} </h2>
                 </div>
                 <!-- section title end -->
             </div>
         </div>
         <div class="shop-tab-area">
             <!-- Shop tabs -->
-            <ul class="shop-tab" role="tablist">
-                <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">NEW ARRIVAL</a></li>
-                <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">POPULAR PRODUCTS</a></li>
-                <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">BEST SELLING</a></li>
-            </ul>
+
             <!-- Shop Tab panes -->
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active" id="tab1">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/2.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
+                        @foreach($clients as $client)
+                            <div class="col-md-3 col-sm-6">
+                                <!-- single product start -->
+                                <div class="single-product hover-style text-center">
+                                    <div class="product-img">
+                                        <!-- product-img -->
+                                        <img src="{{$client->images}}" alt="">
+                                        <!-- product actions -->
+                                        <div class="product-action">
+
                                         </div>
                                     </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Three Ball Bearing</a>
+                                    <!-- product-info start -->
+                                    <div class="product-info text-center">
+                                        <div class="product-name">
+                                            @if(app()->getLocale() == 'ar')
+                                                <a>{{$client->name_ar}}</a>
+                                            @else
+                                                <a>{{$client->name_en}}</a>
+                                            @endif
+
+                                        </div>
                                     </div>
-                                    <div class="product-price">
-                                        <p>$ 320</p>
-                                    </div>
+                                    <!-- product-info start -->
                                 </div>
-                                <!-- product-info start -->
+                                <!-- single product end -->
                             </div>
-                            <!-- single product end -->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/4.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Car Exhaust Pipe</a>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$ 220.50</p>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                            </div>
-                            <!-- single product end -->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/1.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Starter Parst Car</a>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$ 1170</p>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                            </div>
-                            <!-- single product end -->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/3.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Disk Break</a>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$ 950</p>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                            </div>
-                            <!-- single product end -->
-                        </div>
+                        @endforeach
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane fade" id="tab2">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/5.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Car Exhaust Pipe</a>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$ 220.50</p>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                            </div>
-                            <!-- single product end -->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/6.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Disk Break</a>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$ 950</p>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                            </div>
-                            <!-- single product end -->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/7.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Three Ball Bearing</a>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$ 320</p>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                            </div>
-                            <!-- single product end -->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/8.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Starter Parst Car</a>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$ 1170</p>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                            </div>
-                            <!-- single product end -->
-                        </div>
-                    </div>
-                </div>
-                <div role="tabpanel" class="tab-pane fade" id="tab3">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/4.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Starter Parst Car</a>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$ 1170</p>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                            </div>
-                            <!-- single product end -->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/1.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Three Ball Bearing</a>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$ 320</p>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                            </div>
-                            <!-- single product end -->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/2.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Disk Break</a>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$ 950</p>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                            </div>
-                            <!-- single product end -->
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <!-- single product start -->
-                            <div class="single-product hover-style text-center">
-                                <div class="product-img">
-                                    <!-- product-img -->
-                                    <a href="single-shop.html" class="main-img">
-                                        <img src="assets/front/img/product/3.jpg" alt="">
-                                    </a>
-                                    <!-- product actions -->
-                                    <div class="product-action">
-                                        <div class="action-btn">
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-heart"></i> </button>
-                                            <button class="text-button action-single-btn"> add to cart</button>
-                                            <button class="icon-button action-single-btn"> <i class="fa fa-eye"></i> </button>
-                                        </div>
-                                        <!-- ratings -->
-                                        <div class="ratings">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(Based on 04 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                                <div class="product-info text-center">
-                                    <div class="product-name">
-                                        <a href="#">Car Exhaust Pipe</a>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>$ 220.50</p>
-                                    </div>
-                                </div>
-                                <!-- product-info start -->
-                            </div>
-                            <!-- single product end -->
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
 </div>
 <!-- shop area end -->
-<!-- features area start -->
-<div class="features-area section-padding overlay">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <!-- single feature start -->
-                <div class="single-feature text-center">
-                    <div class="feature-icon">
-                        <i class="icofont icofont-tea"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Cup of coffee</h3>
-                        <p>For Lovely Customers</p>
-                    </div>
-                </div>
-                <!-- single feature start -->
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <!-- single feature start -->
-                <div class="single-feature text-center">
-                    <!-- feature icon -->
-                    <div class="feature-icon">
-                        <i class="icofont icofont-dart"></i>
-                    </div>
-                    <!-- feature content -->
-                    <div class="feature-content">
-                        <h3>GUARANTY</h3>
-                        <p>For All Services</p>
-                    </div>
-                </div>
-                <!-- single feature end -->
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <!-- single feature start -->
-                <div class="single-feature text-center">
-                    <!-- feature icon -->
-                    <div class="feature-icon">
-                        <i class="icofont icofont-badge"></i>
-                    </div>
-                    <!-- feature content -->
-                    <div class="feature-content">
-                        <h3>achievement</h3>
-                        <p>10 Years Experience</p>
-                    </div>
-                </div>
-                <!-- single feature end -->
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <!-- single feature start -->
-                <div class="single-feature text-center">
-                    <!-- feature icon -->
-                    <div class="feature-icon">
-                        <i class="icofont icofont-ui-settings"></i>
-                    </div>
-                    <!-- feature content -->
-                    <div class="feature-content">
-                        <h3>PARTS</h3>
-                        <p>Always in Stock</p>
-                    </div>
-                </div>
-                <!-- single feature end -->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- features area end -->
+
 <!-- team member area start -->
 <div class="team-member section-padding">
     <div class="container">
@@ -958,396 +432,46 @@
             <div class="col-md-12">
                 <!-- section title start -->
                 <div class="section-heading text-center">
-                    <h2>Tinker Team <span> Members</span></h2>
+                    <h2>{{App\Helpers\Helper::translate('Partners')}}</h2>
                 </div>
                 <!-- section title end -->
             </div>
         </div>
         <div class="row">
             <!-- single team start -->
+            @foreach($partners as $partner)
             <div class="col-sm-4">
                 <div class="single-team hover-style pull-left">
                     <div class="team-img">
                         <!-- team img start -->
                         <a href="#" class="main-img">
-                            <img src="assets/front/img/team/1.jpg" alt="">
+                            <img src="{{$partner->images}}" style="    height: 325px;" alt="">
                         </a>
                         <!-- team img end -->
                         <!-- team info start -->
                         <div class="team-info">
-                            <h3>Hridoy Roy</h3>
-                            <p>chief executive officer</p>
+                            @if(app()->getLocale() == 'ar')
+                                <h3>{{$partner->name_en}}</h3>
+                            @else
+                                <h3>{{$partner->name_en}}</h3>
+                            @endif
                         </div>
                         <!-- team info end -->
                         <!-- team social start -->
-                        <div class="team-social">
-                            <a href="#"> <i class="icofont icofont-social-facebook"></i> </a>
-                            <a href="#"> <i class="icofont icofont-social-google-plus"></i> </a>
-                            <a href="#"> <i class="icofont icofont-social-twitter"></i> </a>
-                            <a href="#"> <i class="icofont icofont-social-vimeo"></i> </a>
-                        </div>
+
                         <!-- team social end -->
                     </div>
                 </div>
             </div>
+        @endforeach
             <!-- single team end -->
-            <!-- single team start -->
-            <div class="col-sm-4">
-                <div class="single-team hover-style">
-                    <div class="team-img">
-                        <!-- team img start -->
-                        <a href="#" class="main-img">
-                            <img src="assets/front/img/team/2.jpg" alt="">
-                        </a>
-                        <!-- team img end -->
-                        <!-- team info start -->
-                        <div class="team-info">
-                            <h3>Judy Bailey</h3>
-                            <p>Engine Mechanic</p>
-                        </div>
-                        <!-- team info end -->
-                        <!-- team social start -->
-                        <div class="team-social">
-                            <a href="#"> <i class="icofont icofont-social-facebook"></i> </a>
-                            <a href="#"> <i class="icofont icofont-social-google-plus"></i> </a>
-                            <a href="#"> <i class="icofont icofont-social-twitter"></i> </a>
-                            <a href="#"> <i class="icofont icofont-social-vimeo"></i> </a>
-                        </div>
-                        <!-- team social end -->
-                    </div>
-                </div>
-            </div>
-            <!-- single team end -->
-            <!-- single team start -->
-            <div class="col-sm-4">
-                <div class="single-team hover-style pull-right">
-                    <div class="team-img">
-                        <!-- team img start -->
-                        <a href="#" class="main-img">
-                            <img src="assets/front/img/team/3.jpg" alt="">
-                        </a>
-                        <!-- team img end -->
-                        <!-- team info start -->
-                        <div class="team-info">
-                            <h3>MSN TRIO</h3>
-                            <p>Creative Director</p>
-                        </div>
-                        <!-- team info end -->
-                        <!-- team social start -->
-                        <div class="team-social">
-                            <a href="#"> <i class="icofont icofont-social-facebook"></i> </a>
-                            <a href="#"> <i class="icofont icofont-social-google-plus"></i> </a>
-                            <a href="#"> <i class="icofont icofont-social-twitter"></i> </a>
-                            <a href="#"> <i class="icofont icofont-social-vimeo"></i> </a>
-                        </div>
-                        <!-- team social end -->
-                    </div>
-                </div>
-            </div>
-            <!-- single team end -->
+
         </div>
     </div>
 </div>
 <!-- team member area end -->
-<!-- testimonial area start -->
-<div class="testimonial-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- testimonial slider start -->
-                <div class="testimonial-slider owl-preview-1">
-                    <!-- single testimonial start -->
-                    <div class="single-testimonial">
-                        <!-- testimonil img -->
-                        <div class="testimonial-img hidden-xs">
-                            <div class="writer-img">
-                                <img src="assets/front/img/testimonial/1.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- testimonial content -->
-                        <div class="testimonial-content">
-                            <div class="test-writer">
-                                <h3>MSN TRIO</h3>
-                                <p>Creative Director</p>
-                            </div>
-                            <div class="test-spech">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolorem magnadw aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodog consequat. Duis aute irure dolor in reprehenderit in fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single testimonial end -->
-                    <!-- single testimonial start -->
-                    <div class="single-testimonial">
-                        <!-- testimonial img -->
-                        <div class="testimonial-img hidden-xs">
-                            <div class="writer-img">
-                                <img src="assets/front/img/testimonial/2.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- testimonial content -->
-                        <div class="testimonial-content">
-                            <div class="test-writer">
-                                <h3>Hridoy roy</h3>
-                                <p>chief executive officer</p>
-                            </div>
-                            <div class="test-spech">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolorem magnadw aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodog consequat. Duis aute irure dolor in reprehenderit in fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single testimonial end -->
-                    <!-- single testimonial start -->
-                    <div class="single-testimonial">
-                        <!-- testimonial img -->
-                        <div class="testimonial-img hidden-xs">
-                            <div class="writer-img">
-                                <img src="assets/front/img/testimonial/3.jpg" alt="">
-                            </div>
-                        </div>
-                        <!-- testimonial content -->
-                        <div class="testimonial-content">
-                            <div class="test-writer">
-                                <h3>Judy Bailey</h3>
-                                <p>Engine Mechanic</p>
-                            </div>
-                            <div class="test-spech">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolorem magnadw aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodog consequat. Duis aute irure dolor in reprehenderit in fugiat nulla pariatur.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- single testimonial end -->
-                </div>
-                <!-- testimonial slider end -->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- testimonial area end -->
-<!-- blog area start -->
-<div class="blog-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- section title start -->
-                <div class="section-heading text-center">
-                    <h2>Latest <span> Blog</span></h2>
-                </div>
-                <!-- section title end -->
-            </div>
-        </div>
-        <div class="row">
-            <!-- blog slider start -->
-            <div class="blog-slider owl-preview-2">
-                <div class="col-md-12">
-                    <!-- single blog start -->
-                    <div class="single-blog">
-                        <!-- blog img start -->
-                        <div class="blog-img">
-                            <a href="single-blog.html">
-                                <img src="assets/front/img/blog/1.jpg" alt="">
-                                <span class="post-date">
-                                            07 <br> Oct
-                                        </span>
-                            </a>
-                        </div>
-                        <!-- blog img end -->
-                        <!-- blog content start -->
-                        <div class="blog-info">
-                            <!-- post title -->
-                            <a href="single-blog.html" class="blog-title">How to boost up your vehicle engine</a>
-                            <!-- post info -->
-                            <p class="post-info">
-                                <span> <i class="icofont icofont-user"></i> By admin</span>
-                                <span class="pull-right"> <i class="icofont icofont-heart"></i> (225)</span>
-                                <span class="pull-right"> <i class="icofont icofont-comment"></i> (115)</span>
-                            </p>
-                            <!-- post summary -->
-                            <p class="post-summary">
-                                Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
-                            </p>
-                            <!-- read post button -->
-                            <a href="single-blog.html" class="read-post">Continue Reading</a>
-                        </div>
-                        <!-- blog content end -->
-                    </div>
-                    <!-- single blog start -->
-                </div>
-                <div class="col-md-12">
-                    <!-- single blog start -->
-                    <div class="single-blog">
-                        <!-- blog img start -->
-                        <div class="blog-img">
-                            <a href="single-blog.html">
-                                <img src="assets/front/img/blog/2.jpg" alt="">
-                                <span class="post-date">
-                                            07 <br> Oct
-                                        </span>
-                            </a>
-                        </div>
-                        <!-- blog img end -->
-                        <!-- blog content start -->
-                        <div class="blog-info">
-                            <!-- post title -->
-                            <a href="single-blog.html" class="blog-title">How to boost up your vehicle engine</a>
-                            <!-- post info -->
-                            <p class="post-info">
-                                <span> <i class="icofont icofont-user"></i> By admin</span>
-                                <span class="pull-right"> <i class="icofont icofont-heart"></i> (225)</span>
-                                <span class="pull-right"> <i class="icofont icofont-comment"></i> (115)</span>
-                            </p>
-                            <!-- post summary -->
-                            <p class="post-summary">
-                                Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
-                            </p>
-                            <!-- read post button -->
-                            <a href="single-blog.html" class="read-post">Continue Reading</a>
-                        </div>
-                        <!-- blog content end -->
-                    </div>
-                    <!-- single blog start -->
-                </div>
-                <div class="col-md-12">
-                    <!-- single blog start -->
-                    <div class="single-blog">
-                        <!-- blog img start -->
-                        <div class="blog-img">
-                            <a href="single-blog.html">
-                                <img src="assets/front/img/blog/3.jpg" alt="">
-                                <span class="post-date">
-                                            07 <br> Oct
-                                        </span>
-                            </a>
-                        </div>
-                        <!-- blog img end -->
-                        <!-- blog content start -->
-                        <div class="blog-info">
-                            <!-- post title -->
-                            <a href="single-blog.html" class="blog-title">How to boost up your vehicle engine</a>
-                            <!-- post info -->
-                            <p class="post-info">
-                                <span> <i class="icofont icofont-user"></i> By admin</span>
-                                <span class="pull-right"> <i class="icofont icofont-heart"></i> (225)</span>
-                                <span class="pull-right"> <i class="icofont icofont-comment"></i> (115)</span>
-                            </p>
-                            <!-- post summary -->
-                            <p class="post-summary">
-                                Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
-                            </p>
-                            <!-- read post button -->
-                            <a href="single-blog.html" class="read-post">Continue Reading</a>
-                        </div>
-                        <!-- blog content end -->
-                    </div>
-                    <!-- single blog start -->
-                </div>
-                <div class="col-md-12">
-                    <!-- single blog start -->
-                    <div class="single-blog">
-                        <!-- blog img start -->
-                        <div class="blog-img">
-                            <a href="single-blog.html">
-                                <img src="assets/front/img/blog/1.jpg" alt="">
-                                <span class="post-date">
-                                            07 <br> Oct
-                                        </span>
-                            </a>
-                        </div>
-                        <!-- blog img end -->
-                        <!-- blog content start -->
-                        <div class="blog-info">
-                            <!-- post title -->
-                            <a href="single-blog.html" class="blog-title">How to boost up your vehicle engine</a>
-                            <!-- post info -->
-                            <p class="post-info">
-                                <span> <i class="icofont icofont-user"></i> By admin</span>
-                                <span class="pull-right"> <i class="icofont icofont-heart"></i> (225)</span>
-                                <span class="pull-right"> <i class="icofont icofont-comment"></i> (115)</span>
-                            </p>
-                            <!-- post summary -->
-                            <p class="post-summary">
-                                Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
-                            </p>
-                            <!-- read post button -->
-                            <a href="single-blog.html" class="read-post">Continue Reading</a>
-                        </div>
-                        <!-- blog content end -->
-                    </div>
-                    <!-- single blog start -->
-                </div>
-                <div class="col-md-12">
-                    <!-- single blog start -->
-                    <div class="single-blog">
-                        <!-- blog img start -->
-                        <div class="blog-img">
-                            <a href="single-blog.html">
-                                <img src="assets/front/img/blog/2.jpg" alt="">
-                                <span class="post-date">
-                                            07 <br> Oct
-                                        </span>
-                            </a>
-                        </div>
-                        <!-- blog img end -->
-                        <!-- blog content start -->
-                        <div class="blog-info">
-                            <!-- post title -->
-                            <a href="single-blog.html" class="blog-title">How to boost up your vehicle engine</a>
-                            <!-- post info -->
-                            <p class="post-info">
-                                <span> <i class="icofont icofont-user"></i> By admin</span>
-                                <span class="pull-right"> <i class="icofont icofont-heart"></i> (225)</span>
-                                <span class="pull-right"> <i class="icofont icofont-comment"></i> (115)</span>
-                            </p>
-                            <!-- post summary -->
-                            <p class="post-summary">
-                                Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
-                            </p>
-                            <!-- read post button -->
-                            <a href="single-blog.html" class="read-post">Continue Reading</a>
-                        </div>
-                        <!-- blog content end -->
-                    </div>
-                    <!-- single blog start -->
-                </div>
-                <div class="col-md-12">
-                    <!-- single blog start -->
-                    <div class="single-blog">
-                        <!-- blog img start -->
-                        <div class="blog-img">
-                            <a href="single-blog.html">
-                                <img src="assets/front/img/blog/3.jpg" alt="">
-                                <span class="post-date">
-                                            07 <br> Oct
-                                        </span>
-                            </a>
-                        </div>
-                        <!-- blog img end -->
-                        <!-- blog content start -->
-                        <div class="blog-info">
-                            <!-- post title -->
-                            <a href="single-blog.html" class="blog-title">How to boost up your vehicle engine</a>
-                            <!-- post info -->
-                            <p class="post-info">
-                                <span> <i class="icofont icofont-user"></i> By admin</span>
-                                <span class="pull-right"> <i class="icofont icofont-heart"></i> (225)</span>
-                                <span class="pull-right"> <i class="icofont icofont-comment"></i> (115)</span>
-                            </p>
-                            <!-- post summary -->
-                            <p class="post-summary">
-                                Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
-                            </p>
-                            <!-- read post button -->
-                            <a href="single-blog.html" class="read-post">Continue Reading</a>
-                        </div>
-                        <!-- blog content end -->
-                    </div>
-                    <!-- single blog start -->
-                </div>
-            </div>
-            <!-- blog slider end -->
-        </div>
-    </div>
-</div>
-<!-- blog area end -->
+
+
 <!-- quick book area start -->
 <div class="quick-book-area">
     <div class="container">
@@ -1359,7 +483,8 @@
                             <!-- book now content start -->
                             <div class="book-now-title">
                                 <h2>MAKE A BOOK FREE APPOINMENT</h2>
-                                <a href="#" class="book-now-btn"> <i class="icofont icofont-long-arrow-right"></i> BOOK NOW</a>
+                                <a href="#" class="book-now-btn"> <i class="icofont icofont-long-arrow-right"></i> BOOK
+                                    NOW</a>
                             </div>
                             <!-- book now content end -->
                         </div>
@@ -1379,17 +504,18 @@
                 <div class="single-footer-top">
                     <div class="footer-about-us">
                         <!-- small logo start -->
-                        <a href="index.html" class="footer-logo"> <img src="assets/front/img/logo-light.png" alt=""> </a>
+                        <a href="index.html" class="footer-logo"> <img src="assets/front/img/logo-light.png" alt="">
+                        </a>
                         <!-- small logo end -->
                         <!-- address start -->
                         <div class="footer-address">
-                            <p> <span> ADDRESS: </span>Your address goes here</p>
+                            <p><span> ADDRESS: </span>Your address goes here</p>
                         </div>
                         <!-- address end -->
                         <!-- contact info start -->
                         <div class="footer-contact-info">
-                            <p> <span> Telephone:</span> 0123456789 </p>
-                            <p> <span> Email:</span> demo@example.com </p>
+                            <p><span> Telephone:</span> 0123456789 </p>
+                            <p><span> Email:</span> demo@example.com </p>
                         </div>
                         <!-- contact info end -->
                     </div>
@@ -1468,41 +594,7 @@
     </div>
 </div>
 <!-- footer top end -->
-<!-- footer area start -->
-<div class="footer-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-4">
-                <!-- footer social start -->
-                <div class="footer-social">
-                    <ul>
-                        <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                        <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
-                        <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                        <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
-                        <li><a href="#"> <i class="fa fa-pinterest-p"></i> </a></li>
-                    </ul>
-                </div>
-                <!-- footer social end -->
-            </div>
-            <div class="col-md-6 col-sm-4">
-                <!-- copyright text start -->
-                <div class="footer-copyright">
-                    <p>© 2021 <b class="text-white">Tinker</b> Made with <i class="fa fa-heart"></i> by <a href="../../../https@hasthemes.com/default.htm"><b>HasThemes</b></a></p>
-                </div>
-                <!-- copyright text end -->
-            </div>
-            <div class="col-md-3 col-sm-4">
-                <!-- payment method start -->
-                <div class="footer-payment-method">
-                    <img src="assets/front/img/payment-method.png" alt="">
-                </div>
-                <!-- payment method end -->
-            </div>
-        </div>
-    </div>
-</div>
-<!-- footer area end -->
+
 
 <!-- ============== All JS ================ -->
 <!-- jquery js

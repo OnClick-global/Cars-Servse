@@ -12,8 +12,8 @@ class ClientController extends Controller
 {
     public function index()
     {
-        $Partners = Client::get();
-        return view('admin.Client.index', compact('Partners'));
+        $clients = Client::get();
+        return view('admin.Client.index', compact('clients'));
     }
 
     public function create()
@@ -23,39 +23,47 @@ class ClientController extends Controller
 
     public function store(ClientRequest $request)
     {
-        $filename = Helper::uploadImage('Client', 'png', $request->images);
+        if($request->images){
+            $imageFields = Helper::uploadImage($request->images, 'client');
+        }
         $car = Client::Create([
             'name_ar' => $request->name_ar,
             'name_en' => $request->name_en,
-            'images' => $filename,
+            'images' => $imageFields,
+
         ]);
 
-        return redirect(route('all client'))->with('message', Helper::translate('Client created successfully!'));
+        return redirect(route('all client'))->with('success', Helper::translate('Client created successfully!'));
     }
 
     public function destroy($id)
     {
-        $Partner = Client::findOrFail($id);
-        $Partner->delete();
-        return redirect(route('all client'))->with('message', Helper::translate('Client Deleted successfully!'));
+        $client = Client::findOrFail($id);
+        $client->delete();
+        return redirect(route('all client'))->with('success', Helper::translate('Client Deleted successfully!'));
     }
 
     public function edit(Request $request, $id)
     {
-        $Partner = Client::findOrFail($id);
-        $Partner->first();
-        return view('admin.Client.edit', compact('Partner'));
+        $client = Client::findOrFail($id);
+        $client->first();
+        return view('admin.Client.edit', compact('client'));
     }
 
-    public function update(ClientRequest $request, $id)
+    public function update(Request $request, $id)
     {
-        $partner = Client::where('id', $id);
-        $filename = Helper::update('Client', $partner->first('images'), 'png', $request['images']);
-        $partner->update([
-            'name_ar' => $request->name_ar,
-            'name_en' => $request->name_en,
-            'images' => $filename,
-        ]);
-        return redirect(route('all client'))->with('message', Helper::translate('Client updated successfully!'));
+        $data = $this->validate(\request(),
+            [
+                'name_en' => 'required|max:255',
+                'name_ar' => 'required|max:255',
+                'images' => 'nullable|mimes:jpeg,jpg,png|max:10000',
+            ]);
+        if($request->images){
+            $imageFields = Helper::uploadImage($request->images, 'client');
+            $data['images'] = $imageFields;
+        }
+        $client = Client::where('id', $id);
+        $client->update($data);
+        return redirect(route('all client'))->with('success', Helper::translate('Client updated successfully!'));
     }
 }

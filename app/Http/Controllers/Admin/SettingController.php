@@ -16,10 +16,26 @@ class SettingController extends Controller
         return view('admin.setting.setting');
     }
 
-    public function store(SettingRequest $request)
+    public function store(Request $request)
     {
+        $data = $this->validate(\request(),
+            [  'name_ar' => 'required|max:255',
+                'name_en' => 'required|max:255',
+                'Adress_ar' => 'required|max:255',
+                'Adress_en' => 'required|max:255',
+                'phone1' => 'required|numeric',
+                'phone2' => 'required|numeric',
+                'Email' => 'required|email|max:255',
+                'Whatsapp' => 'required|numeric',
+                'facebook' => 'required|url|max:255',
+                'twitter' => 'required|url|max:255',
+                'logo' => 'nullable|mimes:jpeg,jpg,png|max:10000',
+            ]);
+        if($request->logo){
+            $imageFields = Helper::uploadImage($request->logo, 'setting');
+            $data['logo'] = $imageFields;
+        }
         $oldimage = Setting::where('key', 'logo')->first()->value;
-        $filename = Helper::update('settings', $oldimage,'png', $request['logo']);
         Setting::updateOrInsert(['key' => 'name_ar'], ['value' => $request['name_ar'],]);
         Setting::updateOrInsert(['key' => 'name_en'], ['value' => $request['name_en'],]);
         Setting::updateOrInsert(['key' => 'Adress_ar'], ['value' => $request['Adress_ar'],]);
@@ -30,7 +46,9 @@ class SettingController extends Controller
         Setting::updateOrInsert(['key' => 'Whatsapp'], ['value' => $request['Whatsapp'],]);
         Setting::updateOrInsert(['key' => 'facebook'], ['value' => $request['facebook'],]);
         Setting::updateOrInsert(['key' => 'twitter'], ['value' => $request['twitter'],]);
-        Setting::updateOrInsert(['key' => 'logo'], ['value' => $filename,]);
-        return redirect(route('settings'))->with('message', Helper::translate('Settings Updated successfully!'));;
+        if($request->logo) {
+            Setting::updateOrInsert(['key' => 'logo'], ['value' => $data['logo'],]);
+        }
+        return redirect(route('settings'))->with('success', Helper::translate('Settings Updated successfully!'));;
     }
 }

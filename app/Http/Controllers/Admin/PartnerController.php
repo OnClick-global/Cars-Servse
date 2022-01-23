@@ -16,6 +16,7 @@ class PartnerController extends Controller
         $Partners = Partner::get();
         return view('admin.Partner.index', compact('Partners'));
     }
+
     public function create()
     {
         return view('admin.Partner.create');
@@ -23,20 +24,23 @@ class PartnerController extends Controller
 
     public function store(PartnerRequest $request)
     {
-        $filename = Helper::uploadImage('partner', 'png',  $request->images);
+        if($request->images){
+            $imageFields = Helper::uploadImage($request->images, 'partner');
+        }
         $car = Partner::Create([
             'name_ar' => $request->name_ar,
             'name_en' => $request->name_en,
-            'images' => $filename,
+            'images' => $imageFields,
         ]);
 
-        return redirect(route('all partner'))->with('message', Helper::translate('Partner created successfully!'));
+        return redirect(route('all partner'))->with('success', Helper::translate('Partner created successfully!'));
     }
+
     public function destroy($id)
     {
         $Partner = Partner::findOrFail($id);
         $Partner->delete();
-        return redirect(route('all partner'))->with('message', Helper::translate('Partner Deleted successfully!'));
+        return redirect(route('all partner'))->with('success', Helper::translate('Partner Deleted successfully!'));
     }
 
     public function edit(Request $request, $id)
@@ -46,15 +50,20 @@ class PartnerController extends Controller
         return view('admin.Partner.edit', compact('Partner'));
     }
 
-    public function updatePartner(PartnerRequest $request, $id)
+    public function updatePartner(Request $request, $id)
     {
+        $data = $this->validate(\request(),
+            [
+                'name_en' => 'required|max:255',
+                'name_ar' => 'required|max:255',
+                'images' => 'nullable|mimes:jpeg,jpg,png|max:10000',
+            ]);
+        if($request->images){
+            $imageFields = Helper::uploadImage($request->images, 'partner');
+            $data['images'] = $imageFields;
+        }
         $partner = Partner::where('id', $id);
-        $filename = Helper::update('partner',$partner->first('images'),'png',$request['images']);
-        $partner->update([
-            'name_ar' => $request->name_ar,
-            'name_en' => $request->name_en,
-            'images' => $filename,
-        ]);
-        return redirect(route('all partner'))->with('message', Helper::translate('Partner updated successfully!'));
+        $partner->update($data);
+        return redirect(route('all partner'))->with('success', Helper::translate('Partner updated successfully!'));
     }
 }

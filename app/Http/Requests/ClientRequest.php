@@ -24,7 +24,9 @@ class ClientRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name_en' => 'required|max:255',
+            'name_ar' => 'required|max:255',
+            'images' => 'required|mimes:jpeg,jpg,png|max:10000',
         ];
     }
 }

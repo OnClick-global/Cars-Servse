@@ -8,22 +8,11 @@ use Illuminate\Support\Facades\Storage;
 class Helper
 {
 
-    public static function uploadImage(string $dir, string $format, $image = null)
+    public static function uploadImage($file, $dir)
     {
-        if ($image != null) {
-            $imageName = Carbon::now()->toDateString(). "-" . uniqid() . "." . $format;
-
-            if (!Storage::disk('public')->exists($dir)) {
-                Storage::disk('public')->makeDirectory($dir);
-            }
-            Storage::disk('public')->put($dir.'/'.$imageName, file_get_contents($image));
-
-
-        } else {
-            $imageName = 'def.png';
-        }
-
-        return $imageName;
+        $image = time() . uniqid() . '.' . $file->getClientOriginalExtension();
+        $file->move('uploads' . '/' . $dir, $image);
+        return $image;
     }
 
     public static function update(string $dir, $old_image, string $format, $image = null)
