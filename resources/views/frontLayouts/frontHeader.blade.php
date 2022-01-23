@@ -91,7 +91,7 @@
                         <ul>
                             <li> <p> <span> {{App\Helpers\Helper::translate('Phone 1')}}: </span>{{\App\Models\Setting::where('key','phone1')->first()->value}}</p></li>
 
-                            <li> <p> <span> {{App\Helpers\Helper::translate('Phone 2')}}: </span>{{\App\Models\Setting::where('key','phone1')->first()->value}}</p></li>
+                            <li> <p> <span> {{App\Helpers\Helper::translate('Phone 2')}}: </span>{{\App\Models\Setting::where('key','phone2')->first()->value}}</p></li>
                         </ul>
                     </div>
                     <!-- welcome message end -->
