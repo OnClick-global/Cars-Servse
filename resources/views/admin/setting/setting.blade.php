@@ -81,30 +81,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <button class="btn btn-primary"
-                                            type="button">{{App\Helpers\Helper::translate('about us in arabic')}}</button>
-                                </div>
-                                <textarea type="text" name="about_en"
-                                          class="form-control">{{\App\Models\Setting::where('key','about_ar')->first()->value ?? ''}} </textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <button class="btn btn-primary"
-                                            type="button">{{App\Helpers\Helper::translate('about us in english')}}</button>
-                                </div>
-                                <textarea type="text" name="about_ar"
-                                          class="form-control">{{\App\Models\Setting::where('key','about_en')->first()->value ?? ''}} </textarea>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="col-6">
                         <div class="form-group">
                             <div class="input-group">
@@ -198,7 +175,7 @@
                                         <label
                                             class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
                                             data-action="change" data-toggle="tooltip" title=""
-                                            data-original-title="Change avatar">
+                                            data-original-title="{{App\Helpers\Helper::translate('chose image')}}">
                                             <i class="fa fa-pen icon-sm text-muted"></i>
                                             <input type="file" name="logo" accept=".png, .jpg, .jpeg"/>
                                         </label>

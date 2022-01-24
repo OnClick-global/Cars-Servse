@@ -161,7 +161,12 @@
                     </ul>
                 </div>
             </li>
-
+            <li class="menu-item @if( Request::segment(1)== 'about' ) menu-item-active @endif "  aria-haspopup="true">
+                <a href="{{route('about')}}" class="menu-link">
+                    <i class="menu-icon flaticon2-box-1"></i>
+                    <span class="menu-text">{{App\Helpers\Helper::translate('about')}}</span>
+                </a>
+            </li>
             <li class="menu-item @if( Request::segment(1)== 'settings' ) menu-item-active @endif "  aria-haspopup="true">
                 <a href="{{route('settings')}}" class="menu-link">
                     <i class="menu-icon flaticon2-settings"></i>

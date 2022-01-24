@@ -85,6 +85,9 @@
   'image' => 'الصوره',
   'Address in Arabic' => 'العنوان بالعربيه',
   'Address in English' => 'العنوان بالانجليزيه',
-  'about us in arabic' => 'ماذا عننا بالعربيه',
-  'about us in english' => 'ماذا عننا بالانجليزيه',
+  'about us in arabic' => 'ماذا عنا بالعربيه',
+  'about us in english' => 'ماذا عنا بالانجليزيه',
+  'about' => 'ماذا عنا',
+  'chose image' => 'اختر صوه',
+  'Abouts Updated successfully!' => 'تم تعديل ماذا عنا!',
 );

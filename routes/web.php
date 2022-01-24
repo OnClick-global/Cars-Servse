@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AboutController;
 use App\Http\Controllers\Admin\CarsController;
 use App\Http\Controllers\Admin\ClientController;
 use App\Http\Controllers\Admin\PartnerController;
@@ -47,6 +48,10 @@ Route::group(['middleware' => 'auth:web'], function () {
     Route::group(['namespace' => 'admin'], function () {
         Route::get('/settings', [SettingController::class, 'settings'])->name('settings');
         Route::post('/settings/update', [SettingController::class, 'store'])->name('settings update');
+    });
+    Route::group(['namespace' => 'admin'], function () {
+        Route::get('/about', [AboutController::class, 'abouts'])->name('about');
+        Route::post('/about/update', [AboutController::class, 'store'])->name('about update');
     });
     Route::group(['namespace' => 'admin', 'prefix' => 'partners'], function () {
         Route::get('/allPartner', [PartnerController::class, 'index'])->name('all partner');

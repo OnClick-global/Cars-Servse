@@ -23,8 +23,6 @@ class SettingController extends Controller
                 'name_en' => 'required|max:255',
                 'Adress_ar' => 'required|max:255',
                 'Adress_en' => 'required|max:255',
-                'about_ar' => 'required',
-                'about_en' => 'required',
                 'phone1' => 'required|numeric',
                 'phone2' => 'required|numeric',
                 'Email' => 'required|email|max:255',
@@ -42,8 +40,6 @@ class SettingController extends Controller
         Setting::updateOrInsert(['key' => 'name_en'], ['value' => $request['name_en'],]);
         Setting::updateOrInsert(['key' => 'Adress_ar'], ['value' => $request['Adress_ar'],]);
         Setting::updateOrInsert(['key' => 'Adress_en'], ['value' => $request['Adress_en'],]);
-        Setting::updateOrInsert(['key' => 'about_ar'], ['value' => $request['about_ar'],]);
-        Setting::updateOrInsert(['key' => 'about_en'], ['value' => $request['about_en'],]);
         Setting::updateOrInsert(['key' => 'phone1'], ['value' => $request['phone1'],]);
         Setting::updateOrInsert(['key' => 'phone2'], ['value' => $request['phone2'],]);
         Setting::updateOrInsert(['key' => 'Email'], ['value' => $request['Email'],]);
