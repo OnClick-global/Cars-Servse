@@ -60,7 +60,7 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <button class="btn btn-primary"
-                                            type="button">{{App\Helpers\Helper::translate('Adress in Arabic')}}</button>
+                                            type="button">{{App\Helpers\Helper::translate('Address in Arabic')}}</button>
                                 </div>
                                 <input type="text" name="Adress_ar"
                                        value="{{\App\Models\Setting::where('key','Adress_ar')->first()->value ?? ''}}"
@@ -73,11 +73,35 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <button class="btn btn-primary"
-                                            type="button">{{App\Helpers\Helper::translate('Adress in English')}}</button>
+                                            type="button">{{App\Helpers\Helper::translate('Address in English')}}</button>
                                 </div>
                                 <input type="text" name="Adress_en"
                                        value="{{\App\Models\Setting::where('key','Adress_en')->first()->value ?? ''}}"
                                        class="form-control" placeholder="Search for...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-primary"
+                                            type="button">{{App\Helpers\Helper::translate('about us in arabic')}}</button>
+                                </div>
+                                <textarea type="text" name="about_en"
+                                          class="form-control">{{\App\Models\Setting::where('key','about_ar')->first()->value ?? ''}} </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-primary"
+                                            type="button">{{App\Helpers\Helper::translate('about us in english')}}</button>
+                                </div>
+                                <textarea type="text" name="about_ar"
+                                          class="form-control">{{\App\Models\Setting::where('key','about_en')->first()->value ?? ''}} </textarea>
                             </div>
                         </div>
                     </div>

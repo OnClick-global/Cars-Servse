@@ -81,6 +81,10 @@
   'Edit Slider' => 'تعديل صوره العرض',
   'Slider updated successfully!' => 'تم تعديل صوره العرض نبجاح!',
   'Service updated successfully!' => 'تم تعديل الخدمه بنجاح!',
-  'Car updated successfully!' => 'Car updated successfully!',
-  'image' => 'Image',
+  'Car updated successfully!' => 'تم تعديل الصوره بنجاح!',
+  'image' => 'الصوره',
+  'Address in Arabic' => 'العنوان بالعربيه',
+  'Address in English' => 'العنوان بالانجليزيه',
+  'about us in arabic' => 'ماذا عننا بالعربيه',
+  'about us in english' => 'ماذا عننا بالانجليزيه',
 );
