@@ -82,4 +82,5 @@
   'Slider updated successfully!' => 'تم تعديل صوره العرض نبجاح!',
   'Service updated successfully!' => 'تم تعديل الخدمه بنجاح!',
   'Car updated successfully!' => 'Car updated successfully!',
+  'image' => 'Image',
 );

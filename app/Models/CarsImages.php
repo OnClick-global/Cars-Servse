@@ -17,4 +17,5 @@ class CarsImages extends Model
         }
         return asset('uploads/default.jpg');
     }
+
 }

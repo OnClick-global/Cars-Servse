@@ -29,9 +29,7 @@
                 <tr >
                     <th scope="col">#</th>
                     <th scope="col">{{App\Helpers\Helper::translate('name in arabic')}}</th>
-                    <th scope="col">{{App\Helpers\Helper::translate('name in english')}}</th>
-                    <th scope="col">{{App\Helpers\Helper::translate('Description in arabic')}}</th>
-                    <th scope="col">{{App\Helpers\Helper::translate('Description in english')}}</th>
+                    <th scope="col">{{App\Helpers\Helper::translate('image')}}</th>
                     <th scope="col">{{App\Helpers\Helper::translate('Actions')}}</th>
                     <th scope="col">{{App\Helpers\Helper::translate('Status')}}</th>
 
@@ -42,14 +40,12 @@
                     <tr>
                         <th scope="row">{{ $loop->index+1 }}</th>
                         <td>{{$car->name_ar}}</td>
-                        <td>{{$car->name_en}}</td>
-                        <td>{{ Str::limit($car->des_ar, 20, '  ...')}}</td>
-                        <td>{{ Str::limit($car->des_en, 20, '  ...')}}</td>
+                        <td><img src="{{$car->Images->first()->image}}" style="height: 80px;"></td>
+
                         <td>
 
                             <a href="{{route('car delete',$car->id)}}"
-                               onclick="return confirm('هل انت متكد من حذف الخدمه')"<i
-                                class="menu-icon flaticon-delete-1 text-danger"></i></a> &ensp;
+                               onclick="return confirm('هل انت متاكد من حذف الخدمه')"> <i class="menu-icon flaticon-delete-1 text-danger"></i> </a> &ensp;
                             <a href="{{route('car view',$car->id)}}"><i class="menu-icon flaticon-eye text-success"></i></a>&ensp;
                             <a href="{{route('edit car',$car->id)}}"><i class="menu-icon flaticon2-edit text-info"></i></a>
 
