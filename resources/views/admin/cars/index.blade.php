@@ -73,6 +73,24 @@
     </div>
 @endsection
 @section('script')
-
+    <script type="text/javascript">
+        function update_active(el) {
+            if (el.checked)
+                var status = '1';
+            else
+                var status = '0';
+            $.post('{{ route('car status') }}', {
+                _token: '{{ csrf_token() }}',
+                id: el.value,
+                status: status
+            }, function (data) {
+                if (status == 1) {
+                    toastr.success("{{App\Helpers\Helper::translate('Car is Active')}}");
+                } else {
+                    toastr.error("{{App\Helpers\Helper::translate('Car is Deactivate')}}");
+                }
+            });
+        }
+    </script>
 @endsection
 

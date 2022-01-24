@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\CarRequest;
 use App\Models\Car;
 use App\Models\CarsImages;
+use App\Models\ProductImages;
 use Illuminate\Http\Request;
 
 class CarsController extends Controller
@@ -85,6 +86,14 @@ class CarsController extends Controller
             'des_ar' => $request->name_ar,
             'des_en' => $request->name_en,
         ]);
+        if ($request->images) {
+            foreach ($request->images as $image) {
+                CarsImages::create([
+                    'image' => $image,
+                    'car_id' => $id
+                ]);
+            }
+        }
         return redirect(route('allCars'))->with('success', Helper::translate('Car updated successfully!'));
     }
 
