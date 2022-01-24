@@ -90,4 +90,5 @@
   'about' => 'ماذا عنا',
   'chose image' => 'اختر صوه',
   'Abouts Updated successfully!' => 'تم تعديل ماذا عنا!',
+  'About Cs' => 'About Cs',
 );

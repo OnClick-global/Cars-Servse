@@ -2,80 +2,11 @@
 @section('content')
     <div class="slider-area">
         <div class="bend niceties preview-1">
-            <!-- slider images start -->
+            @php($sliders=\App\Models\Slider::all())
             <div id="nivoslider" class="slides">
-                <img src="assets/front/img/slider/slider1.jpg" alt="slider_1" title="#slider-direction-1"/>
-                <img src="assets/front/img/slider/slider2.jpg" alt="slider_2" title="#slider-direction-2"/>
-                <img src="assets/front/img/slider/4.jpg" alt="slider_2" title="#slider-direction-2"/>
-            </div>
-            <!-- slider images end -->
-            <!-- slider 1 direction -->
-            <div id="slider-direction-1" class="t-cn slider-direction">
-                <!-- slider progress start -->
-                <div class="slider-progress"></div>
-                <!-- slider progress end -->
-                <!-- slider caption start -->
-                <div class="slider-caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-9">
-                                <!-- layer 1 -->
-                                <div class="layer-1-1">
-                                    <h2 class="title-1">Best Car Repair </h2>
-                                </div>
-                                <!-- layer 2 -->
-                                <div class="layer-1-2">
-                                    <h2 class="title-2"> and Maintenance Service </h2>
-                                </div>
-                                <!-- layer 3 -->
-                                <div class="layer-1-3">
-                                    <p class="title-3"> sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore etctrro dolore magna aliqua Ut enim ad minim veniam, quis
-                                        nostrud exercitation Lorem ipsum dolor</p>
-                                </div>
-                                <!-- layer 4 -->
-                                <div class="layer-1-4">
-                                    <a href="#" class="title-4">contact us </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- slider caption end -->
-            </div>
-            <!-- slider 2 direction -->
-            <div id="slider-direction-2" class="t-cn slider-direction">
-                <!-- slider progress start -->
-                <div class="slider-progress"></div>
-                <!-- slider progress end -->
-                <!-- slider caption start -->
-                <div class="slider-caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-9">
-                                <!-- layer 1 -->
-                                <div class="layer-2-1">
-                                    <h2 class="title-1">Best Car Repair </h2>
-                                </div>
-                                <!-- layer 2 -->
-                                <div class="layer-2-2">
-                                    <h2 class="title-2"> and Maintenance Service </h2>
-                                </div>
-                                <!-- layer 3 -->
-                                <div class="layer-2-3">
-                                    <p class="title-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                        eiusmod tempor incididunt ut labore etctrro dolore magna aliqua Ut enim ad minim
-                                        veniam, quis nostrud exercitation</p>
-                                </div>
-                                <!-- layer 4 -->
-                                <div class="layer-2-4">
-                                    <a href="#" class="title-4">contact us </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- slider caption end -->
+                @foreach($sliders as $slider)
+                    <img src="{{$slider->image}}" alt="slider_1"/>
+                @endforeach
             </div>
         </div>
     </div>
@@ -87,26 +18,24 @@
                 <div class="col-md-6">
                     <!-- section title start -->
                     <div class="section-heading">
-                        <h2>About <span> Cs</span></h2>
+                        <h2>{{Helper::translate('About Cs')}}</h2>
                     </div>
                     <!-- section title end -->
                     <!-- about content start -->
+                    @php($about=\App\Models\About::first())
                     <div class="about-us-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incdunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerciti aulamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehederit essete cillum dolore eu
-                            fugiat nulla pariatur.</p>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                            est laborum perspiciatis. aliquip ex ea commodo consequat. Duis aute irure dolor in reprehederit
-                            laborum.</p>
-                        <a href="about-us.html" class="default-button">learn more</a>
+                        @if(App()->getLocale()=='ar')
+                            <p>{!!$about->about_ar!!}</p>
+                        @else
+                            <p>{!!$about->about_en!!}</p>
+                        @endif
                     </div>
                     <!-- about content end -->
                 </div>
                 <div class="col-md-6 hidden-xs">
                     <!-- about us img start -->
                     <div class="about-us-img">
-                        <img src="assets/front/img/about/1.png" alt="">
+                        <img src="{{$about->image}}" alt="">
                     </div>
                     <!-- about us img end -->
                 </div>
@@ -153,7 +82,8 @@
                                 </p>
                                 <!-- post summary -->
                                 <p class="post-summary">
-                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
+                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod
+                                    tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
                                 </p>
                                 <!-- read post button -->
                                 <a href="single-blog.html" class="read-post">Continue Reading</a>
@@ -187,7 +117,8 @@
                                 </p>
                                 <!-- post summary -->
                                 <p class="post-summary">
-                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
+                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod
+                                    tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
                                 </p>
                                 <!-- read post button -->
                                 <a href="single-blog.html" class="read-post">Continue Reading</a>
@@ -221,7 +152,8 @@
                                 </p>
                                 <!-- post summary -->
                                 <p class="post-summary">
-                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
+                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod
+                                    tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
                                 </p>
                                 <!-- read post button -->
                                 <a href="single-blog.html" class="read-post">Continue Reading</a>
@@ -255,7 +187,8 @@
                                 </p>
                                 <!-- post summary -->
                                 <p class="post-summary">
-                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
+                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod
+                                    tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
                                 </p>
                                 <!-- read post button -->
                                 <a href="single-blog.html" class="read-post">Continue Reading</a>
@@ -289,7 +222,8 @@
                                 </p>
                                 <!-- post summary -->
                                 <p class="post-summary">
-                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
+                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod
+                                    tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
                                 </p>
                                 <!-- read post button -->
                                 <a href="single-blog.html" class="read-post">Continue Reading</a>
@@ -323,7 +257,8 @@
                                 </p>
                                 <!-- post summary -->
                                 <p class="post-summary">
-                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
+                                    Lorem ipsum dolor sit amet, conse cte tur adipis ici ngal elitm sed do eius mod
+                                    tempor incid idunt ut labore eta dolo mana aliqua. Ut enim ad minim veniam.
                                 </p>
                                 <!-- read post button -->
                                 <a href="single-blog.html" class="read-post">Continue Reading</a>
@@ -477,7 +412,10 @@
                                     <p>Creative Director</p>
                                 </div>
                                 <div class="test-spech">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolorem magnadw aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodog consequat. Duis aute irure dolor in reprehenderit in fugiat nulla pariatur.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolorem magnadw aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodog consequat.
+                                        Duis aute irure dolor in reprehenderit in fugiat nulla pariatur.</p>
                                 </div>
                             </div>
                         </div>
@@ -535,4 +473,4 @@
     <!-- team member area end -->
 
 
-    @endsection
+@endsection
