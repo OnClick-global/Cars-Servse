@@ -7,7 +7,7 @@
   'please Enter Name In English' => 'من فضلط ادخل الاسم بالانجليزيه',
   'Partner image' => 'صوره الشريك',
   'Save' => 'حفظ',
-  'Home' => 'الرائسيه',
+  'Home' => 'الرئيسية',
   'Cars' => 'سيارات',
   'New Car' => 'سياره جديده',
   'All Car' => 'كل السيارات',
@@ -91,4 +91,8 @@
   'chose image' => 'اختر صوه',
   'Abouts Updated successfully!' => 'تم تعديل ماذا عنا!',
   'About Cs' => 'About Cs',
+  'Services' => 'Services',
+  'Client' => 'Client',
+  'about company' => 'About company',
+  'address' => 'Address',
 );

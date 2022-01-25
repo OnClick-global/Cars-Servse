@@ -6,8 +6,8 @@
                 <div class="col-md-3 col-sm-2">
                     <!-- logo start -->
                     <div class="logo">
-                        <a href="index.html">
-                            <img src="img/logo.png" alt="">
+                        <a href="{{route('front')}}">
+                            <img style="height: 50px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}" alt="">
                         </a>
                     </div>
                     <!-- logo end -->
@@ -18,15 +18,13 @@
                         <nav>
                             <ul>
                                 <!-- single menu -->
-                                <li class="has-sub"><a href="#">الرئيسية<i class="icofont"></i></a>
-                                </li>
+
                                 <!-- single menu -->
-                                <li><a href="about-us.html">عن الشركة</a></li>
-                                <!-- single menu -->
-                                <li><a href="about-us.html">العملاء</a></li>
-                                <li><a href="about-us.html">الشركاء</a></li>
-                                <li><a href="about-us.html">السيارات</a></li>
-                                <li class="has-sub"><a href="#">الخدمات<i class="icofont icofont-simple-down"></i></a>
+                                <li><a href="about-us.html">{{App\Helpers\Helper::translate('about company')}}</a></li>
+                                <li><a href="about-us.html">{{App\Helpers\Helper::translate('Client')}}</a></li>
+                                <li><a href="about-us.html">{{App\Helpers\Helper::translate('Partners')}}</a></li>
+                                <li><a href="about-us.html">{{App\Helpers\Helper::translate('Services')}}</a></li>
+                                <li class="has-sub"><a href="#">{{App\Helpers\Helper::translate('Cars')}}<i class="icofont icofont-simple-down"></i></a>
                                     <!-- sub menu start -->
                                     <ul class="sub-menu left">
                                         <li><a href="slider-nivo.html">Basic Services</a></li>

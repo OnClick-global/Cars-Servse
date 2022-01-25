@@ -27,7 +27,7 @@ Auth::routes();
 Route::get('/logout', [LoginController::class, 'logout'])->name('signout')->middleware('auth:web');
 
 Route::group(['namespace' => 'front'], function () {
-Route::get('/', [HomeFrontController::class, 'home'])->name('allCars');
+Route::get('/', [HomeFrontController::class, 'home'])->name('front');
 });
 Route::group(['middleware' => 'auth:web'], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');

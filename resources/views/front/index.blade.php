@@ -5,7 +5,7 @@
             @php($sliders=\App\Models\Slider::all())
             <div id="nivoslider" class="slides">
                 @foreach($sliders as $slider)
-                    <img src="{{$slider->image}}" alt="slider_1"/>
+                    <img style="" src="{{$slider->image}}" alt="slider_1"/>
                 @endforeach
             </div>
         </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="col-md-6 hidden-xs">
                     <!-- about us img start -->
-                    <div class="about-us-img">
+                    <div class="">
                         <img src="{{$about->image}}" alt="">
                     </div>
                     <!-- about us img end -->

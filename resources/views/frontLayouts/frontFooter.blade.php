@@ -7,18 +7,23 @@
                 <div class="single-footer-top">
                     <div class="footer-about-us">
                         <!-- small logo start -->
-                        <a href="index.html" class="footer-logo"> <img src="assets/front/img/logo-light.png" alt="">
+                        <a href="{{route('front')}}" class="footer-logo"> <img src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}" alt="">
                         </a>
                         <!-- small logo end -->
                         <!-- address start -->
                         <div class="footer-address">
-                            <p><span> ADDRESS: </span>Your address goes here</p>
+                            @if(app()->getLocale()=='ar')
+                            <p><span> {{App\Helpers\Helper::translate('address')}}: </span>{{\App\Models\Setting::where('key','adress_ar')->first()->value ?? ''}}</p>
+                            @else
+                                <p><span> {{App\Helpers\Helper::translate('address')}}: </span>{{\App\Models\Setting::where('key','adress_en')->first()->value ?? ''}}</p>
+                            @endif
                         </div>
                         <!-- address end -->
                         <!-- contact info start -->
                         <div class="footer-contact-info">
-                            <p><span> Telephone:</span> 0123456789 </p>
-                            <p><span> Email:</span> demo@example.com </p>
+                            <p><span> Telephone 1:</span> {{\App\Models\Setting::where('key','phone1')->first()->value ?? ''}} </p>
+                            <p><span> Telephone 3:</span> {{\App\Models\Setting::where('key','phone2')->first()->value ?? ''}} </p>
+                            <p><span> Email:</span> {{\App\Models\Setting::where('key','Email')->first()->value ?? ''}} </p>
                         </div>
                         <!-- contact info end -->
                     </div>
@@ -71,26 +76,7 @@
             </div>
             <div class="col-md-3 col-md-offset-1 col-sm-3">
                 <!-- single footer start -->
-                <div class="single-footer-top">
-                    <!-- section title start -->
-                    <div class="footer-top-title">
-                        <h3>Newsletter</h3>
-                    </div>
-                    <!-- section title end -->
-                    <div class="footer-top-newsletter">
-                        <p class="newsletter-text">
-                            Subscribe by our newsletter and get update daily.
-                        </p>
-                        <!-- newsletter form start -->
-                        <form action="#">
-                            <div class="input-box">
-                                <input type="email" placeholder="Email address">
-                            </div>
-                            <a href="#" class="submit-button">Subscribe</a>
-                        </form>
-                        <!-- newsletter form end -->
-                    </div>
-                </div>
+
                 <!-- single footer end -->
             </div>
         </div>
