@@ -21,8 +21,6 @@
 
                                 <!-- single menu -->
                                 <li><a href="about-us.html">{{App\Helpers\Helper::translate('about company')}}</a></li>
-                                <li><a href="about-us.html">{{App\Helpers\Helper::translate('Client')}}</a></li>
-                                <li><a href="about-us.html">{{App\Helpers\Helper::translate('Partners')}}</a></li>
                                 <li><a href="about-us.html">{{App\Helpers\Helper::translate('Services')}}</a></li>
                                 <li class="has-sub"><a href="#">{{App\Helpers\Helper::translate('Cars')}}<i class="icofont icofont-simple-down"></i></a>
                                     <!-- sub menu start -->

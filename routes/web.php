@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\PartnerController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\TensoController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\front\HomeFrontController;
 use App\Http\Controllers\HomeController;
@@ -54,6 +55,24 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::get('/deleteImage/{id}', [CarsController::class, 'imageDelete'])->name('image.delete');
 
     });
+
+
+
+    Route::group(['namespace' => 'admin', 'prefix' => 'tenso'], function () {
+        Route::get('/allTenso', [TensoController::class, 'index'])->name('alltenso');
+        Route::get('/addTensoOnclick123', [TensoController::class, 'create'])->name('add new tenso');
+        Route::post('/storeTenso', [TensoController::class, 'store'])->name('store tenso');
+        Route::get('/EditTenso/{id}', [TensoController::class, 'edit'])->name('edit tenso');
+        Route::post('/updateTenso/{id}', [TensoController::class, 'updateCar'])->name('update tenso');
+        Route::post('/images', [TensoController::class, 'carsImages'])->name('tenso.images');
+        Route::get('/deleteTenso/{id}', [TensoController::class, 'destroy'])->name('tenso delete');
+        Route::get('/deleteImage/{id}', [TensoController::class, 'imageDelete'])->name('image.delete');
+
+    });
+
+
+
+
     Route::group(['namespace' => 'admin'], function () {
         Route::get('/settings', [SettingController::class, 'settings'])->name('settings');
         Route::post('/settings/update', [SettingController::class, 'store'])->name('settings update');

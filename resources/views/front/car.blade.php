@@ -4,7 +4,7 @@
         <div class="bend niceties preview-1">
             <div id="nivoslider" class="slides">
                 @foreach($data->images as $image)
-                    <img style="" src="{{$image->image}}" alt="slider_1"/>
+                    <img style="height: 400px;"  src="{{$image->image}}" alt="slider_1"/>
                 @endforeach
             </div>
         </div>
