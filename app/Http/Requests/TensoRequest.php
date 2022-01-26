@@ -28,7 +28,8 @@ class TensoRequest extends FormRequest
         return [
             'images' => [
                 'nullable',
-                '|array|min:1',
+                'array',
+                'min:1',
                 Rule::requiredIf(function() {
                     return Request::routeIs('store tenso');
                 })

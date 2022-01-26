@@ -21,7 +21,10 @@
 
                                 <!-- single menu -->
                                 <li><a href="about-us.html">{{App\Helpers\Helper::translate('about company')}}</a></li>
+                                <li><a href="about-us.html">{{App\Helpers\Helper::translate('Partners')}}</a></li>
+                                <li><a href="about-us.html">{{App\Helpers\Helper::translate('Clients')}}</a></li>
                                 <li><a href="about-us.html">{{App\Helpers\Helper::translate('Services')}}</a></li>
+                                <li><a href="{{route('tensoView')}}">{{App\Helpers\Helper::translate('tenso')}}</a></li>
                                 <li class="has-sub"><a href="#">{{App\Helpers\Helper::translate('Cars')}}<i class="icofont icofont-simple-down"></i></a>
                                     <!-- sub menu start -->
                                     @php($cars=\App\Models\Car::where('status','1')->get())

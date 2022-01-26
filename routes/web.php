@@ -37,7 +37,8 @@ Route::get('cache', function () {
 });
 Route::group(['namespace' => 'front'], function () {
     Route::get('/', [HomeFrontController::class, 'home'])->name('front');
-    Route::get('/car/{id}', [HomeFrontController::class, 'car'])->name('carFrontView');
+    Route::get('car/{id}', [HomeFrontController::class, 'car'])->name('carFrontView');
+    Route::get('tenso/', [HomeFrontController::class, 'tenso'])->name('tensoView');
 });
 Route::group(['middleware' => 'auth:web'], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');

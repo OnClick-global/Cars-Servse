@@ -103,5 +103,7 @@
   'All Tenso' => 'خدمه توكيل تنسو',
   'tenso updated successfully!' => 'تم تعديل بيانات تنسو!',
   'Edit Tenso' => 'Edit Tenso',
-  'Tenso' => 'Tenso',
+  'Tenso' => 'خدمه توكيل تنسو',
+  'View Service' => 'View Service',
+
 );

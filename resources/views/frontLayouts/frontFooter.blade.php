@@ -21,9 +21,9 @@
                         <!-- address end -->
                         <!-- contact info start -->
                         <div class="footer-contact-info">
-                            <p><span> Telephone 1:</span> {{\App\Models\Setting::where('key','phone1')->first()->value ?? ''}} </p>
-                            <p><span> Telephone 3:</span> {{\App\Models\Setting::where('key','phone2')->first()->value ?? ''}} </p>
-                            <p><span> Email:</span> {{\App\Models\Setting::where('key','Email')->first()->value ?? ''}} </p>
+                            <p><span> {{App\Helpers\Helper::translate('address')}}:</span> {{\App\Models\Setting::where('key','phone1')->first()->value ?? ''}} </p>
+                            <p><span> {{App\Helpers\Helper::translate('Phone 1')}}:</span> {{\App\Models\Setting::where('key','phone2')->first()->value ?? ''}} </p>
+                            <p><span> {{App\Helpers\Helper::translate('Phone 2')}}:</span> {{\App\Models\Setting::where('key','Email')->first()->value ?? ''}} </p>
                         </div>
                         <!-- contact info end -->
                     </div>
@@ -35,17 +35,17 @@
                 <div class="single-footer-top">
                     <!-- section title start -->
                     <div class="footer-top-title">
-                        <h3>Services</h3>
+                        <h3>{{App\Helpers\Helper::translate('Services')}}</h3>
                     </div>
                     <!-- section title end -->
                     <!-- footer menu start -->
                     <div class="footer-top-menu">
                         <ul>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Return Policy</a></li>
-                            <li><a href="#">Our Blog</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="about-us.html">{{App\Helpers\Helper::translate('about company')}}</a></li>
+                            <li><a href="about-us.html">{{App\Helpers\Helper::translate('Partners')}}</a></li>
+                            <li><a href="about-us.html">{{App\Helpers\Helper::translate('Clients')}}</a></li>
+                            <li><a href="about-us.html">{{App\Helpers\Helper::translate('Services')}}</a></li>
+                            <li><a href="{{route('tensoView')}}">{{App\Helpers\Helper::translate('tenso')}}</a></li>
                         </ul>
                     </div>
                     <!-- footer menu end -->
@@ -53,26 +53,7 @@
                 <!-- single footer end -->
             </div>
             <div class="col-md-2 col-md-offset-1 col-sm-3">
-                <!-- single footer start -->
-                <div class="single-footer-top">
-                    <!-- section title start -->
-                    <div class="footer-top-title">
-                        <h3>USEFULL LINKS</h3>
-                    </div>
-                    <!-- section title end -->
-                    <!-- footer menu start -->
-                    <div class="footer-top-menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">How it works</a></li>
-                            <li><a href="#">Terms & Condition</a></li>
-                        </ul>
-                    </div>
-                    <!-- footer menu end -->
-                </div>
-                <!-- single footer end -->
+
             </div>
             <div class="col-md-3 col-md-offset-1 col-sm-3">
                 <!-- single footer start -->

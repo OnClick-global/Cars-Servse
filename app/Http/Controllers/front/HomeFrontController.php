@@ -23,4 +23,11 @@ class HomeFrontController extends Controller
         $data->get();
         return view('front.car', compact('data'));
     }
+    public function tenso()
+    {
+//        return $id;
+        $data=Car::first();
+
+        return view('front.tenso', compact('data'));
+    }
 }

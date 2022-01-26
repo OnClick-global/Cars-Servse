@@ -10,8 +10,102 @@
             </div>
         </div>
     </div>
-    <!-- slider area end -->
-    <!-- about us area start -->
+
+    <div id="tenso" class="testimonial-area section-padding">
+        @php($tenso=\App\Models\Tenso::with('Images')->first())
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- section title start -->
+                    <div class="section-heading text-center">
+                        <h2>
+                            @if(app()->getLocale() =='ar')
+                                <span>{{$tenso->name_ar}}</span>
+                            @else
+                                <span>{{$tenso->name_en}}</span>
+                            @endif
+
+                        </h2>
+                    </div>
+                    <!-- section title end -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- testimonial slider start -->
+                    <div class="testimonial-slider owl-preview-1">
+                        <!-- single testimonial start -->
+                        <div class="single-testimonial">
+                            <!-- testimonil img -->
+                            <div class="testimonial-img hidden-xs">
+                                <div class="writer-img">
+                                    <img style="height: 400px" src="{{$tenso->Images[0]->image}}" alt="">
+                                </div>
+                            </div>
+                            <!-- testimonial content -->
+                            <div class="testimonial-content">
+
+                                <div class="test-spech">
+                                    @if(app()->getLocale() =='ar')
+                                        <p>{{$tenso->des_ar}}</p>
+
+                                    @else
+                                        <p>{{$tenso->des_en}}</p>
+
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- testimonial slider end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="service-area section-padding overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- section title start -->
+                    <div class="section-heading light text-center no-margin">
+                        <h2><span> {{App\Helpers\Helper::translate('Services')}}</span></h2>
+                    </div>
+                    <!-- section title end -->
+                </div>
+            </div>
+            <div class="row">
+                @php($Services=\App\Models\Service::get())
+                @foreach($Services as $Service)
+                    <div class="col-md-4 col-sm-6">
+                        <!-- single service start -->
+                        <div class="single-service">
+                            <div class="icon-title">
+                                <i class="fa fa-soccer-ball-o"></i>
+
+                                <h3> wheel alignment</h3>
+                                @if(app()->getLocale()=='ar')
+                                    <h3>{{$Service->name_ar}}</h3>
+                                @else
+                                    <h3>{{$Service->name_en}}</h3>
+                                @endif
+                            </div>
+                            @if(app()->getLocale()=='ar')
+                                <p>{{$Service->des_ar}}</p>
+                            @else
+                                <p>{{$Service->des_en}}</p>
+                            @endif
+                        </div>
+                        <br>
+                        <img  height="200 px" src="{{$Service->image}}" alt="">
+                        <!-- single service end -->
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+
     <div class="about-us-area section-padding">
         <div class="container">
             <div class="row">
@@ -43,7 +137,7 @@
         </div>
     </div>
 
-    <div class="blog-area section-padding">
+    <div style="background: #ffeeee" class="blog-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -70,7 +164,7 @@
                                 <!-- blog content start -->
                                 <div class="blog-info">
                                     <!-- post title -->
-                                    <a  href="{{route('carFrontView',$car->id)}}" class="blog-title">
+                                    <a href="{{route('carFrontView',$car->id)}}" class="blog-title">
                                         @if(app()->getLocale()=='ar')
                                             {{$car->name_ar}}
                                         @else
@@ -98,62 +192,52 @@
             </div>
         </div>
     </div>
-    <!-- about us area end -->
-    <!-- service area start -->
-    <div class="service-area section-padding overlay">
+
+    <div class="team-member section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <!-- section title start -->
-                    <div class="section-heading light text-center no-margin">
-                        <h2><span> Services</span></h2>
+                    <div class="section-heading text-center">
+                        <h2>{{App\Helpers\Helper::translate('Partners')}}</h2>
                     </div>
                     <!-- section title end -->
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <!-- single service start -->
-                    <div class="single-service">
-                        <div class="icon-title">
-                            <i class="fa fa-car"></i>
-                            <h3> Car Wash</h3>
+                <!-- single team start -->
+                @foreach($partners as $partner)
+                    <div class="col-sm-4">
+                        <div class="single-team hover-style pull-left">
+                            <div class="team-img">
+                                <!-- team img start -->
+                                <a href="#" class="main-img">
+                                    <img src="{{$partner->images}}" style="    height: 325px;" alt="">
+                                </a>
+                                <!-- team img end -->
+                                <!-- team info start -->
+                                <div class="team-info">
+                                    @if(app()->getLocale() == 'ar')
+                                        <h3>{{$partner->name_en}}</h3>
+                                    @else
+                                        <h3>{{$partner->name_en}}</h3>
+                                    @endif
+                                </div>
+                                <!-- team info end -->
+                                <!-- team social start -->
+
+                                <!-- team social end -->
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt
-                            ultram labore et dolore magna aliqua.</p>
                     </div>
-                    <!-- single service end -->
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <!-- single service start -->
-                    <div class="single-service">
-                        <div class="icon-title">
-                            <i class="fa fa-cogs"></i>
-                            <h3> Engine repair</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt
-                            ultram labore et dolore magna aliqua.</p>
-                    </div>
-                    <!-- single service end -->
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <!-- single service start -->
-                    <div class="single-service">
-                        <div class="icon-title">
-                            <i class="fa fa-soccer-ball-o"></i>
-                            <h3> wheel alignment</h3>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adip isic ing elit, sed do eiusmod tempor incididunt
-                            ultram labore et dolore magna aliqua.</p>
-                    </div>
-                    <!-- single service end -->
-                </div>
+            @endforeach
+            <!-- single team end -->
+
             </div>
         </div>
     </div>
-    <!-- service area end -->
-    <!-- shop area start -->
-    <div class="shop-area section-padding">
+
+    <div style="background: #ffeeee"  class="shop-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -206,97 +290,8 @@
             </div>
         </div>
     </div>
-    <!-- shop area end -->
-    <!-- testimonial area start -->
-    <div class="testimonial-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- section title start -->
-                    <div class="section-heading text-center">
-                        <h2><span>خدمة مكيف السيارات</span></h2>
-                    </div>
-                    <!-- section title end -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- testimonial slider start -->
-                    <div class="testimonial-slider owl-preview-1">
-                        <!-- single testimonial start -->
-                        <div class="single-testimonial">
-                            <!-- testimonil img -->
-                            <div class="testimonial-img hidden-xs">
-                                <div class="writer-img">
-                                    <img src="assets/front/img/testimonial/air.jpg" alt="">
-                                </div>
-                            </div>
-                            <!-- testimonial content -->
-                            <div class="testimonial-content">
-                                <div class="test-writer">
-                                    <h3>MSN TRIO</h3>
-                                    <p>Creative Director</p>
-                                </div>
-                                <div class="test-spech">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolorem magnadw aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodog consequat.
-                                        Duis aute irure dolor in reprehenderit in fugiat nulla pariatur.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- testimonial slider end -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- testimonial area end -->
-    <!-- team member area start -->
-    <div class="team-member section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- section title start -->
-                    <div class="section-heading text-center">
-                        <h2>{{App\Helpers\Helper::translate('Partners')}}</h2>
-                    </div>
-                    <!-- section title end -->
-                </div>
-            </div>
-            <div class="row">
-                <!-- single team start -->
-                @foreach($partners as $partner)
-                    <div class="col-sm-4">
-                        <div class="single-team hover-style pull-left">
-                            <div class="team-img">
-                                <!-- team img start -->
-                                <a href="#" class="main-img">
-                                    <img src="{{$partner->images}}" style="    height: 325px;" alt="">
-                                </a>
-                                <!-- team img end -->
-                                <!-- team info start -->
-                                <div class="team-info">
-                                    @if(app()->getLocale() == 'ar')
-                                        <h3>{{$partner->name_en}}</h3>
-                                    @else
-                                        <h3>{{$partner->name_en}}</h3>
-                                    @endif
-                                </div>
-                                <!-- team info end -->
-                                <!-- team social start -->
 
-                                <!-- team social end -->
-                            </div>
-                        </div>
-                    </div>
-            @endforeach
-            <!-- single team end -->
 
-            </div>
-        </div>
-    </div>
-    <!-- team member area end -->
 
 
 @endsection
