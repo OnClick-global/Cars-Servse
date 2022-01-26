@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\front\HomeFrontController;
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -25,7 +26,14 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 Route::get('/logout', [LoginController::class, 'logout'])->name('signout')->middleware('auth:web');
-
+Route::get('cache', function () {
+    Artisan::call('config:cache');
+    Artisan::call('config:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('view:clear');
+    Artisan::call('route:clear');
+    return 'success';
+});
 Route::group(['namespace' => 'front'], function () {
     Route::get('/', [HomeFrontController::class, 'home'])->name('front');
     Route::get('/car/{id}', [HomeFrontController::class, 'car'])->name('carFrontView');

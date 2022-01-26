@@ -13,67 +13,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- favicon.ico -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/front/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{{url('/')}}/assets/front/img/favicon.ico">
 
     <!-- ============== All CSS ================ -->
     <!-- normalize css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/css/normalize.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/normalize.css">
 
     <!-- animate css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/css/animate.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/animate.css">
 
     <!-- bootstrap css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/bootstrap.min.css">
 
     <!-- meanmenu css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/css/meanmenu.min.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/meanmenu.min.css">
 
     <!-- font-awesome css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/font-awesome.min.css">
 
     <!-- icofont css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/css/icofont.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/icofont.css">
 
     <!-- change-text css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/css/change-text.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/change-text.css">
 
     <!-- YTPlayer css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/jquery.mb.YTPlayer.min.css">
 
     <!-- main css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/css/main.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/main.css">
 
     <!-- owl.carousel css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/css/owl.carousel.css">
-    <link rel="stylesheet" href="assets/front/css/owl.theme.css">
-    <link rel="stylesheet" href="assets/front/css/owl.transitions.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/owl.carousel.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/owl.theme.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/owl.transitions.css">
 
     <!-- nivo-slider css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/lib/css/nivo-slider.css">
-    <link rel="stylesheet" href="assets/front/lib/css/preview.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/lib/css/nivo-slider.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/lib/css/preview.css">
 
     <!-- style css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front/style.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/style.css">
 
     <!-- responsive css
     ============================================ -->
-    <link rel="stylesheet" href="assets/front//ss/responsive.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front//ss/responsive.css">
 
     <!-- modernizr js
     ============================================ -->
-    <script src="assets/front/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="{{url('/')}}/assets/front/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 8]>

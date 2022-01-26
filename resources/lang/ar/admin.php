@@ -95,4 +95,5 @@
   'Client' => 'Client',
   'about company' => 'About company',
   'address' => 'Address',
+  'ISUZU Cars' => 'ISUZU Cars',
 );
