@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-
+{{--    tenso--}}
     <div id="tenso" class="testimonial-area section-padding">
         @php($tenso=\App\Models\Tenso::with('Images')->first())
         <div class="container">
@@ -62,9 +62,8 @@
             </div>
         </div>
     </div>
-
-
-    <div class="service-area section-padding overlay">
+{{--    Services--}}
+    <div id="Services" class="service-area section-padding overlay">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -105,8 +104,8 @@
             </div>
         </div>
     </div>
-
-    <div class="about-us-area section-padding">
+{{--about cs--}}
+    <div id="aboutCS"  class="about-us-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -136,7 +135,7 @@
             </div>
         </div>
     </div>
-
+{{--cars--}}
     <div style="background: #ffeeee" class="blog-area section-padding">
         <div class="container">
             <div class="row">
@@ -192,8 +191,8 @@
             </div>
         </div>
     </div>
-
-    <div class="team-member section-padding">
+{{--    Partners--}}
+    <div id="Partners" class="team-member section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -236,8 +235,8 @@
             </div>
         </div>
     </div>
-
-    <div style="background: #ffeeee"  class="shop-area section-padding">
+{{--    Clients--}}
+    <div id="Clients" style="background: #ffeeee"  class="shop-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

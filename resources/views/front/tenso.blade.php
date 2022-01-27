@@ -2,10 +2,10 @@
 @section('content')
     <div class="slider-area">
         <div class="bend niceties preview-1">
-            <div id="nivoslider" class="slides">
+            <div id="" class="container">
                 @foreach($data->images as $image)
                   <div class="" >
-                    <img style="height: 400px;"  src="{{$image->image}}" alt="slider_1"/> <br>
+                    <img style="height: 800px;"  src="{{$image->image}}" alt="slider_1"/> <br>
                   </div>
                 @endforeach
             </div>
