@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js"  lang="zxx">
 <head>
     <!-- Basic page needs
     ============================================ -->
@@ -104,7 +104,31 @@
                                 <li><a target="_blank" href="{{\App\Models\Setting::where('key','facebook')->first()->value}}"> <i class="fa fa-facebook"></i> </a></li>
                                 <li><a href="{{\App\Models\Setting::where('key','twitter')->first()->value}}"> <i class="fa fa-twitter"></i> </a></li>
                                 <li><a href="https://wa.me/{{\App\Models\Setting::where('key','whatsapp')->first()->value}}"> <i class="fa fa-whatsapp"></i> </a></li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        @if(app()->getLocale() == 'en')
+                                            <span>english</span>
+                                        @else
+                                            <span>العربيه</span>
+                                        @endif
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right animated bounceInDown">
+                                        @if(app()->getLocale() == 'en')
+                                            <a style="color: #000000" class="dropdown-item" href="{{url('change_lang/ar')}}">
+                                                العربيه
+                                            </a>
+                                        @else
+                                            <a style="color: #000000" class="dropdown-item" href="{{url('change_lang/en')}}">
+                                                English
+                                            </a>
+                                        @endif
+                                    </div>
+                                </li>
+
+
                             </ul>
+
                         </div>
                         <!-- top social end -->
                         <!-- cart menu start -->

@@ -39,6 +39,7 @@ Route::group(['namespace' => 'front'], function () {
     Route::get('/', [HomeFrontController::class, 'home'])->name('front');
     Route::get('car/{id}', [HomeFrontController::class, 'car'])->name('carFrontView');
     Route::get('tenso/', [HomeFrontController::class, 'tenso'])->name('tensoView');
+    Route::get('change_lang/{lang}', [HomeFrontController::class, 'change_lang'])->name('change_lang');
 });
 Route::group(['middleware' => 'auth:web'], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');

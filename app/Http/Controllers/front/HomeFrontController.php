@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\Car;
 use App\Models\Client;
 use App\Models\Partner;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use PhpOffice\PhpSpreadsheet\Calculation\Category;
 
 class HomeFrontController extends Controller
@@ -29,5 +31,15 @@ class HomeFrontController extends Controller
         $data=Car::first();
 
         return view('front.tenso', compact('data'));
+    }
+
+    public function change_lang(Request $request,$lang)
+    {
+        if (session()->has('lang')) {
+            session()->forget('lang');
+        }
+        session()->put('lang', $lang);
+        App::setLocale($lang);
+        return back();
     }
 }
