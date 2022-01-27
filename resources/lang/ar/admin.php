@@ -105,5 +105,5 @@
   'Edit Tenso' => 'Edit Tenso',
   'Tenso' => 'خدمه توكيل تنسو',
   'View Service' => 'View Service',
-
+  'Car tenso successfully!' => 'Car tenso successfully!',
 );

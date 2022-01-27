@@ -3,16 +3,7 @@
     <div class="container">
         <div class="menu-position">
             <div class="row">
-                <div class="col-md-3 col-sm-2">
-                    <!-- logo start -->
-                    <div class="logo">
-                        <a href="{{route('front')}}">
-                            <img style="height: 50px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}" alt="">
-                        </a>
-                    </div>
-                    <!-- logo end -->
-                </div>
-                <div class="col-md-9 col-sm-10 static">
+                <div class="col-md-12 col-sm-10 static">
                     <!-- main-menu start -->
                     <div class="main-menu">
                         <nav>
@@ -20,6 +11,13 @@
                                 <!-- single menu -->
 
                                 <!-- single menu -->
+                                <li>
+                                    <div class="logo">
+                                        <a href="{{route('front')}}">
+                                            <img style="height: 50px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}" alt="">
+                                        </a>
+                                    </div>
+                                </li>
                                 <li><a href="{{route('front')}}#aboutCS">{{App\Helpers\Helper::translate('about company')}}</a></li>
                                 <li><a href="{{route('front')}}#Partners">{{App\Helpers\Helper::translate('Partners')}}</a></li>
                                 <li><a href="{{route('front')}}#Clients">{{App\Helpers\Helper::translate('Clients')}}</a></li>

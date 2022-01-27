@@ -25,7 +25,7 @@ class TensoController extends Controller
     public function store(TensoRequest $request)
     {
 
-        $car = Tenso::Create([
+        $tenso = Tenso::Create([
             'name_ar' => $request->name_ar,
             'name_en' => $request->name_en,
             'des_ar' => $request->name_ar,
