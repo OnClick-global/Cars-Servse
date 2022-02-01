@@ -65,7 +65,7 @@
 
     <!-- style css
     ============================================ -->
-    <link rel="stylesheet" href="{{url('/')}}/assets/front/style.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/style.css?v=1">
 
     <!-- responsive css
     ============================================ -->
