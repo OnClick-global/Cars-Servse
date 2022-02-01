@@ -46,5 +46,49 @@
         </div>
     </div>
 </div>
+<div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo-light.png" alt="">
+                    </a>
+                </div>
+                <div class="mobile-menu">
+                    <nav>
+                        <ul>
+                            <!-- single menu -->
+
+                            <!-- single menu -->
+               
+                            <li><a href="{{route('front')}}#aboutCS">{{App\Helpers\Helper::translate('about company')}}</a></li>
+                            <li><a href="{{route('front')}}#Partners">{{App\Helpers\Helper::translate('Partners')}}</a></li>
+                            <li><a href="{{route('front')}}#Clients">{{App\Helpers\Helper::translate('Clients')}}</a></li>
+                            <li><a href="{{route('front')}}#Services">{{App\Helpers\Helper::translate('Services')}}</a></li>
+                            <li><a href="{{route('tensoView')}}">{{App\Helpers\Helper::translate('tenso')}}</a></li>
+                            <li class="has-sub"><a href="#">{{App\Helpers\Helper::translate('Cars')}}<i class="icofont icofont-simple-down"></i></a>
+                                <!-- sub menu start -->
+                                @php($cars=\App\Models\Car::where('status','1')->get())
+                                <ul class="sub-menu left">
+                                    @foreach($cars as $car)
+                                        <li><a href="{{route('carFrontView',$car->id)}}">{{$car->name_ar}}</a></li>
+                                    @endforeach
+                                </ul>
+                                <!-- sub menu end -->
+                            </li>
+                            <!-- single menu -->
+
+                            <!-- single menu -->
+
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </header>
 
