@@ -33,7 +33,7 @@ Route::get('cache', function () {
     Artisan::call('cache:clear');
     Artisan::call('view:clear');
     Artisan::call('route:clear');
-    return 'success';
+    return redirect()->back();
 });
 Route::group(['namespace' => 'front'], function () {
     Route::get('/', [HomeFrontController::class, 'home'])->name('front');
