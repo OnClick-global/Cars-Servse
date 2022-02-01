@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Car;
 use App\Models\Client;
 use App\Models\Partner;
+use App\Models\Tenso;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use PhpOffice\PhpSpreadsheet\Calculation\Category;
@@ -28,7 +29,7 @@ class HomeFrontController extends Controller
     public function tenso()
     {
 //        return $id;
-        $data=Car::first();
+        $data=Tenso::first();
 
         return view('front.tenso', compact('data'));
     }
