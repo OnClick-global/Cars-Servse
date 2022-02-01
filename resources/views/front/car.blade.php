@@ -5,7 +5,7 @@
             <div id="" class="container">
                 @foreach($data->images as $image)
                     <div class="" >
-                        <img style="height: 800px;"  src="{{$image->image}}" alt="slider_1"/> <br>
+                        <img class="product-img" style=""  src="{{$image->image}}" alt="slider_1"/> <br>
                     </div>
                 @endforeach
             </div>
