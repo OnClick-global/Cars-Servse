@@ -51,17 +51,14 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="img/logo-light.png" alt="">
+                    <a href="{{route('front')}}">
+                        <img style="height: 50px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}" alt="">
                     </a>
                 </div>
                 <div class="mobile-menu">
                     <nav>
                         <ul>
-                            <!-- single menu -->
-
-                            <!-- single menu -->
-               
+                            <li><a href="#">Home</a>
                             <li><a href="{{route('front')}}#aboutCS">{{App\Helpers\Helper::translate('about company')}}</a></li>
                             <li><a href="{{route('front')}}#Partners">{{App\Helpers\Helper::translate('Partners')}}</a></li>
                             <li><a href="{{route('front')}}#Clients">{{App\Helpers\Helper::translate('Clients')}}</a></li>
