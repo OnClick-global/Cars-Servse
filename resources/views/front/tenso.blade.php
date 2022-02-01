@@ -3,7 +3,7 @@
     <div class="slider-area">
         <div class="bend niceties preview-1">
             <div id="" class="container">
-                @foreach($data->images as $image)
+                @foreach($data->Images as $image)
                   <div class="" >
                     <img style="height: 800px;"  src="{{$image->image}}" alt="slider_1"/> <br>
                   </div>
