@@ -11,7 +11,7 @@ class Helper
     public static function uploadImage($file, $dir)
     {
         $image = time() . uniqid() . '.' . $file->getClientOriginalExtension();
-        $file->move('uploads' . '/' . $dir, $image);
+        $file->move(public_path('uploads'). '/' . $dir, $image);
         return $image;
     }
 
