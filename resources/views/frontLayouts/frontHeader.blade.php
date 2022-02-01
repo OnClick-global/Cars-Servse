@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="no-js"  lang="zxx">
+<html class="no-js" dir="ltr" lang="zxx">
 <head>
     <!-- Basic page needs
     ============================================ -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home || Tinker </title>
+    <title>Car Series </title>
     <meta name="description" content="">
 
     <!-- Mobile specific metas
@@ -69,7 +69,7 @@
 
     <!-- responsive css
     ============================================ -->
-    <link rel="stylesheet" href="{{url('/')}}/assets/front//ss/responsive.css">
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/responsive.css">
 
     <!-- modernizr js
     ============================================ -->
