@@ -1,11 +1,11 @@
 @extends('frontLayouts.app')
 @section('content')
     <div class="slider-area">
-        <div class="bend niceties preview-1">
+        <div class="bend niceties preview-1 ">
             <div id="" class="container">
                 @foreach($data->Images as $image)
                   <div class="" >
-                    <img style="height: 800px;"  src="{{$image->image}}" alt="slider_1"/> <br>
+                    <img class="product-img" style="height: 600px;"  src="{{$image->image}}" alt="slider_1"/> <br><br>
                   </div>
                 @endforeach
             </div>
