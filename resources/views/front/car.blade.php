@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div style="padding-top: 40px">
+    <div >
         <div class="shop-details section-padding">
             <div class="container">
                 <div class="row">
@@ -25,9 +25,6 @@
                                         <h1>{{$data->name_en}}</h1>
                                     @endif
                                 </div>
-                                <div class="price-rating">
-
-                                </div>
                                 <div class="product-text">
                                     @if(app()->getLocale()=='ar')
                                         <p>{{$data->des_ar}}</p>
@@ -36,9 +33,6 @@
                                     @endif
                                 </div>
 
-                                <!-- cart plus minus start -->
-
-                                <!-- shop details social end -->
                             </div>
                         </div>
                     </div>
