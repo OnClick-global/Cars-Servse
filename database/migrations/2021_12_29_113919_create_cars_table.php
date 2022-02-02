@@ -17,8 +17,8 @@ class CreateCarsTable extends Migration
             $table->id();
             $table->string('name_ar');
             $table->string('name_en');
-            $table->text('des_ar');
-            $table->text('des_en');
+            $table->longtext('des_ar');
+            $table->longtext('des_en');
             $table->enum('status',['1','0'])->default('1');
             $table->timestamps();
         });

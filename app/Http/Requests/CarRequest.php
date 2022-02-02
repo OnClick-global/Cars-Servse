@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class CarRequest extends FormRequest
 {
@@ -24,11 +26,19 @@ class CarRequest extends FormRequest
     public function rules()
     {
         return [
-            'images' => 'required|array|min:1',
             'name_en' => 'required|max:255',
             'name_ar' => 'required|max:255',
             'des_en' => 'required|max:255',
             'des_ar' => 'required|max:255',
+            'images' => [
+                'array',
+                'min:1',
+                'nullable',
+                'mimes:jpeg,jpg,png',
+                Rule::requiredIf(function() {
+                    return Request::routeIs('store car');
+                })
+            ]
         ];
     }
 }
