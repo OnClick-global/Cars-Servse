@@ -211,7 +211,7 @@
                             <div class="team-img">
                                 <!-- team img start -->
                                 <a href="#" class="main-img">
-                                    <img src="{{$partner->images}}" style="" alt="">
+                                    <img src="{{$partner->images}}" style="" alt=""> <br><br><br>
                                 </a>
                                 <!-- team img end -->
                                 <!-- team info start -->
