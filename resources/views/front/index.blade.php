@@ -207,11 +207,11 @@
                 <!-- single team start -->
                 @foreach($partners as $partner)
                     <div class="col-sm-4">
-                        <div class="single-team hover-style pull-left">
+                        <div class=" hover-style pull-left">
                             <div class="team-img">
                                 <!-- team img start -->
                                 <a href="#" class="main-img">
-                                    <img src="{{$partner->images}}" style="    height: 325px;" alt="">
+                                    <img src="{{$partner->images}}" style="height: 300px;" alt=""> <br><br><br>
                                 </a>
                                 <!-- team img end -->
                                 <!-- team info start -->
