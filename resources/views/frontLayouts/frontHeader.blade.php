@@ -65,9 +65,12 @@
 
     <!-- style css
     ============================================ -->
-    <link rel="stylesheet" href="{{url('/')}}/assets/front/style.css?v=1">
-
-    <!-- responsive css
+    @if(app()->getLocale() == 'ar')
+        <link rel="stylesheet" href="{{url('/')}}/assets/front/style.rtl.css?v=1">
+    @else
+        <link rel="stylesheet" href="{{url('/')}}/assets/front/style.css?v=1">
+    @endif
+<!-- responsive css
     ============================================ -->
     <link rel="stylesheet" href="{{url('/')}}/assets/front/css/responsive.css">
 
@@ -77,7 +80,8 @@
 </head>
 <body>
 <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="../../../browsehappy.com/default.htm">upgrade your browser</a> to improve your experience.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
+    href="../../../browsehappy.com/default.htm">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <!-- header area start -->
@@ -89,9 +93,13 @@
                     <!-- welcome message start -->
                     <div class="welcome-msg">
                         <ul>
-                            <li> <p> <span> {{App\Helpers\Helper::translate('Phone 1')}}: </span>{{\App\Models\Setting::where('key','phone1')->first()->value}}</p></li>
+                            <li><p>
+                                    <span> {{App\Helpers\Helper::translate('Phone 1')}}: </span>{{\App\Models\Setting::where('key','phone1')->first()->value}}
+                                </p></li>
 
-                            <li> <p> <span> {{App\Helpers\Helper::translate('Phone 2')}}: </span>{{\App\Models\Setting::where('key','phone2')->first()->value}}</p></li>
+                            <li><p>
+                                    <span> {{App\Helpers\Helper::translate('Phone 2')}}: </span>{{\App\Models\Setting::where('key','phone2')->first()->value}}
+                                </p></li>
                         </ul>
                     </div>
                     <!-- welcome message end -->
@@ -101,12 +109,18 @@
                         <!-- top social start -->
                         <div class="top-social">
                             <ul>
-                                <li><a target="_blank" href="{{\App\Models\Setting::where('key','facebook')->first()->value}}"> <i class="fa fa-facebook"></i> </a></li>
-                                <li><a href="{{\App\Models\Setting::where('key','twitter')->first()->value}}"> <i class="fa fa-twitter"></i> </a></li>
-                                <li><a href="https://wa.me/{{\App\Models\Setting::where('key','whatsapp')->first()->value}}"> <i class="fa fa-whatsapp"></i> </a></li>
+                                <li><a target="_blank"
+                                       href="{{\App\Models\Setting::where('key','facebook')->first()->value}}"> <i
+                                            class="fa fa-facebook"></i> </a></li>
+                                <li><a href="{{\App\Models\Setting::where('key','twitter')->first()->value}}"> <i
+                                            class="fa fa-twitter"></i> </a></li>
+                                <li>
+                                    <a href="https://wa.me/{{\App\Models\Setting::where('key','whatsapp')->first()->value}}">
+                                        <i class="fa fa-whatsapp"></i> </a></li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle waves-effect waves-dark" href=""
+                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         @if(app()->getLocale() == 'en')
                                             <span>english</span>
                                         @else
@@ -115,11 +129,13 @@
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right animated bounceInDown">
                                         @if(app()->getLocale() == 'en')
-                                            <a style="color: #000000" class="dropdown-item" href="{{url('change_lang/ar')}}">
+                                            <a style="color: #000000" class="dropdown-item"
+                                               href="{{url('change_lang/ar')}}">
                                                 العربيه
                                             </a>
                                         @else
-                                            <a style="color: #000000" class="dropdown-item" href="{{url('change_lang/en')}}">
+                                            <a style="color: #000000" class="dropdown-item"
+                                               href="{{url('change_lang/en')}}">
                                                 English
                                             </a>
                                         @endif
