@@ -66,7 +66,7 @@
     <!-- style css
     ============================================ -->
     @if(app()->getLocale() == 'ar')
-        <link rel="stylesheet" href="{{url('/')}}/assets/front/style.rtl.css?v=1.2">
+        <link rel="stylesheet" href="{{url('/')}}/assets/front/style.rtl.css?v=1.3">
     @else
         <link rel="stylesheet" href="{{url('/')}}/assets/front/style.css?v=1">
     @endif

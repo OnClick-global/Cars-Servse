@@ -881,7 +881,7 @@ p.error {
     background: rgba(0, 0, 0, 0) url("img/bg/service-bg.jpg") no-repeat scroll center center;
 }
 .single-service {
-    margin-top: 100px;
+    margin-top: 30px;
     padding-left: 30px;
 }
 .single-service .icon-title {
@@ -910,6 +910,7 @@ p.error {
 .single-service p {
     color: #fff;
     margin-bottom: 0;
+    height: 100px;
 }
 
 /*========================================*/
