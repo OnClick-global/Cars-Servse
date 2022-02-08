@@ -245,7 +245,7 @@
                     <div role="tabpanel" class="tab-pane fade in active" id="tab1">
                         <div class="row">
                             @foreach($clients as $client)
-                                <div class="col-md-3 col-sm-6">
+                                <div class="col-md-2 col-sm-6">
                                     <!-- single product start -->
                                     <div class="single-product hover-style text-center">
                                         <div class="product-img">
