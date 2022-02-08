@@ -512,6 +512,7 @@ p.error {
 
 .static {
     position: static;
+    direction: rtl;
 }
 .menu-position {
     position: relative;
@@ -2382,6 +2383,7 @@ a.book-now-btn:hover {
 .footer-top-area {
     background-color: #24273e;
     padding: 80px 0;
+    direction: rtl;
 }
 .footer-top-area.light {
     background-color: #999;
