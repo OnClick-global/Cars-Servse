@@ -69,52 +69,52 @@
 <!-- ============== All JS ================ -->
 <!-- jquery js
 =========================================== -->
-<script src="assets/front/js/vendor/jquery-1.12.0.min.js"></script>
+<script src="{{url('/')}}/assets/front/js/vendor/jquery-1.12.0.min.js"></script>
 
 <!-- bootstrap js
 =========================================== -->
-<script src="assets/front/js/bootstrap.min.js"></script>
+<script src="{{url('/')}}/assets/front/js/bootstrap.min.js"></script>
 
 <!-- meanmenu js
 =========================================== -->
-<script src="assets/front/js/jquery.meanmenu.js"></script>
+<script src="{{url('/')}}/assets/front/js/jquery.meanmenu.js"></script>
 
 <!-- scrollUp js
 =========================================== -->
-<script src="assets/front/js/jquery.scrollUp.min.js"></script>
+<script src="{{url('/')}}/assets/front/js/jquery.scrollUp.min.js"></script>
 
 <!-- wow js
 =========================================== -->
-<script src="assets/front/js/wow.min.js"></script>
+<script src="{{url('/')}}/assets/front/js/wow.min.js"></script>
 
 <!-- owl.carousel js
 =========================================== -->
-<script src="assets/front/js/owl.carousel.min.js"></script>
+<script src="{{url('/')}}/assets/front/js/owl.carousel.min.js"></script>
 
 <!-- change-text js
 =========================================== -->
-<script src="assets/front/js/change-text.js"></script>
+<script src="{{url('/')}}/assets/front/js/change-text.js"></script>
 
 <!-- YTPlayer js
 =========================================== -->
-<script src="assets/front/js/jquery.mb.YTPlayer.min.js"></script>
+<script src="{{url('/')}}/assets/front/js/jquery.mb.YTPlayer.min.js"></script>
 
 <!-- textillate js
 =========================================== -->
-<script src="assets/front/js/jquery.lettering.js"></script>
-<script src="assets/front/js/jquery.textillate.js"></script>
+<script src="{{url('/')}}/assets/front/js/jquery.lettering.js"></script>
+<script src="{{url('/')}}/assets/front/js/jquery.textillate.js"></script>
 
 <!-- nivo.slider js
 =========================================== -->
-<script src="assets/front/lib/js/jquery.nivo.slider.js"></script>
-<script src="assets/front/lib/home.js"></script>
+<script src="{{url('/')}}/assets/front/lib/js/jquery.nivo.slider.js"></script>
+<script src="{{url('/')}}/assets/front/lib/home.js"></script>
 
 <!-- plugins js
 =========================================== -->
-<script src="assets/front/js/plugins.js"></script>
+<script src="{{url('/')}}/assets/front/js/plugins.js"></script>
 
 <!-- main js
 =========================================== -->
-<script src="assets/front/js/main.js"></script>
+<script src="{{url('/')}}/assets/front/js/main.js"></script>
 </body>
 </html>
