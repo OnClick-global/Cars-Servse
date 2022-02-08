@@ -80,7 +80,7 @@
             <div class="brand flex-column-auto" id="kt_brand">
                 <!--begin::Logo-->
                 <a href="{{route('home')}}" class="brand-logo">
-                    <img alt="Logo" style="width: 100px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}   " />
+                    <img alt="Logo" style="width: 100px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo_header')->first()->value ?? ''}}   " />
                 </a>
                 <!--end::Logo-->
                 <!--begin::Toggle-->

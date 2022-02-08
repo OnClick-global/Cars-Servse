@@ -7,7 +7,7 @@
                 <div class="single-footer-top">
                     <div class="footer-about-us">
                         <!-- small logo start -->
-                        <a href="{{route('front')}}" class="footer-logo"> <img src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}" alt="">
+                        <a href="{{route('front')}}" class="footer-logo"> <img src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo_footer')->first()->value ?? ''}}" alt="">
                         </a>
                         <!-- small logo end -->
                         <!-- address start -->
