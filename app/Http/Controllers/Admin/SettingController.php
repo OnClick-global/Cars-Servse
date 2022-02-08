@@ -30,12 +30,18 @@ class SettingController extends Controller
                 'facebook' => 'required|url|max:255',
                 'twitter' => 'required|url|max:255',
                 'logo_header' => 'nullable|mimes:jpeg,jpg,png|max:10000',
+                'logo_footer' => 'nullable|mimes:jpeg,jpg,png|max:10000',
             ]);
-        if($request->logo){
+        if($request->logo_header){
             $imageFields = Helper::uploadImage($request->logo, 'setting');
             $data['logo_header'] = $imageFields;
         }
-        $oldimage = Setting::where('key', 'logo_header')->first()->value;
+        if($request->logo_footer){
+            $imageFields = Helper::uploadImage($request->logo, 'setting');
+            $data['logo_footer'] = $imageFields;
+        }
+        $oldimageHeader = Setting::where('key', 'logo_header')->first()->value;
+        $oldimageFooter = Setting::where('key', 'logo_footer')->first()->value;
         Setting::updateOrInsert(['key' => 'name_ar'], ['value' => $request['name_ar'],]);
         Setting::updateOrInsert(['key' => 'name_en'], ['value' => $request['name_en'],]);
         Setting::updateOrInsert(['key' => 'Adress_ar'], ['value' => $request['Adress_ar'],]);
@@ -46,8 +52,11 @@ class SettingController extends Controller
         Setting::updateOrInsert(['key' => 'Whatsapp'], ['value' => $request['Whatsapp'],]);
         Setting::updateOrInsert(['key' => 'facebook'], ['value' => $request['facebook'],]);
         Setting::updateOrInsert(['key' => 'twitter'], ['value' => $request['twitter'],]);
-        if($request->logo) {
+        if($request->logo_header) {
             Setting::updateOrInsert(['key' => 'logo_header'], ['value' => $data['logo_header'],]);
+        }
+        if($request->logo_footer) {
+            Setting::updateOrInsert(['key' => 'logo_footer'], ['value' => $data['logo_footer'],]);
         }
         return redirect(route('settings'))->with('success', Helper::translate('Settings Updated successfully!'));;
     }
