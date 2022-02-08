@@ -168,7 +168,7 @@
                         <div class="row">
                             <div class="col-4">
                                 <button class="btn btn-primary"
-                                        type="button">{{App\Helpers\Helper::translate('Logo')}}</button>
+                                        type="button"> لوجو الراس</button>
                             </div>
                             <div class="col-2">
                                 <div class="form-group">
