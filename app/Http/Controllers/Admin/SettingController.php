@@ -35,7 +35,7 @@ class SettingController extends Controller
             $imageFields = Helper::uploadImage($request->logo, 'setting');
             $data['logo_header'] = $imageFields;
         }
-        $oldimage = Setting::where('key', 'logo')->first()->value;
+        $oldimage = Setting::where('key', 'logo_header')->first()->value;
         Setting::updateOrInsert(['key' => 'name_ar'], ['value' => $request['name_ar'],]);
         Setting::updateOrInsert(['key' => 'name_en'], ['value' => $request['name_en'],]);
         Setting::updateOrInsert(['key' => 'Adress_ar'], ['value' => $request['Adress_ar'],]);
@@ -47,7 +47,7 @@ class SettingController extends Controller
         Setting::updateOrInsert(['key' => 'facebook'], ['value' => $request['facebook'],]);
         Setting::updateOrInsert(['key' => 'twitter'], ['value' => $request['twitter'],]);
         if($request->logo) {
-            Setting::updateOrInsert(['key' => 'logo_header'], ['value' => $data['logo'],]);
+            Setting::updateOrInsert(['key' => 'logo_header'], ['value' => $data['logo_header'],]);
         }
         return redirect(route('settings'))->with('success', Helper::translate('Settings Updated successfully!'));;
     }
