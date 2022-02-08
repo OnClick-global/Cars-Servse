@@ -77,7 +77,7 @@
 
                             <div class="col-8">
                                 @foreach($car->Images as $c)
-                                    <a style="position: absolute;" class="btn btn-icon btn-danger btn-circle btn-sm" onclick="confirm('هل متاكد من الحذف؟')" href="{{route('image.delete',$c->id)}}">
+                                    <a style="position: absolute;" class="btn btn-icon btn-danger btn-circle btn-sm" onclick="confirm('هل متاكد من الحذف؟')" href="{{route('image.delete.car',$c->id)}}">
                                         <i class="icon-nm fas far fa-trash" aria-hidden='true'  ></i>
                                     </a>
                                     <img class="p-2" style="height: 150px; width: 150px;"
