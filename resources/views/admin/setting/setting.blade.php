@@ -177,7 +177,7 @@
                                             data-action="change" data-toggle="tooltip" title=""
                                             data-original-title="{{App\Helpers\Helper::translate('chose image')}}">
                                             <i class="fa fa-pen icon-sm text-muted"></i>
-                                            <input type="file" name="logo" accept=".png, .jpg, .jpeg"/>
+                                            <input type="file" name="logo_header" accept=".png, .jpg, .jpeg"/>
                                         </label>
 
                                         <span
