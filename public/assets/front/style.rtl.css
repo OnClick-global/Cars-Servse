@@ -2471,3 +2471,17 @@ a.book-now-btn:hover {
 .footer-copyright a:hover {
     text-decoration: underline;
 }
+
+
+html {
+    text-align: right;
+}
+
+#sticker .col-md-7 {
+    order: 0;
+    float: right;
+}
+
+.menu-position .col-md-3 {
+    float: right;
+}

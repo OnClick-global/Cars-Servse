@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" dir="ltr" lang="zxx">
+<html class="no-js" lang="zxx">
 <head>
     <!-- Basic page needs
     ============================================ -->
@@ -66,7 +66,7 @@
     <!-- style css
     ============================================ -->
     @if(app()->getLocale() == 'ar')
-        <link rel="stylesheet" href="{{url('/')}}/assets/front/style.rtl.css?v=1">
+        <link rel="stylesheet" href="{{url('/')}}/assets/front/style.rtl.css?v=1.0">
     @else
         <link rel="stylesheet" href="{{url('/')}}/assets/front/style.css?v=1">
     @endif
