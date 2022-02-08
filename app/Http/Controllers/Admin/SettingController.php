@@ -33,7 +33,7 @@ class SettingController extends Controller
             ]);
         if($request->logo){
             $imageFields = Helper::uploadImage($request->logo, 'setting');
-            $data['logo'] = $imageFields;
+            $data['logo_header'] = $imageFields;
         }
         $oldimage = Setting::where('key', 'logo')->first()->value;
         Setting::updateOrInsert(['key' => 'name_ar'], ['value' => $request['name_ar'],]);
