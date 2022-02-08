@@ -197,7 +197,7 @@
             <div class="row">
                 <!-- single team start -->
                 @foreach($partners as $partner)
-                    <div class="col-sm-4">
+                    <div class="col-sm-2">
                         <div class=" hover-style pull-left">
                             <div class="team-img">
                                 <!-- team img start -->
