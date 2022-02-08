@@ -18,6 +18,7 @@ class SettingController extends Controller
 
     public function store(Request $request)
     {
+        return $request;
         $data = $this->validate(\request(),
             [  'name_ar' => 'required|max:255',
                 'name_en' => 'required|max:255',
