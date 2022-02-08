@@ -7,11 +7,11 @@
                     <!-- logo start -->
                     <div class="logo">
                         <a href="{{route('front')}}">
-                            <img style="height: 50px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo_header')->first()->value ?? ''}}" alt="">
+                            <img style="height: 50px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}" alt="">
                         </a>
                     </div>
                     <!-- logo end -->
-                </div>
+                </div>                
                 <div class="col-md-9 col-sm-10 static">
                     <!-- main-menu start -->
                     <div class="main-menu">
@@ -55,7 +55,7 @@
             <div class="col-xs-12">
                 <div class="logo">
                     <a href="{{route('front')}}">
-                        <img style="height: 50px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo_header')->first()->value ?? ''}}" alt="">
+                        <img style="height: 50px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}}" alt="">
                     </a>
                 </div>
                 <div class="mobile-menu">
