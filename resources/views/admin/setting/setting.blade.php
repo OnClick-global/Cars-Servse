@@ -179,14 +179,14 @@
                                         <label
                                             class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
                                             data-action="change" data-toggle="tooltip" title=""
-                                            data-original-title="{{App\Helpers\Helper::translate('chose image')}}">
+                                            data-original-title="اختر لوجو الراس">
                                             <i class="fa fa-pen icon-sm text-muted"></i>
                                             <input type="file" name="logo_header" accept=".png, .jpg, .jpeg"/>
                                         </label>
 
                                         <span
                                             class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
-                                            data-action="cancel" data-toggle="tooltip" title="تزييل">
+                                            data-action="cancel" data-toggle="tooltip" title="cancel">
                                          <i class="ki ki-bold-close icon-xs text-muted"></i>
                                         </span>
                                     </div>
@@ -198,7 +198,7 @@
                         <div class="row">
                             <div class="col-4">
                                 <button class="btn btn-primary"
-                                        type="button">{{App\Helpers\Helper::translate('Logo')}}</button>
+                                        type="button"> لوجو التزييل</button>
                             </div>
                             <div class="col-2">
                                 <div class="form-group">
@@ -209,14 +209,14 @@
                                         <label
                                             class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
                                             data-action="change" data-toggle="tooltip" title=""
-                                            data-original-title="{{App\Helpers\Helper::translate('chose image')}}">
+                                            data-original-title="{اختر لوجو التزييل">
                                             <i class="fa fa-pen icon-sm text-muted"></i>
                                             <input type="file" name="logo_footer" accept=".png, .jpg, .jpeg"/>
                                         </label>
 
                                         <span
                                             class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
-                                            data-action="cancel" data-toggle="tooltip" title="اختر لوجو الراس">
+                                            data-action="cancel" data-toggle="tooltip" title="اختر لوجو التزييل">
                                          <i class="ki ki-bold-close icon-xs text-muted"></i>
                                         </span>
                                     </div>
