@@ -14,6 +14,10 @@
                    class="text-muted">{{App\Helpers\Helper::translate('dashboard')}}</a>
             </li>
             <li class="breadcrumb-item">
+                <a href="{{route('allCars')}}"
+                   class="text-muted">{{App\Helpers\Helper::translate('All Cars')}}</a>
+            </li>
+            <li class="breadcrumb-item">
                 <a   class="text-primary" >{{App\Helpers\Helper::translate('Edit Car')}}</a>
             </li>
         </ul>

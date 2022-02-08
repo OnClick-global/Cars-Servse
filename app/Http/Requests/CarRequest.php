@@ -34,7 +34,6 @@ class CarRequest extends FormRequest
                 'array',
                 'min:1',
                 'nullable',
-                'mimes:jpeg,jpg,png',
                 Rule::requiredIf(function() {
                     return Request::routeIs('store car');
                 })
