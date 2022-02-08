@@ -29,8 +29,8 @@ class CarsController extends Controller
         $car = Car::Create([
             'name_ar' => $request->name_ar,
             'name_en' => $request->name_en,
-            'des_ar' => $request->name_ar,
-            'des_en' => $request->name_en,
+            'des_ar' => $request->des_ar,
+            'des_en' => $request->des_en,
 
         ]);
         foreach ($request->images as $image) {
@@ -84,8 +84,8 @@ class CarsController extends Controller
         $car = Car::where('id',$id)->update([
             'name_ar' => $request->name_ar,
             'name_en' => $request->name_en,
-            'des_ar' => $request->name_ar,
-            'des_en' => $request->name_en,
+            'des_ar' => $request->des_ar,
+            'des_en' => $request->des_en,
         ]);
         if ($request->images) {
             foreach ($request->images as $image) {

@@ -106,4 +106,6 @@
   'Tenso' => 'خدمه توكيل تنسو',
   'View Service' => 'View Service',
   'Car tenso successfully!' => 'Car tenso successfully!',
+  'all cars' => 'All cars',
+  'cars' => 'Cars',
 );
