@@ -170,7 +170,7 @@
                                 <div class="form-group">
                                     <div class="image-input image-input-outline" id="kt_image_1">
                                         <div class="image-input-wrapper"
-                                             style="background-image: url({{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}})"></div>
+                                             style="background-image: url({{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo_header')->first()->value ?? ''}})"></div>
 
                                         <label
                                             class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
