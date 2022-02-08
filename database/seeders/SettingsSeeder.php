@@ -55,7 +55,10 @@ class SettingsSeeder extends Seeder
             'value' => '',
         ]);
         $admin = Setting::create([
-            'key' => 'logo  ',
+            'key' => 'logo_header',
+            'value' => 'def.png ',
+        ]);      $admin = Setting::create([
+            'key' => 'logo_footer',
             'value' => 'def.png ',
         ]);
     }

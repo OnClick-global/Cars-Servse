@@ -170,14 +170,36 @@
                                 <div class="form-group">
                                     <div class="image-input image-input-outline" id="kt_image_1">
                                         <div class="image-input-wrapper"
-                                             style="background-image: url({{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value ?? ''}})"></div>
+                                             style="background-image: url({{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo_header')->first()->value ?? ''}})"></div>
 
                                         <label
                                             class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
                                             data-action="change" data-toggle="tooltip" title=""
                                             data-original-title="{{App\Helpers\Helper::translate('chose image')}}">
                                             <i class="fa fa-pen icon-sm text-muted"></i>
-                                            <input type="file" name="logo" accept=".png, .jpg, .jpeg"/>
+                                            <input type="file" name="logo_header" accept=".png, .jpg, .jpeg"/>
+                                        </label>
+
+                                        <span
+                                            class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+                                            data-action="cancel" data-toggle="tooltip" title="Cancel avatar">
+                                         <i class="ki ki-bold-close icon-xs text-muted"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-group">
+                                    <div class="image-input image-input-outline" id="kt_image_1">
+                                        <div class="image-input-wrapper"
+                                             style="background-image: url({{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo_footer')->first()->value ?? ''}})"></div>
+
+                                        <label
+                                            class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow"
+                                            data-action="change" data-toggle="tooltip" title=""
+                                            data-original-title="{{App\Helpers\Helper::translate('chose image')}}">
+                                            <i class="fa fa-pen icon-sm text-muted"></i>
+                                            <input type="file" name="logo_footer" accept=".png, .jpg, .jpeg"/>
                                         </label>
 
                                         <span

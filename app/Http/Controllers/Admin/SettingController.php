@@ -29,7 +29,8 @@ class SettingController extends Controller
                 'Whatsapp' => 'required|numeric',
                 'facebook' => 'required|url|max:255',
                 'twitter' => 'required|url|max:255',
-                'logo' => 'nullable|mimes:jpeg,jpg,png|max:10000',
+                'logo_footer' => 'nullable|mimes:jpeg,jpg,png|max:10000',
+                'logo_header' => 'nullable|mimes:jpeg,jpg,png|max:10000',
             ]);
         if($request->logo){
             $imageFields = Helper::uploadImage($request->logo, 'setting');
