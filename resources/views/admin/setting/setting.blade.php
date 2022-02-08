@@ -172,7 +172,7 @@
                             </div>
                             <div class="col-2">
                                 <div class="form-group">
-                                    <div class="image-input image-input-outline" id="kt_image_1">
+                                    <div class="image-input image-input-outline" id="kt_image_2">
                                         <div class="image-input-wrapper"
                                              style="background-image: url({{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo_header')->first()->value ?? ''}})"></div>
 
@@ -239,6 +239,9 @@
 @section('script')
     <script>
         var avatar1 = new KTImageInput('kt_image_1');
+    </script>
+    <script>
+        var avatar1 = new KTImageInput('kt_image_2');
     </script>
     @if(Session::has('message'))
         <script>
