@@ -95,7 +95,7 @@ input[type="radio"]:focus {
     outline: none;
 }
 .section-padding {
-    padding: 120px 0px;
+    padding: 40px 0px;
 }
 .section-heading h2 {
     font-size: 36px;
@@ -1192,6 +1192,7 @@ p.error {
     background-image: url("img/bg/testimonial-bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .single-testimonial .testimonial-img {
     float: right;
@@ -2484,4 +2485,8 @@ html {
 
 .menu-position .col-md-3 {
     float: right;
+}
+
+div#Clients {
+    background: rgba(0, 0, 0, 0) url(img/bg/service-bg.jpg) no-repeat scroll center center;
 }

@@ -10,7 +10,36 @@
             </div>
         </div>
     </div>
-{{--    tenso--}}
+    <div id="aboutCS"  class="about-us-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- section title start -->
+                    <div class="section-heading">
+                        <h2>{{Helper::translate('About Cs')}}</h2>
+                    </div>
+                    <!-- section title end -->
+                    <!-- about content start -->
+                    @php($about=\App\Models\About::first())
+                    <div class="about-us-info">
+                        @if(App()->getLocale()=='ar')
+                            <p>{!!$about->about_ar!!}</p>
+                        @else
+                            <p>{!!$about->about_en!!}</p>
+                        @endif
+                    </div>
+                    <!-- about content end -->
+                </div>
+                <div class="col-md-6 hidden-xs">
+                    <!-- about us img start -->
+                    <div class="">
+                        <img src="{{$about->image}}" alt="">
+                    </div>
+                    <!-- about us img end -->
+                </div>
+            </div>
+        </div>
+    </div>    
     <div id="tenso" class="testimonial-area section-padding">
         @php($tenso=\App\Models\Tenso::with('Images')->first())
         <div class="container">
@@ -62,81 +91,7 @@
             </div>
         </div>
     </div>
-{{--    Services--}}
-    <div id="Services" class="service-area section-padding overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- section title start -->
-                    <div class="section-heading light text-center no-margin">
-                        <h2><span> {{App\Helpers\Helper::translate('Services')}}</span></h2>
-                    </div>
-                    <!-- section title end -->
-                </div>
-            </div>
-            <div class="row">
-                @php($Services=\App\Models\Service::get())
-                @foreach($Services as $Service)
-                    <div class="col-md-4 col-sm-6">
-                        <!-- single service start -->
-                        <div class="single-service">
-                            <div class="icon-title">
-                                <i class="fa fa-soccer-ball-o"></i>
-
-                                <h3> wheel alignment</h3>
-                                @if(app()->getLocale()=='ar')
-                                    <h3>{{$Service->name_ar}}</h3>
-                                @else
-                                    <h3>{{$Service->name_en}}</h3>
-                                @endif
-                            </div>
-                            @if(app()->getLocale()=='ar')
-                                <p>{{$Service->des_ar}}</p>
-                            @else
-                                <p>{{$Service->des_en}}</p>
-                            @endif
-                        </div>
-                        <br>
-                        <img  height="200 px" src="{{$Service->image}}" alt="">
-                        <!-- single service end -->
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
-{{--about cs--}}
-    <div id="aboutCS"  class="about-us-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <!-- section title start -->
-                    <div class="section-heading">
-                        <h2>{{Helper::translate('About Cs')}}</h2>
-                    </div>
-                    <!-- section title end -->
-                    <!-- about content start -->
-                    @php($about=\App\Models\About::first())
-                    <div class="about-us-info">
-                        @if(App()->getLocale()=='ar')
-                            <p>{!!$about->about_ar!!}</p>
-                        @else
-                            <p>{!!$about->about_en!!}</p>
-                        @endif
-                    </div>
-                    <!-- about content end -->
-                </div>
-                <div class="col-md-6 hidden-xs">
-                    <!-- about us img start -->
-                    <div class="">
-                        <img src="{{$about->image}}" alt="">
-                    </div>
-                    <!-- about us img end -->
-                </div>
-            </div>
-        </div>
-    </div>
-{{--cars--}}
-    <div style="background: #ffeeee" class="blog-area section-padding">
+    <div class="blog-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -191,7 +146,47 @@
             </div>
         </div>
     </div>
-{{--    Partners--}}
+    <div id="Services" class="service-area section-padding overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- section title start -->
+                    <div class="section-heading light text-center no-margin">
+                        <h2><span> {{App\Helpers\Helper::translate('Services')}}</span></h2>
+                    </div>
+                    <!-- section title end -->
+                </div>
+            </div>
+            <div class="row">
+                @php($Services=\App\Models\Service::get())
+                @foreach($Services as $Service)
+                    <div class="col-md-4 col-sm-6">
+                        <!-- single service start -->
+                        <div class="single-service">
+                            <div class="icon-title">
+                                <i class="fa fa-soccer-ball-o"></i>
+
+                                <h3> wheel alignment</h3>
+                                @if(app()->getLocale()=='ar')
+                                    <h3>{{$Service->name_ar}}</h3>
+                                @else
+                                    <h3>{{$Service->name_en}}</h3>
+                                @endif
+                            </div>
+                            @if(app()->getLocale()=='ar')
+                                <p>{{$Service->des_ar}}</p>
+                            @else
+                                <p>{{$Service->des_en}}</p>
+                            @endif
+                        </div>
+                        <br>
+                        <img  height="200 px" src="{{$Service->image}}" alt="">
+                        <!-- single service end -->
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
     <div id="Partners" class="team-member section-padding">
         <div class="container">
             <div class="row">
@@ -235,13 +230,12 @@
             </div>
         </div>
     </div>
-{{--    Clients--}}
-    <div id="Clients" style="background: #ffeeee"  class="shop-area section-padding">
+    <div id="Clients"  class="shop-area section-padding overlay">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <!-- section title start -->
-                    <div class="section-heading text-center">
+                    <div class="section-heading light text-center no-margin">
                         <h2>{{App\Helpers\Helper::translate('Clients')}} </h2>
                     </div>
                     <!-- section title end -->
