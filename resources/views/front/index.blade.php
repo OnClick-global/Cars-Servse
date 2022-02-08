@@ -202,10 +202,8 @@
                             <div class="team-img">
                                 <!-- team img start -->
                                 <a href="#" class="main-img">
-                                    <img src="{{$partner->images}}" alt=""> <br><br><br>
+                                    <img src="{{$partner->images}}" alt="">
                                 </a>
-                                <!-- team img end -->
-                                <!-- team info start -->
                                 <div class="team-info">
                                     @if(app()->getLocale() == 'ar')
                                         <h3>{{$partner->name_en}}</h3>
@@ -213,10 +211,6 @@
                                         <h3>{{$partner->name_en}}</h3>
                                     @endif
                                 </div>
-                                <!-- team info end -->
-                                <!-- team social start -->
-
-                                <!-- team social end -->
                             </div>
                         </div>
                     </div>
