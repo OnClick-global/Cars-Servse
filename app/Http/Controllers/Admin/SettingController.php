@@ -18,7 +18,6 @@ class SettingController extends Controller
 
     public function store(Request $request)
     {
-        return $request;
         $data = $this->validate(\request(),
             [  'name_ar' => 'required|max:255',
                 'name_en' => 'required|max:255',
@@ -34,11 +33,11 @@ class SettingController extends Controller
                 'logo_footer' => 'nullable|mimes:jpeg,jpg,png|max:10000',
             ]);
         if($request->logo_header){
-            $imageFields = Helper::uploadImage($request->logo, 'setting');
+            $imageFields = Helper::uploadImage($request->logo_header, 'setting');
             $data['logo_header'] = $imageFields;
         }
         if($request->logo_footer){
-            $imageFields = Helper::uploadImage($request->logo, 'setting');
+            $imageFields = Helper::uploadImage($request->logo_footer, 'setting');
             $data['logo_footer'] = $imageFields;
         }
         $oldimageHeader = Setting::where('key', 'logo_header')->first()->value;
