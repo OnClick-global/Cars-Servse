@@ -164,12 +164,12 @@
                         <!-- single service start -->
                         <div class="single-service">
                             <div class="icon-title">
-                                <img class="serviceImg" src="{{$Service->image}}" alt="">
                                 @if(app()->getLocale()=='ar')
                                     <h3>{{$Service->name_ar}}</h3>
                                 @else
                                     <h3>{{$Service->name_en}}</h3>
                                 @endif
+                                <img class="serviceImg" src="{{$Service->image}}" alt="">
                             </div>
                             @if(app()->getLocale()=='ar')
                                 <p>{{$Service->des_ar}}</p>
