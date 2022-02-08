@@ -29,7 +29,7 @@ class SettingController extends Controller
                 'Whatsapp' => 'required|numeric',
                 'facebook' => 'required|url|max:255',
                 'twitter' => 'required|url|max:255',
-                'logo' => 'nullable|mimes:jpeg,jpg,png|max:10000',
+                'logo_header' => 'nullable|mimes:jpeg,jpg,png|max:10000',
             ]);
         if($request->logo){
             $imageFields = Helper::uploadImage($request->logo, 'setting');
@@ -47,7 +47,7 @@ class SettingController extends Controller
         Setting::updateOrInsert(['key' => 'facebook'], ['value' => $request['facebook'],]);
         Setting::updateOrInsert(['key' => 'twitter'], ['value' => $request['twitter'],]);
         if($request->logo) {
-            Setting::updateOrInsert(['key' => 'logo'], ['value' => $data['logo'],]);
+            Setting::updateOrInsert(['key' => 'logo_header'], ['value' => $data['logo'],]);
         }
         return redirect(route('settings'))->with('success', Helper::translate('Settings Updated successfully!'));;
     }
