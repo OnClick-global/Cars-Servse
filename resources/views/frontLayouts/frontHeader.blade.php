@@ -26,12 +26,7 @@
 
     <!-- bootstrap css
     ============================================ -->
-    @if(app()->getLocale() == 'ar')
-        <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
-    @else
-        <link rel="stylesheet" href="{{url('/')}}/assets/front/css/bootstrap.min.css">
-    @endif    
-
+    <link rel="stylesheet" href="{{url('/')}}/assets/front/css/bootstrap.min.css">
 
     <!-- meanmenu css
     ============================================ -->
