@@ -164,9 +164,7 @@
                         <!-- single service start -->
                         <div class="single-service">
                             <div class="icon-title">
-                                <i class="fa fa-soccer-ball-o"></i>
-
-                                <h3> wheel alignment</h3>
+                                <img class="serviceImg" src="{{$Service->image}}" alt="">
                                 @if(app()->getLocale()=='ar')
                                     <h3>{{$Service->name_ar}}</h3>
                                 @else
@@ -179,8 +177,6 @@
                                 <p>{{$Service->des_en}}</p>
                             @endif
                         </div>
-                        <br>
-                        <img  height="200 px" src="{{$Service->image}}" alt="">
                         <!-- single service end -->
                     </div>
                 @endforeach
@@ -283,8 +279,4 @@
             </div>
         </div>
     </div>
-
-
-
-
 @endsection
