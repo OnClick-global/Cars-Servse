@@ -39,7 +39,7 @@
 <div id="kt_header_mobile" class="header-mobile align-items-center header-mobile-fixed">
     <!--begin::Logo-->
     <a href="{{route('home')}}">
-        <img alt="Logo" style="width: 100px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo_header')->first()->value}}   " />
+        <img alt="Logo" style="width: 100px;" src="{{asset('uploads/setting')}}/{{\App\Models\Setting::where('key','logo')->first()->value}}   " />
     </a>
     <!--end::Logo-->
     <!--begin::Toolbar-->
