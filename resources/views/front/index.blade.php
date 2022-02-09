@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-md-6 hidden-xs">
                     <!-- about us img start -->
-                    <div class="">
+                    <div class="about-us-img">
                         <img src="{{$about->image}}" alt="">
                     </div>
                     <!-- about us img end -->

@@ -861,15 +861,15 @@ p.error {
     bottom: -40px;
     content: "";
     height: 300px;
-    right: 20px;
+    left: 20px;
     position: absolute;
-    transform: rotate(-5deg);
+    transform: rotate(5deg);
     width: 300px;
     z-index: -1;
 }
 .about-us-img::before {
-    right: auto;
-    left: 20px;
+    left: auto;
+    right: 20px;
     top: -40px;
 }
 
