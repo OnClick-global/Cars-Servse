@@ -72,9 +72,9 @@
     <!-- style css
     ============================================ -->
     @if(app()->getLocale() == 'ar')
-        <link rel="stylesheet" href="{{url('/')}}/assets/front/style.rtl.css?v=1.7">
+        <link rel="stylesheet" href="{{url('/')}}/assets/front/style.rtl.css?v=1.8">
     @else
-        <link rel="stylesheet" href="{{url('/')}}/assets/front/style.css?v=1.0">
+        <link rel="stylesheet" href="{{url('/')}}/assets/front/style.css?v=1.8">
     @endif
 <!-- responsive css
     ============================================ -->

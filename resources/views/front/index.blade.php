@@ -68,7 +68,7 @@
                             <!-- testimonil img -->
                             <div class="testimonial-img hidden-xs">
                                 <div class="writer-img">
-                                    <img style="height: 400px" src="{{$tenso->Images[0]->image}}" alt="">
+                                    <img style="height: 188px" src="{{$tenso->Images[0]->image}}" alt="">
                                 </div>
                             </div>
                             <!-- testimonial content -->
