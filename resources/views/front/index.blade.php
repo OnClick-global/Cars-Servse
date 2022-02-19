@@ -21,7 +21,7 @@
                     <!-- section title end -->
                     <!-- about content start -->
                     @php($about=\App\Models\About::first())
-                    <div class="about-us-info">
+                    <div class="about-us-info" @if(app()->getLocale() == 'ar') style="direction: rtl;" @else  @endif >
                         @if(App()->getLocale()=='ar')
                             <p>{!!$about->about_ar!!}</p>
                         @else
