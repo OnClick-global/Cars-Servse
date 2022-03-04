@@ -3,7 +3,7 @@
     <div class="container">
         <div class="menu-position">
             <div class="row">
-                <div class="col-md-3 col-sm-2">
+                <div class="col-md-2 col-sm-2">
                     <!-- logo start -->
                     <div class="logo">
                         <a href="{{route('front')}}">
@@ -12,7 +12,7 @@
                     </div>
                     <!-- logo end -->
                 </div>
-                <div class="col-md-9 col-sm-10 static">
+                <div class="col-md-10 col-sm-10 static">
                     <!-- main-menu start -->
                     <div class="main-menu">
                         <nav>

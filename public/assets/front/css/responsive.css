@@ -219,7 +219,7 @@
         z-index: 99999999;
     }
     .mobile-menu-area {
-        background-color: #24273e;
+        background-color: #000000;
     }
     .mean-container .mean-bar::after {
         content: "";
@@ -234,7 +234,7 @@
 		padding: 5px 0;
     }
     .mean-container .mean-nav ul li a {
-        color: #24273e;
+        color: #000000;
     }
     .mean-container .mean-nav ul li a:hover {
         color: #ee2050;

@@ -42,10 +42,11 @@
                     <div class="footer-top-menu">
                         <ul>
                             <li><a href="{{route('front')}}#aboutCS">{{App\Helpers\Helper::translate('about company')}}</a></li>
+                            <li><a href="{{route('front')}}#Partners">{{App\Helpers\Helper::translate('isuzu')}}</a></li>
+                            <li><a href="{{route('tensoView')}}">{{App\Helpers\Helper::translate('Denso')}}</a></li>
                             <li><a href="{{route('front')}}#Partners">{{App\Helpers\Helper::translate('Partners')}}</a></li>
-                            <li><a href="{{route('front')}}#Clients">{{App\Helpers\Helper::translate('Clients')}}</a></li>
-                            <li><a href="{{route('front')}}#Services">{{App\Helpers\Helper::translate('Services')}}</a></li>
-                            <li><a href="{{route('tensoView')}}">{{App\Helpers\Helper::translate('tenso')}}</a></li>
+                            <li><a href="{{route('front')}}#Clients">{{App\Helpers\Helper::translate('brands')}}</a></li>
+
                         </ul>
                     </div>
                     <!-- footer menu end -->

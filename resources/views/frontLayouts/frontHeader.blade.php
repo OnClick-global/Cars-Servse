@@ -31,10 +31,10 @@
         <link rel="stylesheet" href="{{url('/')}}/assets/front/css/bootstrap.min.css">
     @else
         <link rel="stylesheet" href="{{url('/')}}/assets/front/css/bootstrap.min.css">
-    @endif    
+    @endif
 
 
-    <!-- meanmenu css
+<!-- meanmenu css
     ============================================ -->
     <link rel="stylesheet" href="{{url('/')}}/assets/front/css/meanmenu.min.css">
 
@@ -75,7 +75,7 @@
         <link rel="stylesheet" href="{{url('/')}}/assets/front/style.rtl.css?v=1.8">
     @else
         <link rel="stylesheet" href="{{url('/')}}/assets/front/style.css?v=1.8">
-    @endif
+@endif
 <!-- responsive css
     ============================================ -->
     <link rel="stylesheet" href="{{url('/')}}/assets/front/css/responsive.css">
@@ -100,11 +100,8 @@
                     <div class="welcome-msg">
                         <ul>
                             <li><p>
-                                    <span> {{App\Helpers\Helper::translate('Phone 1')}}: </span>{{\App\Models\Setting::where('key','phone1')->first()->value}}
-                                </p></li>
-
-                            <li><p>
-                                    <span> {{App\Helpers\Helper::translate('Phone 2')}}: </span>{{\App\Models\Setting::where('key','phone2')->first()->value}}
+                                    <span> {{App\Helpers\Helper::translate('plames')}}: </span>{{\App\Models\Setting::where('key','phone1')->first()->value}}
+                                    - {{\App\Models\Setting::where('key','phone2')->first()->value}}
                                 </p></li>
                         </ul>
                     </div>
@@ -116,8 +113,14 @@
                         <div class="top-social">
                             <ul>
                                 <li><a target="_blank"
+                                       href="{{\App\Models\Setting::where('key','snapchat')->first()->value}}"> <i
+                                            class="fa fa-snapchat-ghost"></i> </a></li>
+                                <li><a target="_blank"
                                        href="{{\App\Models\Setting::where('key','facebook')->first()->value}}"> <i
                                             class="fa fa-facebook"></i> </a></li>
+                                <li><a target="_blank"
+                                       href="{{\App\Models\Setting::where('key','instagram')->first()->value}}"> <i
+                                            class="fa fa-instagram"></i> </a></li>
                                 <li><a href="{{\App\Models\Setting::where('key','twitter')->first()->value}}"> <i
                                             class="fa fa-twitter"></i> </a></li>
                                 <li>
