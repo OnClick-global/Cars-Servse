@@ -160,6 +160,32 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-primary"
+                                            type="button">{{App\Helpers\Helper::translate('instagram')}}</button>
+                                </div>
+                                <input type="url" name="twitter"
+                                       value="{{\App\Models\Setting::where('key','instagram')->first()->value ?? ''}}"
+                                       class="form-control" placeholder="Search for...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-primary"
+                                            type="button">{{App\Helpers\Helper::translate('snapchat')}}</button>
+                                </div>
+                                <input type="url" name="twitter"
+                                       value="{{\App\Models\Setting::where('key','snapchat')->first()->value ?? ''}}"
+                                       class="form-control" placeholder="Search for...">
+                            </div>
+                        </div>
+                    </div>
                     <br>
                     <br>
                     <br>

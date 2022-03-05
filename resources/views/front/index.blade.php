@@ -39,7 +39,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
     <div id="tenso" class="testimonial-area section-padding">
         @php($tenso=\App\Models\Tenso::with('Images')->first())
         <div class="container">
@@ -158,7 +158,7 @@
                 </div>
             </div>
             <div class="row">
-                @php($Services=\App\Models\Service::get())
+                @php($Services=\App\Models\Service::where('type','services')->get())
                 @foreach($Services as $Service)
                     <div class="col-md-4 col-sm-6">
                         <!-- single service start -->
@@ -269,6 +269,33 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Partners" class="team-member section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- section title start -->
+                    <div class="section-heading text-center">
+                        <h2>{{App\Helpers\Helper::translate('our_branches')}}</h2>
+                    </div>
+                    <!-- section title end -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-6 order-lg-1">
+                    <h4 style="text-align: center;">{{App\Helpers\Helper::translate('gda')}}</h4>
+                    <div class="camp-img position-relative w-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.6703850916133!2d39.25727478506027!3d21.442197085775888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cc0bad8a9025%3A0xd3fb3c91c92dce6b!2z2LXZitin2YbYqSDYp9mK2LPZiNiy2Ygg2YXYudiq2YXYryDYs9mKINin2LM!5e0!3m2!1sar!2ssa!4v1646477911798!5m2!1sar!2ssa"  width="100%" height="560" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-lg-6 order-lg-1">
+                    <h4 style="text-align: center;">{{App\Helpers\Helper::translate('elryad')}}</h4>
+                    <div class="camp-img position-relative w-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.6958197865515!2d46.74725571499841!3d24.63416668416117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22f1dde015aed8a1!2zMjTCsDM4JzAzLjAiTiA0NsKwNDQnNTguMCJF!5e0!3m2!1sen!2seg!4v1646477941519!5m2!1sen!2seg"  width="100%" height="560" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </div>

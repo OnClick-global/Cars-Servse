@@ -142,7 +142,7 @@
                             </a>
                         </li>
                         <li class="menu-item @if( Request::segment(2)== 'allService' ) menu-item-active @endif "  aria-haspopup="true">
-                            <a href="{{route('all service')}}" class="menu-link">
+                            <a href="{{route('all_service')}}" class="menu-link">
                                 <i class="menu-bullet menu-bullet-dot">
                                     <span></span>
                                 </i>

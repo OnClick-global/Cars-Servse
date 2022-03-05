@@ -21,9 +21,9 @@
                         <!-- address end -->
                         <!-- contact info start -->
                         <div class="footer-contact-info">
-                            <p><span> {{App\Helpers\Helper::translate('address')}}:</span> {{\App\Models\Setting::where('key','phone1')->first()->value ?? ''}} </p>
-                            <p><span> {{App\Helpers\Helper::translate('Phone 1')}}:</span> {{\App\Models\Setting::where('key','phone2')->first()->value ?? ''}} </p>
-                            <p><span> {{App\Helpers\Helper::translate('Phone 2')}}:</span> {{\App\Models\Setting::where('key','Email')->first()->value ?? ''}} </p>
+                            <p><span> {{App\Helpers\Helper::translate('email')}}:</span> {{\App\Models\Setting::where('key','email')->first()->value ?? ''}} </p>
+                            <p><span> {{App\Helpers\Helper::translate('Phone 1')}}:</span> {{\App\Models\Setting::where('key','phone1')->first()->value ?? ''}} </p>
+                            <p><span> {{App\Helpers\Helper::translate('Phone 2')}}:</span> {{\App\Models\Setting::where('key','phone2')->first()->value ?? ''}} </p>
                         </div>
                         <!-- contact info end -->
                     </div>

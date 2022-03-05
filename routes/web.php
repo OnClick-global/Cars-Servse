@@ -38,6 +38,7 @@ Route::get('cache', function () {
 Route::group(['namespace' => 'front'], function () {
     Route::get('/', [HomeFrontController::class, 'home'])->name('front');
     Route::get('car/{id}', [HomeFrontController::class, 'car'])->name('carFrontView');
+    Route::get('service/{id}', [HomeFrontController::class, 'service'])->name('serviceFrontView');
     Route::get('tenso/', [HomeFrontController::class, 'tenso'])->name('tensoView');
     Route::get('change_lang/{lang}', [HomeFrontController::class, 'change_lang'])->name('change_lang');
 });
@@ -100,7 +101,7 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::get('/deleteClient/{id}', [ClientController::class, 'destroy'])->name('client delete');
     });
     Route::group(['namespace' => 'admin', 'prefix' => 'service'], function () {
-        Route::get('/allService', [ServiceController::class, 'index'])->name('all service');
+        Route::get('/all', [ServiceController::class, 'index'])->name('all_service');
         Route::get('/addNewService', [ServiceController::class, 'create'])->name('add new service');
         Route::post('/newService', [ServiceController::class, 'store'])->name('store service');
         Route::get('/EditService/{id}', [ServiceController::class, 'edit'])->name('edit service');

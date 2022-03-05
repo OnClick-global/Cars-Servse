@@ -11,7 +11,7 @@ class ServiceController extends Controller
 {
     public function index()
     {
-        $data = Service::get();
+        $data = Service::where('type','service')->get();
         return view('admin.Service.index', compact('data'));
     }
 
