@@ -14,7 +14,7 @@ class UpdateTensoTable extends Migration
     public function up()
     {
         Schema::table('tensos', function (Blueprint $table) {
-            $table->text('type')->default('tenso');
+            $table->string('type')->default('tenso');
         });
     }
 
