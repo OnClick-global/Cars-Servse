@@ -72,6 +72,9 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::get('/deleteImage/{id}', [TensoController::class, 'imageDelete'])->name('image.delete');
 
     });
+    Route::group(['namespace' => 'admin', 'prefix' => 'isuzu'], function () {
+        Route::get('/allisuzu', [TensoController::class, 'allisuzu'])->name('allisuzu');
+    });
 
 
 

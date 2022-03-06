@@ -71,27 +71,6 @@
                     </ul>
                 </div>
             </li>
-            <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'tenso' ) menu-item-open @endif" aria-haspopup="true" data-menu-toggle="hover">
-                <a href="javascript:;" class="menu-link menu-toggle">
-                    <i class="menu-icon flaticon-car"></i>
-                    <span class="menu-text">{{App\Helpers\Helper::translate('tenso')}}</span>
-                    <i class="menu-arrow"></i>
-                </a>
-                <div class="menu-submenu">
-                    <i class="menu-arrow"></i>
-                    <ul class="menu-subnav">
-                        <li class="menu-item menu-item-active" aria-haspopup="true">
-                        <li class="menu-item @if( Request::segment(2)== 'alltenso' ) menu-item-active @endif "  aria-haspopup="true">
-                            <a href="{{route('alltenso')}}" class="menu-link">
-                                <i class="menu-bullet menu-bullet-dot">
-                                    <span></span>
-                                </i>
-                                <span class="menu-text">{{App\Helpers\Helper::translate('Tenso')}}</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
             <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'partners' ) menu-item-open @endif" aria-haspopup="true" data-menu-toggle="hover">
                 <a href="javascript:;" class="menu-link menu-toggle">
                     <i class="menu-icon flaticon-security"></i>
@@ -182,6 +161,18 @@
                     </ul>
                 </div>
             </li>
+            <li class="menu-item @if( Request::segment(1)== 'tenso' ) menu-item-active @endif" aria-haspopup="true" data-menu-toggle="hover">
+                <a href="{{route('alltenso')}}" class="menu-link menu-toggle">
+                    <i class="menu-icon flaticon-car"></i>
+                    <span class="menu-text">{{App\Helpers\Helper::translate('tenso')}}</span>
+                </a>
+            </li>
+            <li class="menu-item @if( Request::segment(1)== 'isuzu' ) menu-item-active @endif" aria-haspopup="true" data-menu-toggle="hover">
+                <a href="{{route('allisuzu')}}" class="menu-link menu-toggle">
+                    <i class="menu-icon flaticon-car"></i>
+                    <span class="menu-text">{{App\Helpers\Helper::translate('isuzu')}}</span>
+                </a>
+            </li>
             <li class="menu-item @if( Request::segment(1)== 'about' ) menu-item-active @endif "  aria-haspopup="true">
                 <a href="{{route('about')}}" class="menu-link">
                     <i class="menu-icon flaticon2-box-1"></i>
@@ -194,7 +185,6 @@
                     <span class="menu-text">{{App\Helpers\Helper::translate('Settings')}}</span>
                 </a>
             </li>
-
         </ul>
         <!--end::Menu Nav-->
     </div>

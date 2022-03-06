@@ -13,7 +13,12 @@ class TensoController extends Controller
 {
     public function index()
     {
-        $data = Tenso::get();
+        $data = Tenso::where('type','tenso')->get();
+        return view('admin.tenso.index', compact('data'));
+    }
+    public function allisuzu()
+    {
+        $data = Tenso::where('type','isuzu')->get();
         return view('admin.tenso.index', compact('data'));
     }
 
@@ -38,7 +43,7 @@ class TensoController extends Controller
                 'tenso_id' => $tenso->id
             ]);
         }
-        return redirect(route('add new tenso'))->with('success', Helper::translate('Car tenso successfully!'));
+            return redirect(route('add new tenso'))->with('success', Helper::translate('Car tenso successfully!'));
     }
 
     public function carsImages(Request $request)
@@ -67,6 +72,7 @@ class TensoController extends Controller
 
     public function updateCar(TensoRequest $request, $id)
     {
+        $tenso = Tenso::findOrFail($id);
         $car = Tenso::where('id', $id)->update([
             'name_ar' => $request->name_ar,
             'name_en' => $request->name_en,
@@ -81,7 +87,13 @@ class TensoController extends Controller
                 ]);
             }
         }
-        return redirect(route('alltenso'))->with('success', Helper::translate('tenso updated successfully!'));
+        if($tenso->type == 'tenso'){
+            return redirect(route('alltenso'))->with('success', Helper::translate('tenso updated successfully!'));
+
+        }else{
+            return redirect(route('allisuzu'))->with('success', Helper::translate('tenso updated successfully!'));
+
+        }
     }
 
     public function imageDelete($id)

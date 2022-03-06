@@ -41,7 +41,7 @@
         </div>
     </div>
     <div id="tenso" class="testimonial-area section-padding">
-        @php($tenso=\App\Models\Tenso::with('Images')->first())
+        @php($tenso=\App\Models\Tenso::where('type','tenso')->with('Images')->first())
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -143,6 +143,57 @@
                     @endforeach
                 </div>
                 <!-- blog slider end -->
+            </div>
+        </div>
+    </div>
+    <div id="tenso" class="testimonial-area section-padding">
+        @php($isuzu=\App\Models\Tenso::where('type','isuzu')->with('Images')->first())
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- section title start -->
+                    <div class="section-heading text-center">
+                        <h2>
+                            @if(app()->getLocale() =='ar')
+                                <span>{{$isuzu->name_ar}}</span>
+                            @else
+                                <span>{{$isuzu->name_en}}</span>
+                            @endif
+
+                        </h2>
+                    </div>
+                    <!-- section title end -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- testimonial slider start -->
+                    <div class="testimonial-slider owl-preview-1">
+                        <!-- single testimonial start -->
+                        <div class="single-testimonial">
+                            <!-- testimonil img -->
+                            <div class="testimonial-img hidden-xs">
+                                <div class="writer-img">
+                                    <img style="height: 188px" src="{{$isuzu->Images[0]->image}}" alt="">
+                                </div>
+                            </div>
+                            <!-- testimonial content -->
+                            <div class="testimonial-content">
+
+                                <div class="test-spech">
+                                    @if(app()->getLocale() =='ar')
+                                        <p>{{$isuzu->des_ar}}</p>
+
+                                    @else
+                                        <p>{{$isuzu->des_en}}</p>
+
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- testimonial slider end -->
+                </div>
             </div>
         </div>
     </div>
