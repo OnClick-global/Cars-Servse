@@ -45,7 +45,7 @@ Route::group(['namespace' => 'front'], function () {
 Route::group(['middleware' => 'auth:web'], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-    Route::group(['namespace' => 'admin', 'prefix' => 'cars'], function () {
+    Route::group(['namespace' => 'Admin', 'prefix' => 'cars'], function () {
         Route::get('/allCars', [CarsController::class, 'index'])->name('allCars');
         Route::get('/addNewCar', [CarsController::class, 'create'])->name('add new car');
         Route::post('/store', [CarsController::class, 'store'])->name('store car');
@@ -61,7 +61,7 @@ Route::group(['middleware' => 'auth:web'], function () {
 
 
 
-    Route::group(['namespace' => 'admin', 'prefix' => 'tenso'], function () {
+    Route::group(['namespace' => 'Admin', 'prefix' => 'tenso'], function () {
         Route::get('/allTenso', [TensoController::class, 'index'])->name('alltenso');
         Route::get('/addTensoOnclick123', [TensoController::class, 'create'])->name('add new tenso');
         Route::post('/storeTenso', [TensoController::class, 'store'])->name('store tenso');
@@ -72,22 +72,22 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::get('/deleteImage/{id}', [TensoController::class, 'imageDelete'])->name('image.delete');
 
     });
-    Route::group(['namespace' => 'admin', 'prefix' => 'isuzu'], function () {
+    Route::group(['namespace' => 'Admin', 'prefix' => 'isuzu'], function () {
         Route::get('/allisuzu', [TensoController::class, 'allisuzu'])->name('allisuzu');
     });
 
 
 
 
-    Route::group(['namespace' => 'admin'], function () {
+    Route::group(['namespace' => 'Admin'], function () {
         Route::get('/settings', [SettingController::class, 'settings'])->name('settings');
         Route::post('/settings/update', [SettingController::class, 'store'])->name('settings update');
     });
-    Route::group(['namespace' => 'admin'], function () {
+    Route::group(['namespace' => 'Admin'], function () {
         Route::get('/about', [AboutController::class, 'abouts'])->name('about');
         Route::post('/about/update', [AboutController::class, 'store'])->name('about update');
     });
-    Route::group(['namespace' => 'admin', 'prefix' => 'partners'], function () {
+    Route::group(['namespace' => 'Admin', 'prefix' => 'partners'], function () {
         Route::get('/allPartner', [PartnerController::class, 'index'])->name('all partner');
         Route::get('/addNewPartner', [PartnerController::class, 'create'])->name('add new partner');
         Route::post('/newPartner', [PartnerController::class, 'store'])->name('store partner');
@@ -95,7 +95,7 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::post('/updatePartner/{id}', [PartnerController::class, 'updatePartner'])->name('update partner');
         Route::get('/deletePartner/{id}', [PartnerController::class, 'destroy'])->name('partner delete');
     });
-    Route::group(['namespace' => 'admin', 'prefix' => 'clients'], function () {
+    Route::group(['namespace' => 'Admin', 'prefix' => 'clients'], function () {
         Route::get('/allClient', [ClientController::class, 'index'])->name('all client');
         Route::get('/addNewClient', [ClientController::class, 'create'])->name('add new client');
         Route::post('/newClient', [ClientController::class, 'store'])->name('store client');
@@ -103,7 +103,7 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::post('/updateClient/{id}', [ClientController::class, 'update'])->name('update client');
         Route::get('/deleteClient/{id}', [ClientController::class, 'destroy'])->name('client delete');
     });
-    Route::group(['namespace' => 'admin', 'prefix' => 'services'], function () {
+    Route::group(['namespace' => 'Admin', 'prefix' => 'services'], function () {
         Route::get('/all', [ServiceController::class, 'index'])->name('all_service');
         Route::get('/addNewService', [ServiceController::class, 'create'])->name('add new service');
         Route::post('/newService', [ServiceController::class, 'store'])->name('store service');
@@ -113,7 +113,7 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::get('/deleteService/{id}', [ServiceController::class, 'destroy'])->name('service delete');
     });
 
-    Route::group(['namespace' => 'admin', 'prefix' => 'sliders'], function () {
+    Route::group(['namespace' => 'Admin', 'prefix' => 'sliders'], function () {
         Route::get('/allSliders', [SliderController::class, 'index'])->name('all Sliders');
         Route::get('/addNewSliders', [SliderController::class, 'create'])->name('add new Slider');
         Route::post('/newSliders', [SliderController::class, 'store'])->name('store Slider');
