@@ -101,7 +101,7 @@
                 </div>
             </li>
 
-            <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'service' ) menu-item-open @endif
+            <li class="menu-item menu-item-submenu @if( Request::segment(1)== 'services' ) menu-item-open @endif
                 " aria-haspopup="true" data-menu-toggle="hover">
                 <a href="javascript:;" class="menu-link menu-toggle">
                     <i class="menu-icon flaticon-statistics"></i>

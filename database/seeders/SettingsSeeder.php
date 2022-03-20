@@ -16,47 +16,59 @@ class SettingsSeeder extends Seeder
     {
         $admin = Setting::create([
             'key' => 'name_ar',
-            'value' => '',
+            'value' => ' ',
         ]);
         $admin = Setting::create([
             'key' => 'name_en',
-            'value' => '',
+            'value' => ' ',
         ]);
         $admin = Setting::create([
             'key' => 'Adress_ar',
-            'value' => '',
+            'value' => ' ',
         ]);
         $admin = Setting::create([
             'key' => 'Adress_en',
-            'value' => '',
+            'value' => ' ',
         ]);
         $admin = Setting::create([
             'key' => 'phone1',
-            'value' => '',
+            'value' => ' ',
         ]);
         $admin = Setting::create([
             'key' => 'phone2',
-            'value' => '',
+            'value' => ' ',
         ]);
         $admin = Setting::create([
             'key' => 'Email',
-            'value' => '',
+            'value' => ' ',
         ]);
         $admin = Setting::create([
             'key' => 'Whatsapp',
-            'value' => '',
+            'value' => ' ',
         ]);
         $admin = Setting::create([
             'key' => 'facebook',
-            'value' => '',
+            'value' => ' ',
         ]);
         $admin = Setting::create([
             'key' => 'twitter',
-            'value' => '',
+            'value' => ' ',
         ]);
         $admin = Setting::create([
-            'key' => 'logo  ',
-            'value' => 'def.png ',
+            'key' => 'snapchat',
+            'value' => ' ',
+        ]);
+        $admin = Setting::create([
+            'key' => 'instagram',
+            'value' => ' ',
+        ]);
+        $admin = Setting::create([
+            'key' => 'logo',
+            'value' => 'def.png',
+        ]);
+        $admin = Setting::create([
+            'key' => 'logo_header',
+            'value' => 'logo_header',
         ]);
     }
 }

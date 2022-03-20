@@ -103,7 +103,7 @@ Route::group(['middleware' => 'auth:web'], function () {
         Route::post('/updateClient/{id}', [ClientController::class, 'update'])->name('update client');
         Route::get('/deleteClient/{id}', [ClientController::class, 'destroy'])->name('client delete');
     });
-    Route::group(['namespace' => 'admin', 'prefix' => 'service'], function () {
+    Route::group(['namespace' => 'admin', 'prefix' => 'services'], function () {
         Route::get('/all', [ServiceController::class, 'index'])->name('all_service');
         Route::get('/addNewService', [ServiceController::class, 'create'])->name('add new service');
         Route::post('/newService', [ServiceController::class, 'store'])->name('store service');
