@@ -49,9 +49,9 @@
                     <div class="section-heading text-center">
                         <h2>
                             @if(app()->getLocale() =='ar')
-                                <span>{{$tenso->name_ar}}</span>
+                                <span style="color: red;" >{{$tenso->name_ar}}</span>
                             @else
-                                <span>{{$tenso->name_en}}</span>
+                                <span style="color: red;" >{{$tenso->name_en}}</span>
                             @endif
 
                         </h2>
@@ -76,11 +76,9 @@
 
                                 <div class="test-spech">
                                     @if(app()->getLocale() =='ar')
-                                        <p>{{$tenso->des_ar}}</p>
-
+                                        <p style="color: black;" >{{$tenso->des_ar}}</p>
                                     @else
-                                        <p>{{$tenso->des_en}}</p>
-
+                                        <p style="color: black;" >{{$tenso->des_en}}</p>
                                     @endif
                                 </div>
                             </div>
@@ -155,9 +153,9 @@
                     <div class="section-heading text-center">
                         <h2>
                             @if(app()->getLocale() =='ar')
-                                <span>{{$isuzu->name_ar}}</span>
+                                <span style="color: red;" >{{$isuzu->name_ar}}</span>
                             @else
-                                <span>{{$isuzu->name_en}}</span>
+                                <span style="color: red;" >{{$isuzu->name_en}}</span>
                             @endif
 
                         </h2>
@@ -182,10 +180,10 @@
 
                                 <div class="test-spech">
                                     @if(app()->getLocale() =='ar')
-                                        <p>{{$isuzu->des_ar}}</p>
+                                        <p style="color: black;" >{{$isuzu->des_ar}}</p>
 
                                     @else
-                                        <p>{{$isuzu->des_en}}</p>
+                                        <p style="color: black;" >{{$isuzu->des_en}}</p>
 
                                     @endif
                                 </div>
