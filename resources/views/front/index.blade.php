@@ -76,9 +76,9 @@
 
                                 <div class="test-spech">
                                     @if(app()->getLocale() =='ar')
-                                        <p style="color: black;" >{{$tenso->des_ar}}</p>
+                                        <strong style="color: black;" >{{$tenso->des_ar}}</strong>
                                     @else
-                                        <p style="color: black;" >{{$tenso->des_en}}</p>
+                                        <strong style="color: black;" >{{$tenso->des_en}}</strong>
                                     @endif
                                 </div>
                             </div>
@@ -180,11 +180,9 @@
 
                                 <div class="test-spech">
                                     @if(app()->getLocale() =='ar')
-                                        <p style="color: black;" >{{$isuzu->des_ar}}</p>
-
+                                        <strong style="color: black;" >{{$isuzu->des_ar}}</strong>
                                     @else
-                                        <p style="color: black;" >{{$isuzu->des_en}}</p>
-
+                                        <strong style="color: black;" >{{$isuzu->des_en}}</strong>
                                     @endif
                                 </div>
                             </div>
