@@ -30,7 +30,7 @@
                     </div>
                     <!-- about content end -->
                 </div>
-                <div class="col-md-6 hidden-xs">
+                <div class="col-md-6">
                     <!-- about us img start -->
                     <div class="about-us-img">
                         <img src="{{$about->image}}" alt="">
@@ -66,7 +66,7 @@
                         <!-- single testimonial start -->
                         <div class="single-testimonial">
                             <!-- testimonil img -->
-                            <div class="testimonial-img hidden-xs">
+                            <div class="testimonial-img ">
                                 <div class="writer-img">
                                     <img style="width: 280px; height: 190px;" src="{{$tenso->Images[0]->image}}" alt="">
                                 </div>
@@ -110,7 +110,7 @@
                             <div class="single-blog">
                                 <!-- blog img start -->
                                 <div class="blog-img">
-                                    <img style="height: 100%;" src="{{$car->Images[0]->image}}" alt="">
+                                    <img style="height: 100%" src="{{$car->Images[0]->image}}" alt="">
                                 </div>
                                 <!-- blog img end -->
                                 <!-- blog content start -->
@@ -170,14 +170,13 @@
                         <!-- single testimonial start -->
                         <div class="single-testimonial">
                             <!-- testimonil img -->
-                            <div class="testimonial-img hidden-xs">
+                            <div class="testimonial-img ">
                                 <div class="writer-img">
-                                    <img style="width: 280px; height: 190px; " src="{{$isuzu->Images[0]->image}}" alt="">
+                                    <img style="width: 280px; height: 190px;" src="{{$isuzu->Images[0]->image}}" alt="">
                                 </div>
                             </div>
                             <!-- testimonial content -->
                             <div class="testimonial-content">
-
                                 <div class="test-spech">
                                     @if(app()->getLocale() =='ar')
                                         <strong style="color: black;" >{{$isuzu->des_ar}}</strong>
