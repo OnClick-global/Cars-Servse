@@ -68,7 +68,7 @@
                             <!-- testimonil img -->
                             <div class="testimonial-img hidden-xs">
                                 <div class="writer-img">
-                                    <img style="height: 188px" src="{{$tenso->Images[0]->image}}" alt="">
+                                    <img style="width: 280px; height: 190px;" src="{{$tenso->Images[0]->image}}" alt="">
                                 </div>
                             </div>
                             <!-- testimonial content -->
@@ -110,7 +110,7 @@
                             <div class="single-blog">
                                 <!-- blog img start -->
                                 <div class="blog-img">
-                                    <img style="height: 250px;" src="{{$car->Images[0]->image}}" alt="">
+                                    <img style="height: 100%;" src="{{$car->Images[0]->image}}" alt="">
                                 </div>
                                 <!-- blog img end -->
                                 <!-- blog content start -->
@@ -172,7 +172,7 @@
                             <!-- testimonil img -->
                             <div class="testimonial-img hidden-xs">
                                 <div class="writer-img">
-                                    <img style="height: 188px" src="{{$isuzu->Images[0]->image}}" alt="">
+                                    <img style="width: 280px; height: 190px; " src="{{$isuzu->Images[0]->image}}" alt="">
                                 </div>
                             </div>
                             <!-- testimonial content -->
