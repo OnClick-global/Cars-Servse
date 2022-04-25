@@ -67,21 +67,21 @@
                                     </ul>
                                     <!-- sub menu end -->
                                 </li>
-                                <li class="has-sub">
-                                    <a href="javascript:void(this);">{{App\Helpers\Helper::translate('Services')}}
-                                        <i class="icofont icofont-simple-down"></i>
-                                    </a>
-                                    <!-- sub menu start -->
+{{--                                <li class="has-sub">--}}
+{{--                                    <a href="javascript:void(this);">{{App\Helpers\Helper::translate('Services')}}--}}
+{{--                                        <i class="icofont icofont-simple-down"></i>--}}
+{{--                                    </a>--}}
+{{--                                    <!-- sub menu start -->--}}
 
-                                    <ul class="sub-menu left">
-                                        @foreach($services as $row)
-                                            <li><a href="{{route('serviceFrontView',$row->id)}}">
-                                                    {{ app()->getLocale() == 'en' ? $row->name_en : $row->name_ar }}
-                                                </a></li>
-                                        @endforeach
-                                    </ul>
-                                    <!-- sub menu end -->
-                                </li>
+{{--                                    <ul class="sub-menu left">--}}
+{{--                                        @foreach($services as $row)--}}
+{{--                                            <li><a href="{{route('serviceFrontView',$row->id)}}">--}}
+{{--                                                    {{ app()->getLocale() == 'en' ? $row->name_en : $row->name_ar }}--}}
+{{--                                                </a></li>--}}
+{{--                                        @endforeach--}}
+{{--                                    </ul>--}}
+{{--                                    <!-- sub menu end -->--}}
+{{--                                </li>--}}
                                 <li>
                                     <a href="{{route('front')}}#Partners">{{App\Helpers\Helper::translate('Partners')}}</a>
                                 </li>
@@ -160,20 +160,33 @@
                                 </ul>
                                 <!-- sub menu end -->
                             </li>
-                            <li class="has-sub">
-                                <a href="javascript:void(this);">{{App\Helpers\Helper::translate('Services')}}
-                                    <i class="icofont icofont-simple-down"></i>
-                                </a>
-                                <!-- sub menu start -->
-                                <ul class="sub-menu left">
-                                    @foreach($services as $row)
-                                        <li><a href="{{route('serviceFrontView',$row->id)}}">
-                                                {{ app()->getLocale() == 'en' ? $row->name_en : $row->name_ar }}
-                                            </a></li>
-                                    @endforeach
-                                </ul>
-                                <!-- sub menu end -->
-                            </li>
+{{--                            <li class="has-sub">--}}
+{{--                                <a href="javascript:void(this);">{{App\Helpers\Helper::translate('Services')}}--}}
+{{--                                    <i class="icofont icofont-simple-down"></i>--}}
+{{--                                </a>--}}
+{{--                                <!-- sub menu start -->--}}
+{{--                                <ul class="sub-menu left">--}}
+{{--                                    @foreach($services as $row)--}}
+{{--                                        <li><a href="{{route('serviceFrontView',$row->id)}}">--}}
+{{--                                                {{ app()->getLocale() == 'en' ? $row->name_en : $row->name_ar }}--}}
+{{--                                            </a></li>--}}
+{{--                                    @endforeach--}}
+{{--                                </ul>--}}
+{{--                                <!-- sub menu end -->--}}
+{{--                            </li>                  <li class="has-sub">--}}
+{{--                                <a href="javascript:void(this);">{{App\Helpers\Helper::translate('Services')}}--}}
+{{--                                    <i class="icofont icofont-simple-down"></i>--}}
+{{--                                </a>--}}
+{{--                                <!-- sub menu start -->--}}
+{{--                                <ul class="sub-menu left">--}}
+{{--                                    @foreach($services as $row)--}}
+{{--                                        <li><a href="{{route('serviceFrontView',$row->id)}}">--}}
+{{--                                                {{ app()->getLocale() == 'en' ? $row->name_en : $row->name_ar }}--}}
+{{--                                            </a></li>--}}
+{{--                                    @endforeach--}}
+{{--                                </ul>--}}
+{{--                                <!-- sub menu end -->--}}
+{{--                            </li>--}}
                             <li>
                                 <a href="{{route('front')}}#Partners">{{App\Helpers\Helper::translate('Partners')}}</a>
                             </li>
