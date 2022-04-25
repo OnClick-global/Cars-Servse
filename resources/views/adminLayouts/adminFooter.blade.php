@@ -17,8 +17,7 @@
         <!--end::Copyright-->
         <!--begin::Nav-->
         <div class="nav nav-dark">
-            <a href="https://onclick-eg.com/about-us" target="_blank" class="nav-link pl-0 pr-5">About</a>
-            <a href="https://onclick-eg.com/contact" target="_blank" class="nav-link pl-0 pr-0">Contact</a>
+          
         </div>
         <!--end::Nav-->
     </div>
