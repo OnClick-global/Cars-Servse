@@ -29,6 +29,8 @@ class SettingController extends Controller
                 'Whatsapp' => 'required|numeric',
                 'facebook' => 'required|url|max:255',
                 'twitter' => 'required|url|max:255',
+                'instagram' => 'required|url|max:255',
+                'snapchat' => 'required|url|max:255',
                 'logo_header' => 'nullable|mimes:jpeg,jpg,png|max:10000',
                 'logo_footer' => 'nullable|mimes:jpeg,jpg,png|max:10000',
             ]);
@@ -50,6 +52,8 @@ class SettingController extends Controller
         Setting::updateOrInsert(['key' => 'phone2'], ['value' => $request['phone2'],]);
         Setting::updateOrInsert(['key' => 'Email'], ['value' => $request['Email'],]);
         Setting::updateOrInsert(['key' => 'Whatsapp'], ['value' => $request['Whatsapp'],]);
+        Setting::updateOrInsert(['key' => 'snapchat'], ['value' => $request['snapchat'],]);
+        Setting::updateOrInsert(['key' => 'instagram'], ['value' => $request['instagram'],]);
         Setting::updateOrInsert(['key' => 'facebook'], ['value' => $request['facebook'],]);
         Setting::updateOrInsert(['key' => 'twitter'], ['value' => $request['twitter'],]);
         if($request->logo_header) {

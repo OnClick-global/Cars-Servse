@@ -167,7 +167,7 @@
                                     <button class="btn btn-primary"
                                             type="button">{{App\Helpers\Helper::translate('instagram')}}</button>
                                 </div>
-                                <input type="url" name="twitter"
+                                <input type="url" name="instagram"
                                        value="{{\App\Models\Setting::where('key','instagram')->first()->value ?? ''}}"
                                        class="form-control" placeholder="Search for...">
                             </div>
@@ -180,7 +180,7 @@
                                     <button class="btn btn-primary"
                                             type="button">{{App\Helpers\Helper::translate('snapchat')}}</button>
                                 </div>
-                                <input type="url" name="twitter"
+                                <input type="url" name="snapchat"
                                        value="{{\App\Models\Setting::where('key','snapchat')->first()->value ?? ''}}"
                                        class="form-control" placeholder="Search for...">
                             </div>
