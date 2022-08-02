@@ -14,7 +14,7 @@
                    class="text-muted">{{App\Helpers\Helper::translate('dashboard')}}</a>
             </li>
             <li class="breadcrumb-item">
-                <a href="{{route('allService')}}"
+                <a href="{{url('services/all')}}"
                    class="text-muted">{{App\Helpers\Helper::translate('All Services')}}</a>
             </li>
             <li class="breadcrumb-item">
