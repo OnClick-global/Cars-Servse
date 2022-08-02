@@ -36,7 +36,7 @@ class ServiceController extends Controller
             unset($data['image']);
         }
         Service::Create($data);
-        return redirect(route('all service'))->with('success', Helper::translate('Service created successfully!'));
+        return redirect(url('services/all'))->with('success', Helper::translate('Service created successfully!'));
     }
 
     public function edit(Request $request, $id)
@@ -69,13 +69,13 @@ class ServiceController extends Controller
         }
         $client = Service::where('id', $id);
         $client->update($data);
-        return redirect(route('all service'))->with('success', Helper::translate('Service updated successfully!'));
+        return redirect(url('services/all'))->with('success', Helper::translate('Service updated successfully!'));
     }
 
     public function destroy($id)
     {
         $client = Service::findOrFail($id);
         $client->delete();
-        return redirect(route('all service'))->with('success', Helper::translate('Service Deleted successfully!'));
+        return redirect(url('services/all'))->with('success', Helper::translate('Service Deleted successfully!'));
     }
 }

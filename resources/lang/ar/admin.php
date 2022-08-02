@@ -1,3 +1,4 @@
+
 <?php return array(
     'New Partner' => 'شريك جديد',
     'dashboard' => 'لوحه التحكم',
